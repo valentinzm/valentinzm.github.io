@@ -1,0 +1,946 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Acino</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800|Roboto:400,900&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="container">
+        <div class="header__row">
+          <div class="logo">
+            <svg viewBox="0 0 120 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="image" focusable="false">
+              <path d="M0 13.7248L13.2211 2.44772C16.9759 -0.755119 22.445 -0.774789 26.2059 2.15402C22.7878 0.827941 18.7528 1.37192 15.7872 3.90149L2.56616 15.1786L0 13.7248Z" fill="#EF7C00"/>
+              <path d="M4.86621 16.4815L18.0872 5.20449C21.842 2.00158 27.3111 1.98198 31.072 4.91079C27.6538 3.58471 23.619 4.12869 20.6532 6.65825L7.43237 17.9354L4.86621 16.4815Z" fill="#EF7C00"/>
+              <path d="M9.73145 19.2385L22.9524 7.96122C26.7072 4.75845 32.1763 4.73878 35.9373 7.66752C32.5192 6.34151 28.4843 6.88542 25.5186 9.41505L12.2976 20.6923L9.73145 19.2385Z" fill="#EF7C00"/>
+              <path d="M42.135 19.8411L28.9136 31.1187C25.1587 34.3214 19.6897 34.3412 15.9287 31.4125C19.3469 32.7384 23.3818 32.1946 26.3475 29.6649L39.5691 18.3874L42.135 19.8411Z" fill="#C70B6F"/>
+              <path d="M37.2698 17.0846L24.0484 28.3621C20.2935 31.5649 14.8243 31.5846 11.0635 28.6557C14.4815 29.9818 18.5165 29.4378 21.4821 26.9083L34.7036 15.6306L37.2698 17.0846Z" fill="#C70B6F"/>
+              <path d="M32.403 14.3276L19.1816 25.6052C15.4267 28.8082 9.95759 28.8278 6.19678 25.899C9.61487 27.2251 13.6498 26.6811 16.6154 24.1515L29.8369 12.8738L32.403 14.3276Z" fill="#C70B6F"/>
+              <path d="M62.0459 14.0978C62.0459 10.7709 60.5498 8.72717 55.526 8.72717C53.5168 8.72717 51.4369 9.19668 49.8675 9.75086L50.2124 13.0478C51.5314 12.3083 53.4152 11.8463 54.8281 11.8463C57.0889 11.8463 57.8735 12.6779 57.8735 14.2799V15.112C52.5677 15.112 48.8623 17.0526 48.8623 20.719C48.8623 23.1839 50.4845 24.8391 53.3101 24.8391C55.6337 24.8391 57.6276 23.4174 58.3812 21.6922L58.3446 21.859C58.219 22.6602 57.9549 23.9454 57.9549 24.8391H62.0459V14.0978ZM57.8735 18.039C57.8735 19.8873 56.5235 21.7358 54.5454 21.7358C53.3841 21.7358 52.6932 21.0891 52.6932 20.1028C52.6932 18.8707 53.635 17.669 57.8735 17.669V18.039Z" fill="#222222"/>
+              <path d="M76.3639 24.1192L76.042 20.7093C75.1724 21.1476 73.9815 21.3661 72.8864 21.3661C70.15 21.3661 69.0873 19.5517 69.0873 16.8927C69.0873 13.9515 70.4073 12.0746 73.0151 12.0746C74.0459 12.0746 75.0438 12.3247 75.9133 12.6378L76.3318 9.16496C75.3011 8.88326 74.1423 8.72717 73.0476 8.72717C67.3811 8.72717 64.7729 12.4502 64.7729 17.2995C64.7729 22.5864 67.5418 24.8391 71.9851 24.8391C73.6917 24.8391 75.2694 24.5259 76.3639 24.1192Z" fill="#222222"/>
+              <path d="M101.591 13.5104C101.591 10.8659 100.454 8.72717 96.9189 8.72717C94.3619 8.72717 92.5317 9.97333 91.5843 11.7664L91.5524 11.7362C91.711 10.946 92.0459 9.42619 92.0459 8.72717H87.9541V24.8391H92.0459V16.867C92.0459 14.223 93.605 11.9793 95.6568 11.9793C97.1404 11.9793 97.5004 12.8529 97.5004 14.4335V24.8391H101.591V13.5104Z" fill="#222222"/>
+              <path d="M120 16.4872C120 11.158 117.191 8.72717 112.839 8.72717C108.179 8.72717 105 12.2175 105 17.0479C105 22.5641 107.808 24.8391 112.161 24.8391C116.759 24.8391 120 21.3486 120 16.4872ZM115.926 16.7051C115.926 19.8531 114.445 21.4423 112.5 21.4423C110.216 21.4423 109.073 19.8217 109.073 16.6427C109.073 13.4643 110.802 12.0929 112.562 12.0929C114.876 12.0929 115.926 13.7135 115.926 16.7051Z" fill="#222222"/>
+              <path d="M83.8639 24.8391V8.72717H79.7729V24.8391H83.8639Z" fill="#222222"/>
+              <path d="M83.8639 4.68635C83.8639 3.56892 82.9378 2.68546 81.8056 2.68546C80.6735 2.68546 79.7729 3.59511 79.7729 4.68635C79.7729 5.80418 80.6735 6.71342 81.8056 6.71342C82.9378 6.71342 83.8639 5.80418 83.8639 4.68635Z" fill="#222222"/>
+            </svg>
+          </div>
+
+          <p class="header__note">
+            Информация для
+            <br>
+            медицинских специалистов
+          </p>
+        </div>
+      </div>
+    </header>
+
+
+    <main class="main">
+      <div class="hero">
+        <div class="container">
+          <h1 class="hero__heading">
+            Лечение хронических рецидивирующих циститов
+          </h1>
+        </div>
+      </div>
+
+
+      <div class="top-info-section">
+        <div class="container">
+          <div class="grid">
+            <div class="grid__col grid__col-md-6">
+              <div class="circle-graph">
+                <div class="circle-graph__graph">
+                  <img src="img/general/circle-50.png"alt="">
+                  <span class="circle-graph__value">50%</span>
+                </div>
+                <div class="circle-graph__desc">
+                  Женщин переносят рецидив после эпизода острого цистита&nbsp;<sup class="text-bolder text-highlight">1</sup>
+                </div>
+              </div>
+            </div>
+  
+            <div class="grid__col grid__col-md-6">
+              <div class="circle-graph">
+                <div class="circle-graph__graph">
+                  <img src="img/general/circle-27.png"alt="">
+                  <span class="circle-graph__value">27%</span>
+                </div>
+                <div class="circle-graph__desc">
+                  Женщин переносят рецидив в течение 
+                  6&nbsp;месяцев после первого эпизода&nbsp;<sup class="text-bolder text-highlight">2</sup>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="banner-info">
+        <div class="container">
+          <p class="banner-info__text">
+            РЕЦИДИВИРУЮЩИЕ ИНФЕКЦИИ ИНМП:
+            <br>
+            <span class="banner-info__text--light">МЕЖДИСЦИПЛИНАРНАЯ ПРОБЛЕМА</span>
+          </p>
+        </div>
+      </div>
+
+
+      <div class="infographic-section">
+        <div class="container">
+          <h2>
+            Пациентки с симптомами цистита&nbsp;<sup class="text-bolder text-highlight">3</sup>
+          </h2>
+
+          <div class="infographic">
+            <div class="infographic__top-bar"></div>
+            <div class="infographic-body">
+              <div class="infographic-body__col">
+                <ul class="infographic-list">
+                  <li class="infographic-item infographic-item--colored">
+                    <span class="infographic-item__text">Не обращаются к врачу</span>
+                    <span class="infographic-item__value">40%</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="infographic-body__col">
+                <ul class="infographic-list infographic-list--scaled">
+                  <li class="infographic-item infographic-item--colored">
+                    <span class="infographic-item__text">Обращаются к врачу</span>
+                    <span class="infographic-item__value">60%</span>
+                  </li>
+                  <li class="infographic-item">
+                    <span class="infographic-item__text">К урологу</span>
+                    <span class="infographic-item__value">16%</span>
+                  </li>
+                  <li class="infographic-item">
+                    <span class="infographic-item__text">К гинекологу</span>
+                    <span class="infographic-item__value">18%</span>
+                  </li>
+                  <li class="infographic-item">
+                    <span class="infographic-item__text">К терапевту</span>
+                    <span class="infographic-item__value">11%</span>
+                  </li>
+                  <li class="infographic-item">
+                    <span class="infographic-item__text">К другим специалистам</span>
+                    <span class="infographic-item__value">15%</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <hr class="divider divider--dashed">
+        </div>
+      </div>
+
+
+      <div class="diagnosis-section">
+        <div class="container">
+          <h2 class="diagnosis__heading">Диагностика цистита&nbsp;<sup class="text-bolder text-highlight">4</sup></h2>
+
+          <ul class="accordion diagnosis-accordion">
+            <li class="accordion-item js-accordion is-active">
+              <h3 class="accordion-item__heading">
+                <span class="accordion-item__heading-text">Наличие <a href="#" class="js-accordion-button">клинических симптомов</a></span>
+                <button class="accordion-item__button js-accordion-button" type='button'>
+                  <svg class="accordion-item__icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6666 24V0H13.3333V24H10.6666Z" fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10.6665L24 10.6665L24 13.3332L-1.16564e-07 13.3332L0 10.6665Z" fill="black" />
+                  </svg>
+                  
+                  <svg class="accordion-item__icon-minus" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" aria-hidden="true">
+                    <circle cx="18" cy="18" r="18" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.99998 16.7366L26.9999 16.7366L26.9999 19.2629L8.99998 19.2629L8.99998 16.7366Z" fill="#C70B6F"/>
+                  </svg>
+                </button>
+              </h3>
+              <div class="accordion-item__content js-accordion-content">
+                <ul class="list list--interlaced">
+                  <li>Дизурия</li>
+                  <li>Учащенное и болезненное мочеиспускание;</li>
+                  <li>Ургентные позывы к мочеиспусканию;</li>
+                  <li>Боль в надлобковой и поясничной области.</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="accordion-item js-accordion">
+              <h3 class="accordion-item__heading">
+                <span class="accordion-item__heading-text">Отсутствие выделений из влагалища</span>
+              </h3>
+              <div class="accordion-item__content js-accordion-content">
+                <ul class="list list--interlaced">
+                  <li>Подозрение на острый пиелонефрит;</li>
+                  <li>Отсутствие эффекта от проводимой
+                    терапии или рецидив инфекции в
+                    течение 4&nbsp;недель после завершения лечения;</li>
+                  <li>Нетипичное течение цистита;</li>
+                  <li>Беременность.</li>
+                </ul>
+              </div>
+            </li>
+
+            
+
+
+            <li class="accordion-item js-accordion">
+              <h3 class="accordion-item__heading">
+                <span class="accordion-item__heading-text">
+                  Посев мочи при остром неосложненном
+                  цистите не требуется 
+                  и&nbsp;проводится только по показаниям
+                </span>
+                <button class="accordion-item__button js-accordion-button" type='button'>
+                  <svg class="accordion-item__icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6666 24V0H13.3333V24H10.6666Z" fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10.6665L24 10.6665L24 13.3332L-1.16564e-07 13.3332L0 10.6665Z" fill="black" />
+                  </svg>
+                  
+                  <svg class="accordion-item__icon-minus" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" aria-hidden="true">
+                    <circle cx="18" cy="18" r="18" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.99998 16.7366L26.9999 16.7366L26.9999 19.2629L8.99998 19.2629L8.99998 16.7366Z" fill="#C70B6F"/>
+                  </svg>
+                </button>
+              </h3>
+
+              <div class="accordion-item__content js-accordion-content">
+                <ul class="list list--interlaced">
+                  <li>Подозрение на острый пиелонефрит;</li>
+                  <li>Отсутствие эффекта от проводимой
+                    терапии или рецидив инфекции в
+                    течение 4&nbsp;недель после завершения лечения;</li>
+                  <li>Нетипичное течение цистита;</li>
+                  <li>Беременность.</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      
+
+
+      <div class="banner-bacterium-section">
+        <div class="container">
+          <h2 class="banner-bacterium__heading">
+            В 77% случаем возбудителем цистина были штампы E. Coli&nbsp;<sup class="text-bolder text-highlight">5</sup>
+          </h2>
+          <img class="banner-bacterium__img" src="img/general/bacterium.png" alt="">
+          <div class="banner-bacterium__note">
+            Исследование ARESC, 4 264 пациентки 18-65 лет в 10
+            странах мира, включая Россию 2003-2006 г.
+          </div>
+        </div>
+      </div>
+
+
+      <div class="graph-section-2">
+        <div class="container">
+          <hr class="divider divider--dashed">
+          <h2>
+            Какой антибактериальный препарат
+            <br>
+            является первым выбором
+            <br>
+            в лечении цистита по мнению врачей акушеров-урологов?&nbsp;<sup class="text-bolder text-highlight">6</sup>
+          </h2>
+
+          <div class="graph graph-mid">
+            <div class="graph-y-axis">
+              <div class="graph-y-axis__item">
+                Левофлокс
+              </div>
+              <div class="graph-y-axis__item">
+                Фуразидин
+              </div>
+              <div class="graph-y-axis__item">
+                Нитрофурантоин
+              </div>
+              <div class="graph-y-axis__item">
+                Фосфомицин
+              </div>
+              <div class="graph-y-axis__item">
+                Ципрофлоксацин
+              </div>
+              <div class="graph-y-axis__item">
+                Офлоксацин
+              </div>
+            </div>
+
+            <div class="graph-body">
+              <div class="graph-field">
+                <div class="graph-field__cell">
+                  <span class="graph-field__item graph-field__item-3">
+                    3%
+                  </span>
+                </div>
+                <div class="graph-field__cell">
+                  <span class="graph-field__item graph-field__item-19">
+                    19%
+                  </span>
+                </div>
+                <div class="graph-field__cell">
+                  <span class="graph-field__item graph-field__item-14">
+                    14%
+                  </span>
+                </div>
+                <div class="graph-field__cell">
+                  <span class="graph-field__item graph-field__item--highlight graph-field__item-43">
+                    43%
+                  </span>
+                </div>
+                <div class="graph-field__cell">
+                  <span class="graph-field__item graph-field__item-16">
+                    16%
+                  </span>
+                </div>
+                <div class="graph-field__cell">
+                  <span class="graph-field__item graph-field__item-5">
+                    5%
+                  </span>
+                </div>
+              </div>
+              <div class="graph-x-axis">
+                <div class="graph-x-axis__start"><span class="graph-x-axis__item-value">0%</span></div>
+                <div class="graph-x-axis__item"><span class="graph-x-axis__item-value">10%</span></div>
+                <div class="graph-x-axis__item"><span class="graph-x-axis__item-value">20%</span></div>
+                <div class="graph-x-axis__item"><span class="graph-x-axis__item-value">30%</span></div>
+                <div class="graph-x-axis__item"><span class="graph-x-axis__item-value">40%</span></div>
+                <div class="graph-x-axis__item"><span class="graph-x-axis__item-value">50%</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="recommend-section">
+        <div class="container">
+          <hr class="divider divider--dashed">
+          <h2>
+            Фосфомицин – один из антибиотиков первого выбора терапии ИНМП в
+            федеральных клинических рекомендациях&nbsp;<sup class="text-bolder text-highlight">7</sup>
+          </h2>
+
+          <button class="btn btn--primary btn--block btn--center js-recommend-toggler">
+            КАКИЕ АНТИБИОТИКИ НЕ РЕКОМЕНДУЮТСЯ ПРИ ЦИСТИТАХ?
+          </button>
+          <span class="btn__note">нажмите, чтобы узнать подробнее</span>
+        </div>
+      </div>
+
+
+      <div class="recommend-details">
+        <div class="container">
+          <h2>ЭМПИРИЧЕСКАЯ АНТИБИОТИКОТЕРАПИЯ ОСТРОГО НЕОСЛОЖНЕННОГО ЦИСТИТА</h2>
+          <p class="recommend-details__subheading">
+            Данные исследования ДАРМИС&nbsp;<sup class="text-bolder text-highlight">8</sup>
+          </p>
+
+          <div class="infotable infotable-recommend">
+            <div class="infotable__col">
+              <header class="infotable__head">
+                <h3>
+                  Высокая чувствительность
+                  <br>
+                  E. Coli&nbsp;<sup class="text-bolder text-highlight">8</sup>
+                </h3>
+              </header>
+              <div class="infotable__body">
+                <ul>
+                  <li>
+                    <div class="icon-flag">
+                      <div class="icon-flag">
+                        <span class="icon-flag__icon icon icon-circle-check">
+                          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="22.5" stroke="#C70B6F" stroke-width="3"/>
+                            <path d="M14 25.4L19.5714 31L33.5 17" stroke="#C70B6F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </span>
+                        <span class="icon-flag__text">98% Фосфомицин</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="infotable__col">
+              <header class="infotable__head">
+                <h3>
+                  Высокая резистентность
+                  <br>
+                  E. Coli&nbsp;<sup class="text-bolder">8</sup>
+                </h3>
+              </header>
+              <div class="infotable__body">
+                <ul>
+                  <li>
+                    <div class="icon-flag">
+                      <div class="icon-flag">
+                        <span class="icon-flag__icon icon icon-circle-times">
+                          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="22.5" stroke="#C70B6F" stroke-width="3"/>
+                            <path d="M17.0001 30.75L30.7501 17" stroke="#C70B6F" stroke-width="3" stroke-linecap="round"/>
+                            <path d="M17 17L30.75 30.75" stroke="#C70B6F" stroke-width="3" stroke-linecap="round"/>
+                          </svg>
+                        </span>
+                        <span class="icon-flag__text">58% Ампициллин</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="icon-flag">
+                      <div class="icon-flag">
+                        <span class="icon-flag__icon icon icon-circle-times">
+                          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="22.5" stroke="#C70B6F" stroke-width="3"/>
+                            <path d="M17.0001 30.75L30.7501 17" stroke="#C70B6F" stroke-width="3" stroke-linecap="round"/>
+                            <path d="M17 17L30.75 30.75" stroke="#C70B6F" stroke-width="3" stroke-linecap="round"/>
+                          </svg>
+                        </span>
+                        <span class="icon-flag__text">43% Аммоксициллин</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="icon-flag">
+                      <div class="icon-flag">
+                        <span class="icon-flag__icon icon icon-circle-times">
+                          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="22.5" stroke="#C70B6F" stroke-width="3"/>
+                            <path d="M17.0001 30.75L30.7501 17" stroke="#C70B6F" stroke-width="3" stroke-linecap="round"/>
+                            <path d="M17 17L30.75 30.75" stroke="#C70B6F" stroke-width="3" stroke-linecap="round"/>
+                          </svg>
+                        </span>
+                        <span class="icon-flag__text">37% Триметаприм</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="drugbox-section">
+        <div class="container">
+          <div class="grid">
+            <div class="grid__col grid__col-md-6">
+              <img class="dragbox__img" src="img/general/ecophomural-small.png" alt="">
+            </div>
+            <div class="grid__col grid__col-md-6">
+              <div class="dragbox__text">
+                <p class="text-bold">Экоантибиотик</p>
+                <p class="text-bold">Фосфомицин 3.0&nbsp;г. в комбинации 
+                  с&nbsp;Лактулозой ангидро</p>
+              </div>
+            </div>
+          </div>
+
+          <hr class="divider divider--dashed">
+          
+          <button class="btn btn--primary btn--block btn--center js-addition-toggler">Что такое экоантибиотик?</button>
+          <span class="btn__note">нажмите, чтобы узнать подробнее</span>
+        </div>
+      </div>
+
+
+      <div class="addition-section">
+        <div class="container">
+          <h2>Что такое экоантибиотик?</h2>
+          <p class="addition__subheading">Экоантибиотик содержит стандартную дозировку антибиотика и пребиотик лактулозу в особой инновационной форме ангидро.&nbsp;<sup class="text-highlight">9</sup>
+          </p>
+  
+          <div class="infotable infotable-addition">
+            <div class="infotable__col">
+              <header class="infotable__head">
+                <h3>АНТИБИОТИК</h3>
+              </header>
+              <div class="infotable__body clearfix">
+                <figure class="tablet">
+                  <img src="img/general/tablet-1.png" alt="">
+                  <figcaption class="tablet-caption">Антибиотик</figcaption>
+                </figure>
+              </div>
+            </div>
+  
+            <div class="infotable__col">
+              <header class="infotable__head">
+                <h3>ЭКОАНТИБИОТИК</h3>
+              </header>
+              <div class="infotable__body clearfix">
+                <figure class="tablet">
+                  <img src="img/general/tablet-2.png" alt="">
+                  <figcaption class="tablet-caption">
+                    <span class="tablet-caption__top">Антибиотик</span>
+                    <span class="tablet-caption__bottom">
+                      Пребиотик
+                      <br>
+                      (лактулоза ангидро)
+                    </span>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div><!-- .infotable end -->
+  
+          <div class="addition__foot">
+            <h3 class="text-highlight">ПРЕИМУЩЕСТВА ЭКОАНТИБИОТИКА</h3>
+            <p class="text-bold">Фармкомпозиция антибиотика с пребиотиком направлена на</p>
+            <p>Предупреждение и/ или нивелирование дисбиотических расстройств кишечника&nbsp;<sup class="text-highlight">9</sup>
+            </p>
+            <p>Мобилизацию метаболического потенциала нормофлоры&nbsp;<sup class="text-highlight">9</sup>
+            </p>
+
+            <hr class="divider divider--dashed">
+
+            <p><b>9.</b> Буторова Л.И. др. Экоантибиотики: новая стратегия повышения эффективности антихеликобактерной терапии и профилактики антибиотикоассоциированной диареи. Лечаший врач. 2013; 5: 66-72.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="prevention-section">
+        <div class="container">
+          <div class="prevention-heading clearfix">
+            <h2>
+              Предотвращение рецидивов ИМП:&nbsp;<sup class="text-highlight">4</sup>
+            </h2>
+            <img class="prevention__img" src="img/general/eau-logo.png" alt="">
+          </div>
+
+          <ul class="list-dashed list-dashed--interlaced">
+            <li>Выявление и устранение факторов риска;</li>
+            <li>Применение методов не антимикробной профилактики;</li>
+            <li>Антимикробная профилактика.</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="graph-section-3">
+        <div class="container">
+          <h2>
+            Какие средства не антимикробной профилактики
+            рецидивов хронического цистита 
+            вам известны?&nbsp;<sup class="text-bolder text-highlight">6</sup>
+          </h2>
+
+          <div class="graph graph-bottom">
+            <div class="graph-y-axis">
+              <div class="graph-y-axis__item">
+                Плоды клюквы и др. лекарственное растительное сырье
+              </div>
+              <div class="graph-y-axis__item">
+                Д-манноза<br>
+                (Экоцистин)
+              </div>
+              <div class="graph-y-axis__item">
+                БАДы, содержащие клюкву
+              </div>
+              <div class="graph-y-axis__item">
+                Растительные препараты 
+                (Канефрон, Цистон)
+              </div>
+            </div>
+
+            <div class="graph-body">
+              <div class="graph-field">
+                <div class="graph-field__cell">
+                  <span class="graph-field__item graph-field__item-41">
+                    41%
+                  </span>
+                </div>
+                <div class="graph-field__cell">
+                  <span class="graph-field__item graph-field__item-31">
+                    31%
+                  </span>
+                </div>
+                <div class="graph-field__cell">
+                  <span class="graph-field__item graph-field__item-31">
+                    31%
+                  </span>
+                </div>
+                <div class="graph-field__cell">
+                  <span class="graph-field__item graph-field__item-78">
+                    78%
+                  </span>
+                </div>
+              </div>
+              <div class="graph-x-axis">
+                <div class="graph-x-axis__start"><span class="graph-x-axis__item-value">0%</span></div>
+                <div class="graph-x-axis__item"><span class="graph-x-axis__item-value">20%</span></div>
+                <div class="graph-x-axis__item"><span class="graph-x-axis__item-value">40%</span></div>
+                <div class="graph-x-axis__item"><span class="graph-x-axis__item-value">60%</span></div>
+                <div class="graph-x-axis__item"><span class="graph-x-axis__item-value">80%</span></div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="divider divider--dashed">
+        </div>
+      </div>
+
+
+      <div class="drug-section">
+        <div class="container">
+          <h2 class="drug__heading">D-МАННОЗА</h2>
+          <p class="drug__subheading">
+            для не антимикробной профилактики ИМП:
+          </p>
+
+          <ul class="date-list">
+            <li class="date-list__item">
+              <span class="date-list__item-date">с 2015 г.</span>
+              <span class="date-list__item-text">
+                В Европейских клинических рекомендациях по
+                ИМП&nbsp;<sup class="text-bolder text-highlight">10</sup>
+              </span>
+            </li>
+            <li class="date-list__item">
+              <span class="date-list__item-date">с 2017 г.</span>
+              <span class="date-list__item-text">
+                В Российских Методических рекомендациях
+                департамента здравоохранения по ИМП&nbsp;<sup class="text-bolder text-highlight">11</sup>
+              </span>
+            </li>
+          </ul>
+
+          <button class="btn btn--primary btn--block btn--center js-drug-toggler">
+            ЧТО ТАКОЕ D-МАННОЗА?
+          </button>
+          <span class="btn__note">нажмите, чтобы узнать подробнее</span>
+        </div>
+      </div>
+
+
+      <div class="drug-details">
+        <div class="container">
+          <h3>ЧТО ТАКОЕ D-МАННОЗА?</h3>
+          <ul class="list-dashed list-dashed--flags">
+            <li>
+              <figure><img src="img/general/drug/img-1.png" alt=""></figure>
+              <span>
+                D-манноза – моносахарид, который не
+                метаболизируется в организме человека&nbsp;<sup class="text-bolder text-highlight">12</sup>
+              </span>
+            </li>
+            <li>
+              <figure><img src="img/general/drug/img-2.png" alt=""></figure>
+              <span>
+                Быстро всасывается и экскретируется 
+                с мочой&nbsp;<sup class="text-bolder text-highlight">12</sup>
+              </span>
+            </li>
+            <li>
+              <figure><img src="img/general/drug/img-3.png" alt=""></figure>
+              <span>
+                Связывается с адгезинатами уропатогенной кишечной
+                палочки&nbsp;<sup class="text-bolder text-highlight">12</sup>
+              </span>
+            </li>
+            <li>
+              <figure><img src="img/general/drug/img-4.png" alt=""></figure>
+              <span>
+                Препятствует адгезии E. Coli и развитию инфекционно-воспалительного процесса&nbsp;<sup class="text-bolder text-highlight">12</sup>
+              </span>
+            </li>
+          </ul>
+  
+          <div class="drug-details__note">
+            <b>12.</b> L. DOMENICI at all. D-mannose: a promising support for acute urinary tract infections in women. 
+            A pilot study. European Review for Medical and Pharmacological Sciences 2016; 20: 2920-2925
+          </div>
+        </div>
+      </div>
+
+
+      <div class="drug-foot">
+        <div class="container">
+          <h2>
+            Правильная дозировка&nbsp;– 
+            залог успешной терапии
+          </h2>
+
+          <div class="drug-foot__grid">
+            <div class="drug-foot__col-left">
+              <p>
+                Международные клинические
+                исследования показали высокую
+                эффективность D-маннозы в суточной
+                дозировке не менее 1&nbsp;500&nbsp;мг&nbsp;<sup class="text-bolder text-highlight">12</sup>&nbsp;<sup class="text-bolder text-highlight">13</sup>
+              </p>
+            </div>
+            <div class="drug-foot__col-right">
+              <div class="border-b-box">
+                <div class="icon-flag">
+                  <span class="icon-flag__icon icon icon-circle-check">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="22.5" stroke="#C70B6F" stroke-width="3"/>
+                      <path d="M14 25.4L19.5714 31L33.5 17" stroke="#C70B6F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                  <span class="icon-flag__text">
+                    D-МАННОЗА
+                    <br>
+                    <span class="text-highlight">1 500 мг</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="band">
+        <div class="container">
+          <p>ЭКОЦИСТИН® Источник D-маннозы 1&nbsp;500&nbsp;мг</p>
+        </div>
+      </div>
+
+
+      <div class="pair-section">
+        <div class="container">
+          <hr class="divider divider--dashed">
+          <h2>ЭКОФОМУРАЛ И ЭКОЦИСТИН: ЛУЧШЕ РАБОТАЮТ В ПАРЕ</h2>
+
+          <div class="grid">
+            <div class="grid__col grid__col-md-6 flex-col">
+              <div class="drag drag-1 flex-col">
+                <figure class="drag-img">
+                  <img src="img/general/ecophomural-big.png" alt="">
+                  <figcaption class="drag-img__caption">ЭКОФОМУРАЛ®</figcaption>
+                </figure>
+    
+                <div class="drag-info">
+                  <p class="drag-info__heading">ЭМПИРИЧЕСКИЙ:</p>
+                  <p>Фосфомицин – антибиотик первого выбора
+                    для эмпирической терапии цистита&nbsp;<sup class="text-highlight">7</sup>
+                  </p>
+                </div>
+                
+                <div class="drag-info">
+                  <p class="drag-info__heading">УСИЛЕННЫЙ:</p>
+                  <p>Лактулоза ангидро – единственный
+                    пребиотик, включенный 
+                    в европейскую
+                    фармакопею&nbsp;<sup class="text-highlight">14</sup>
+                  </p>
+                </div>
+  
+                <p>№ ЛП-003302, 2015-11-10</p>
+  
+                <div class="drag-warning">
+                  <img src="img/general/warning-1.svg" alt="Имеются противопоказания. Ознакомьтесь с инструкцией">
+                </div>
+              </div>
+            </div>
+  
+            <div class="grid__col grid__col-md-6 flex-col">
+              <div class="drag flex-col">
+                <figure class="drag-img">
+                  <img src="img/general/ecocistin.png" alt="">
+                  <figcaption class="drag-img__caption">ЭКОЦИСТИН®</figcaption>
+                </figure>
+    
+                <div class="drag-info">
+                  <p class="drag-info__heading">УНИКАЛЬНЫЙ:</p>
+                  <p>Единственный зарегистрированный в России
+                    БАД – источник Д-маннозы в дозировке 1500
+                    мг&nbsp;<sup class="text-highlight">15</sup>&nbsp;<sup class="text-highlight">16</sup>&nbsp;<sup class="text-highlight">17</sup>
+                  </p>
+                </div>
+  
+                <div class="drag-info">
+                  <p class="drag-info__heading">УДОБНЫЙ:</p>
+                  <p>1 упаковка на полный курс приема, 1 саше в день, курс приема 20 дней&nbsp;<sup class="text-highlight">18</sup>
+                  </p>
+                </div>
+  
+                <p>RU.77.99.11.003.Е.004108.09.18, 2018-09-17</p>
+  
+                <div class="drag-warning">
+                  <img src="img/general/warning-2.svg" alt="БАД. Не является лекарственным средством">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <ul class="list-ordered">
+            <li>
+              <b>1.</b> Лазарева Н.Б., Ших Е.В., Карноух К.И. Современные подходы к антибактериальной терапии
+              острых циститов: взгляд клини-ческого фармаколога. Вопросы гинекологии, акушерства и
+              перинатологии. 2019; 18(4): 129–134. DOI: 10.20953/1726-1678-2019-4-129-134
+            </li>
+
+            <li><b>2.</b> Foxman B. Am J Public Health 1990; 80: 331</li>
+
+            <li>
+              <b>3.</b> Рафальский В.В., Моисеева Е.М. Эпидемиология неосложненных внебольничных инфекций
+              мочевыводящих путей в Российской Федерации. Вестник урологии. 2018;6(2):30-37.
+              DOI:10.21886/2308-6424- 2018-6-2-30-37
+            </li>
+
+            <li>
+              <b>4.</b> UTI Guidelines EAU, 2019
+              https://uroweb.org/guideline/urological-infections /#
+            </li>
+
+           
+
+            <li>
+              <b>5.</b> Schito G.C., Naber K.G., Botto H., Palou J., Mazzei T., Gualco L., Marchese A. The ARESC study: an
+              international survey on the antimicrobial resistance of pathogens involved in uncomplicated urinary
+              tract infections. // Int J Antimicrob Agents. 2009 Jun 6
+            </li>
+
+            <li><b>6.</b> Опрос 125 врачей-урологов на портале doktornarabote.ru, ноябрь 2019 г.</li>
+
+            <li>
+              <b>7.</b> Перепанова Т.С., Козлов Р.С. и др. Антимикробная терапия и профилактика инфекций почек,
+              мочевыводящих путей и мужских половых органов. Федеральные клинические рекомендации.
+              Москва 2017
+            </li>
+
+            <li>
+              <b>8.</b> Палагин И.С., Сухорукова М.В., Дехнич А.В., Эйдельштейн М.В., Шевелев А.Н., Гринев А.В.,
+              Перепанова Т.С., Козлов Р.С., исследовательская группа «ДАРМИС». Современное состояние
+              антибиотикорезистентности возбудителей внебольничных инфекций мочевых путей в России:
+              результаты исследования «ДАРМИС» (2010–2011).
+            </li>
+
+            <li>
+              <b>9.</b> Буторова Л.И. др Экоантибиотики: новая стратегия повышения эффективности
+              антихеликобактерной терапии и профилактики антибиотикоассоциированной диареи. Лечащий
+              врач. 2013; 5: 66-72.
+            </li>
+
+            <li>
+              <b>10. </b>M. Grabe, R. Bartoletti, T.E. Bjerklund Johansen, T. Caj, M. Cek, B. Koves, K.G. Naber, R. S. Pikard, P. Tenke, F. Wagenlehner, B. Wult. Guidelines on urological infections, European Association of Urology, 2015.
+            </li>
+
+            <li>
+              <b>11.</b> Инфекции мочевыводящих путей. А.В. Зайцев и др. Методические рекомендации. Москва
+              2017.26 с
+            </li>
+
+            <li>
+              <b>12.</b> L. DOMENICI at all. D-mannose: a promising support for acute urinary tract infections in women. A
+              pilot study.
+              European Review for Medical and Pharmacological Sciences 2016; 20: 2920-2925
+            </li>
+
+            <li>
+              <b>13.</b> B. Kranjcec, D.Papes, S. Altarac. D-mannose powder for prophylaxis of recurrent urinary tract
+              infections in women: a randomized clinical trial. World J Urol DOI 10.1007/s00345-013-1091-6.
+            </li>           
+
+            <li><b>14.</b> INFORMATION LEAFLET Ph. Eur. Reference Standard Lactulose for peak identification CRS batch 2</li>
+
+            <li>
+              <b>15.</b> https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D0%BD%D0%BD%D0%BE%D0%B7%D0%B0 от
+              11.07.2019
+            </li>
+
+            <li><b>16.</b> https://www.lsgeotar.ru/tsistifliux-plius-19613.html от 11.07.2019</li>
+
+            <li><b>17.</b> https://www.lsgeotar.ru/mannoza-21606.html от 11.07.2019</li>
+
+            <li>
+              <b>18.</b> Листок-вкладыш Биологически активная добавка к пище Экоцистин® порошок для
+              приготовления раствора для приема внутрь 26.09.2018
+            </li>
+          </ul>
+
+          <div class="instruction">
+            <h3 class="text-highlight">КРАТКАЯ ИНСТРУКЦИЯ ПО МЕДИЦИНСКОМУ ПРИМЕНЕНИЮ ПРЕПАРАТА ЭКОФОМУРАЛ®</h3>
+            <p><b>Торговое название:</b> Экофомурал®.</p>
+            <p>
+              <b>Международное непатентованное название:</b> фосфомицин. Лекарственная форма: гранулы для
+              приготовления раствора для приема внутрь. Состав на один пакет.
+            </p>
+            <p>
+              <b>Активное вещество:</b> фосфомицина трометамол (в пересчете на 100% вещество) – 3,752/5,629 г в
+              пересчете на фосфомицин – 2,0/3,0 г; вспомогательные вещества: лактулоза – 1,000/1,500 г,
+              натрия сахаринат – 0,010/0,016 г, ароматизатор клубничный – 0,070/0,070 г, мальтитол – до массы
+              6,0/8,0 г. Фармакотерапевтическая группа: антибиотик. Код АТХ: JO lXXOl.
+            </p>
+            <p>
+              <b>Показания к применению.</b> Бактериальные инфекции мочевыводящих путей различной
+              локализации, вызываемые чувствительными к фосфомицину микроорганизмами: острые
+              неосложненные инфекции мочевыводящих путей; бессимптомная бактериурия; профилактика
+              инфекций мочевыводящих путей после хирургического вмешательства и трансуретральных
+              диагностических исследований.
+            </p>
+            <p>
+              <b>Противопоказания:</b> повышенная чувствительность к фосфомицину или другим компонентам
+              препарата, тяжелая почечная недостаточность (клиренс креатинина – 10 мл/мин), дети младше 5
+              лет, дефицит сахарозы/изомальтазы, непереносимость фруктозы, глюко-галактозная
+              мальабсорбция.
+            </p>
+            <p>
+              <b>Способ применения и дозы.</b> Экофомурал® применяют однократно, натощак, за 2–3 ч до или
+              после приема пищи, предпочтительно перед сном, предварительно опорожнив мочевой пузырь:
+              взрослым и детям старше 12 лет в суточной дозе 3,0 г, детям от 5 до12 лет в суточной дозе 2,0 г.
+              Содержимое пакета растворяют в 1/2 стакана воды. Курс лечения составляет 1 день. Для
+              профилактики инфекций мочевыводящих путей при хирургическом вмешательстве,
+              диагностических процедурах указанная выше доза принимается 2 раза – за 3 ч до вмешательства
+              и через 24 ч после него.
+            </p>
+            <p>
+              <b>Побочные действия.</b> Возможны расстройства со стороны желудочно-кишечного тракта (тошнота,
+              изжога, понос), кожная сыпь, аллергические реакции, головная боль, головокружение, астения,
+              парестезия (ощущение онемения кожи, «ползание мурашек»), неврит зрительного нерва,
+              тахикардия, снижение артериального давления, кожный зуд, бронхиальная астма,
+              ангионевротический отек, крапивница, анафилактический шок, рвота, диспепсия,
+              псевдомембранозный колит, боль в животе, повышение активности «печеночных» трансаминаз,
+              вульвовагинит, тромбоцитоз, лейкопения.
+              Перед применением ознакомьтесь с полной инструкцией по медицинскому применению
+              препарата Экофомурал®.
+            </p>
+            <p>
+              <b>Производитель/организация, принимающая претензии:</b> ОАО «АВВА РУС», Россия, 610044,
+              Кировская обл., г. Киров, ул. Луганская, д. 53а, тел.: (8332) 25-12-29, (495) 956-75-54, avva.com.ru
+              ecoantibiotic.ru
+            </p>
+            <p>
+              <b>Организация, уполномоченная принимать претензии от потребителей на территории РФ:</b> 
+              ООО «Ацино Рус», 127055, г. Москва, ул. Палиха, д. 10, стр. 3, оф. 2.1, тел. + 7 (495) 502-92-47, e-mail:
+              info_rus@acino.swiss, safety_rus@acino.swiss
+              ECOC/RU/082019/49
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+    </main>
+
+  </div><!-- .wrapper end -->
+
+  <script src="js/vendor/jquery-3.3.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
