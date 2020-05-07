@@ -60,6 +60,7 @@ body{
 }
 .row{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
 }
 .content-between{
@@ -99,6 +100,40 @@ body{
 .form-textarea{
     padding-top: 22px;
     height: 132px;
+}
+.form-privacy{
+    display: flex;
+    margin-top: 16px;
+}
+.form-checkbox{
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px; 
+    flex: 0 0 20px;
+    background: #000000;
+    border-radius: 4px;
+    outline: none;
+    margin: 0px 3px;
+    box-sizing: border-box;
+    padding: 0px;
+    margin-right: 11px;
+}
+.form-checkbox:checked:before{
+    content: "";
+    display: block;
+    width: 6px;
+    height: 12px;
+    border: 0 solid #fff;
+    border-width: 0px 3px 3px 0;
+    -webkit-transform: rotateZ(40deg);
+    margin: 2px 8px;
+    pointer-events: none;
+}
+.form-privacy__text{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
 }
 .alert{
     background: #000;
@@ -233,4 +268,21 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+@media(max-width: 768px){
+    .nav{
+        display: none;
+    }
+    .half-column{
+        width: 327px;
+        flex: 0 0 327px;
+        margin: 0 auto;
+    }
+    .title{
+        font-size: 40px;
+        line-height: 56px;
+    }
+    .button{
+        max-width: 160px;
+    }
 }
