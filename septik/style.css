@@ -55,12 +55,14 @@ a:hover{
     align-items: center;
     justify-content: center;
     transition: 0.3s;
+    border: none;
 }
 
 .btn-primary:hover, .btn-primary:focus{
     border: none;
     opacity: 0.85;
     background: #1792BB;
+    box-shadow: none;
 }
 .bold{
     font-weight: bold;
