@@ -3,6 +3,9 @@ body{
     font-family: 'Montserrat', sans-serif;
     color: #1B1B1B;
 }
+img{
+    max-width: 100%;
+}
 .header{
     padding-top: 20px;
 }
