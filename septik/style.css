@@ -124,6 +124,7 @@ a:hover{
 .item__old-price{
     color: #7D7D7D!important;
     text-decoration: line-through;
+    margin-left: 10px;
 }
 .item__btn{
     background: #1792BB;
