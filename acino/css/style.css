@@ -531,6 +531,10 @@ sup{
   box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
 }
+.gradient-block .text-bold{
+  line-height: unset;
+  color: #fff;
+}
 .gradient-block:before{
   content: '';
   background-image: url(../images/info.svg);
