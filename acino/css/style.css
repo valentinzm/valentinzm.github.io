@@ -710,9 +710,10 @@ sup{
   line-height: 25px;
   color: #FFFFFF;
 }
-.numeric-list li{
-  display: flex;
+.numeric-list__bold{
+  font-weight: 500;
 }
+
 .numeric-list .text-bold{
   flex: 0 0 12px;
   margin-right: 20px;
@@ -782,6 +783,13 @@ sup{
   position: absolute;
   width: 16px;
   height: 2px;
+  background: #fff;
+}
+.accordion-link__plus:after{
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 16px;
   background: #fff;
 }
 .accordion-item__content{
