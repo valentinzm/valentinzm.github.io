@@ -122,9 +122,10 @@ textarea {
 }
 
 a {
-  color: #c70b6f;
+  color: #222222;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  text-decoration: none;
 }
 
 a:hover {
@@ -478,6 +479,9 @@ sup{
 .mb-100{
   margin-bottom: 100px;
 }
+.green-link{
+  color: #8CE956;
+}
 .divider{
   margin-top: 60px;
   margin-bottom: 60px;
@@ -678,7 +682,8 @@ sup{
 .criteria__image p{
   margin: 0;
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 32px;
+  transform: translate(7px, -4px);
 }
 .criteria__text{
   max-width: 277px;
@@ -712,6 +717,12 @@ sup{
 }
 .numeric-list__bold{
   font-weight: 500;
+}
+.numeric-list__indent li{
+  display: flex;
+}
+.numeric-list__indent li p{
+  margin: 0;
 }
 
 .numeric-list .text-bold{
@@ -878,5 +889,43 @@ sup{
   .divider{
     margin-top: 25px;
     margin-bottom: 25px;
+  }
+  .method{
+    height: 150px;
+  }
+  .method::after{
+    top: 148px;
+  }
+  .subtitle{
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .border-block__title{
+    width: 100%;
+  }
+  .border-block{
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+  }
+  .criteria__descr{
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .criteria__image p{
+    font-size: 2rem;
+  }
+  .gradient-text{
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .accordion-item__title p{
+    font-size: 24px;
+  }
+}
+@media(max-width: 576px){
+  .header__note p{
+    font-size: 13px;
   }
 }
