@@ -781,6 +781,7 @@ sup{
 .accordion-link{
   width: 30px;
   height: 30px;
+  flex: 0 0 30px;
   background: #48C300;
   border-radius: 50px;
   cursor: pointer;
