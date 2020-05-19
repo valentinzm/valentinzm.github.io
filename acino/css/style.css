@@ -748,6 +748,7 @@ sup{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .driptan__header_title{
   font-weight: bold;
@@ -886,6 +887,9 @@ sup{
   .mb-100{
     margin-bottom: 30px;
   }
+  .gradient-block{
+    margin-top: 70px;
+  }
   .divider{
     margin-top: 25px;
     margin-bottom: 25px;
@@ -922,6 +926,16 @@ sup{
   }
   .accordion-item__title p{
     font-size: 24px;
+  }
+  .site-footer{
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .site-footer p{
+    font-size: 16px;
   }
 }
 @media(max-width: 576px){
