@@ -185,11 +185,11 @@ var x = setInterval(function() {
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById("countdown").innerHTML = '<p>' + days + "<span>дней</span></p><p>" + hours + "<span>часов<span>дней</span></p><p> " +
-        minutes + "<span>минут<span>дней</span></p><p> " + seconds + "<span>секунд<span>дней</span></p><p> ";
+    document.getElementById("countdown").innerHTML = '<p>' + days + "<span>дней</span></p><p>" + hours + "<span>часов</span></p><p> " +
+        minutes + "<span>минут</span></p><p> " + seconds + "<span>секунд</span></p>";
 
     if (distance < 0) {
         clearInterval(x);
         document.getElementById("countdown").innerHTML = "EXPIRED";
     }
-}, 1000);
+}, 0);
