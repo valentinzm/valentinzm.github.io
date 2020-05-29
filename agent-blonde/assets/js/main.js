@@ -200,6 +200,7 @@ var x = setInterval(function() {
     }
 }, 0);
 
+document.querySelector('.bakers__list li').add('bakers__active');
 document.querySelectorAll('.bakers__list li').forEach(function(e) {
     e.onclick = bakersActive;
 });
