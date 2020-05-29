@@ -1560,7 +1560,7 @@ input:focus {
 
 .directors__button {
     position: absolute;
-    top: -65px;
+    top: 18px;
     right: 25px;
     opacity: .6;
 }
