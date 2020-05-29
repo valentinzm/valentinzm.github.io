@@ -2153,7 +2153,8 @@ input:focus {
 .agent-page .hero__wrapper {
     max-width: 360px;
     z-index: 20;
-    position: relative
+    position: relative;
+    padding-left: 13px;
 }
 
 @media (max-width:991.98px) {
