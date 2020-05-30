@@ -1217,7 +1217,7 @@ input:focus {
 
 .comments__wrapper {
     border-bottom: 1px solid #313131;
-    padding-bottom: 2.5rem
+    padding-bottom: 15px;
 }
 
 .comments__sort {
@@ -1433,7 +1433,8 @@ input:focus {
 }
 
 .comment__btn svg {
-    margin-right: 7px
+    margin-right: 7px;
+    max-width: 14px;
 }
 
 .comment__btn:hover,
@@ -1587,13 +1588,13 @@ input:focus {
 @media (max-width:767.98px) {
     .column-flex1__directors {
         flex: 0 0 100%!important;
-        max-width: 215px!important;
+        max-width: 265px!important;
     }
     .column-flex1__directors .slick-list {
         overflow: visible;
     }
     .related__carousel .slick-list {
-        max-width: 215px;
+        max-width: 265px;
         overflow: visible;
         padding-left: 15px;
     }
@@ -2135,7 +2136,7 @@ input:focus {
 @media (max-width:767.98px) {
     .agent-page__hero:after {
         height: 20%;
-        top: 160px;
+        top: 110px;
         bottom: unset
     }
 }
@@ -2160,7 +2161,8 @@ input:focus {
 @media (max-width:991.98px) {
     .agent-page .hero__wrapper {
         max-width: 100%;
-        padding-top: 130px
+        padding-top: 130px;
+        padding-left: 0;
     }
 }
 
@@ -2277,7 +2279,7 @@ input:focus {
     -webkit-box-align: center;
     align-items: center;
     flex-wrap: wrap;
-    padding-bottom: 2.1875rem;
+    padding-bottom: 15px;
     border-bottom: 1px solid #313131
 }
 
@@ -2312,7 +2314,8 @@ input:focus {
 }
 
 .agent-page__btn svg {
-    margin-right: 7px
+    margin-right: 7px;
+    max-width: 14px;
 }
 
 .agent-page__btn:hover,
@@ -2417,9 +2420,9 @@ input:focus {
     display: flex;
     -webkit-box-align: end;
     align-items: flex-end;
-    margin-bottom: 1.25rem;
+    margin-bottom: 15px;
     position: relative;
-    margin-top: 15px;
+    margin-top: 0;
 }
 
 .goal__timer {
@@ -2438,8 +2441,11 @@ input:focus {
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: #FFFFFF;
-    opacity: 0.35;
     margin-bottom: 20px;
+}
+
+.goal__timer--text span {
+    opacity: 0.35;
 }
 
 .goal__timer--text:after {
@@ -2510,7 +2516,7 @@ input:focus {
         justify-content: center;
         -webkit-box-align: start;
         align-items: flex-start;
-        margin: .9375rem 0
+        margin: 0;
     }
 }
 
@@ -2645,6 +2651,10 @@ input:focus {
     z-index: 10;
 }
 
+.slick-arrow {
+    display: none!important;
+}
+
 .agent-page__supports--title {
     font-style: normal;
     font-weight: 550;
@@ -2731,10 +2741,10 @@ input:focus {
         background: #1a1a1a;
     }
     .header {
-        height: 36px;
+        height: 40px;
     }
     .header__wrapper {
-        height: 36px;
+        height: 40px;
     }
     .header__logo img {
         width: 205px;
@@ -2783,7 +2793,7 @@ input:focus {
         letter-spacing: 0.03em;
         color: #FFFFFF;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        margin-bottom: 12px;
+        margin-bottom: 0;
     }
     .goal__required {
         font-weight: 200;
@@ -2812,6 +2822,7 @@ input:focus {
         white-space: nowrap;
         text-transform: none;
         margin-top: 60px;
+        margin-bottom: 25px;
     }
     .agent-page__article .row {
         flex-direction: column-reverse;
@@ -3163,7 +3174,7 @@ input:focus {
 
 .bakers__load-more {
     margin-top: 1.875rem;
-    padding-bottom: 1.875rem;
+    padding-bottom: 15px;
     display: block;
     font-weight: 500;
     font-size: 1rem;
@@ -3205,8 +3216,11 @@ input:focus {
         flex-flow: row;
         white-space: nowrap;
         min-width: inherit;
-        overflow-x: auto;
+        overflow-x: hidden;
         overflow-y: hidden;
+        max-width: 330px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .bakers__baker {
         -webkit-box-orient: vertical;

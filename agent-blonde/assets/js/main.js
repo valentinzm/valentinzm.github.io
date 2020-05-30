@@ -200,14 +200,20 @@ var x = setInterval(function() {
     }
 }, 0);
 
-document.querySelector('.bakers__list li').classList.add('bakers__active');
-document.querySelectorAll('.bakers__list li').forEach(function(e) {
-    e.onclick = bakersActive;
-});
+// document.querySelector('.bakers__list li').classList.add('bakers__active');
+// document.querySelectorAll('.bakers__list li').forEach(function(e) {
+//     e.onclick = bakersActive;
+// });
 
-function bakersActive() {
-    document.querySelectorAll('.bakers__list li').forEach(function(e) {
-        e.classList.remove('bakers__active');
-    });
-    this.classList.add('bakers__active');
-}
+// function bakersActive() {
+//     document.querySelectorAll('.bakers__list li').forEach(function(e) {
+//         e.classList.remove('bakers__active');
+//     });
+//     this.classList.add('bakers__active');
+//     let next = this.nextElementSibling;
+//     let prev = this.previousElementSibling
+
+//     document.querySelectorAll('.bakers__list li').forEach(function(e) {
+//         e.style.transform = 'translateX(66px)';
+//     });
+// }
