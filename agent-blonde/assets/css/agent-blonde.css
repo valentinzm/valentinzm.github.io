@@ -1582,9 +1582,13 @@ input:focus {
 
 .directors__button {
     position: absolute;
-    top: 30px;
-    right: 25px;
+    top: 15px;
+    right: 10px;
     opacity: .6;
+}
+
+.directors__button svg {
+    max-width: 40px;
 }
 
 .directors__item img {
