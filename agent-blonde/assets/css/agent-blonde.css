@@ -1211,8 +1211,9 @@ input:focus {
     display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
-    -webkit-box-align: center;
-    align-items: center
+    -webkit-box-align: flex-end;
+    align-items: flex-end;
+    height: 36px;
 }
 
 .comments__wrapper {
@@ -1427,6 +1428,21 @@ input:focus {
     transition: .25s
 }
 
+.comment__btn span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 3px;
+}
+
+.comment__btn--reply span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin-top: 2px;
+}
+
 .comment__btn--reply {
     margin-left: 1.25rem;
     margin-right: 0
@@ -1435,6 +1451,7 @@ input:focus {
 .comment__btn svg {
     margin-right: 7px;
     max-width: 14px;
+    height: 14px;
 }
 
 .comment__btn:hover,
@@ -1561,7 +1578,7 @@ input:focus {
 
 .directors__button {
     position: absolute;
-    top: 18px;
+    top: 30px;
     right: 25px;
     opacity: .6;
 }
@@ -2344,7 +2361,7 @@ input:focus {
     color: #fff;
     font-size: 1.875rem;
     font-weight: 700;
-    margin-bottom: .625rem;
+    margin-bottom: 0;
     max-width: 280px
 }
 
@@ -2455,35 +2472,39 @@ input:focus {
     margin-left: 15px;
 }
 
-#countdown {
+.countdown {
     color: #fff;
     display: flex;
 }
 
-#countdown p {
+.countdown__value {
+    width: 40px;
+    flex: 0 0 40px;
+    margin-right: 8px;
+}
+
+.countdown__separator {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFFFFF;
+    width: 7px;
+    flex: 0 0 7px;
+    margin-right: 8px;
+}
+
+.countdown p {
     margin-bottom: 2px;
     font-style: normal;
     font-weight: 200;
     font-size: 35px;
     line-height: 35px;
     text-align: center;
-    margin-right: 16px;
     position: relative;
 }
 
-#countdown p:after {
-    content: ':';
-    position: absolute;
-    right: -15px;
-    top: 0;
-    bottom: 0;
-}
-
-#countdown p:last-child:after {
-    content: none;
-}
-
-#countdown span {
+.countdown span {
     display: block;
     font-weight: 300;
     font-size: 8px;
@@ -2855,8 +2876,20 @@ input:focus {
         border-radius: 10px;
     }
     .agent-page__support:after,
-    .agent-page__support:before {
+    .agent-page__support:hover:before {
         content: none;
+    }
+    .slick-current .agent-page__support:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        height: 5px;
+        width: 90px;
+        background: #FA403A;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 9;
     }
     .agent-page__support h4 {
         font-size: 20px;
@@ -3302,7 +3335,8 @@ input:focus {
 
 .baker__name {
     font-size: 1rem;
-    margin-bottom: .3125rem;
+    margin-bottom: 0px;
+    padding-top: 11px;
     color: #fff;
     font-weight: 500
 }

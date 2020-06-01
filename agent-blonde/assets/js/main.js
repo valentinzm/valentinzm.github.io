@@ -178,27 +178,48 @@ function readMore() {
         e.classList.remove('read-more__text');
     })
 }
-var countDownDate = new Date("Sep 1, 2020 15:37:25").getTime();
 
-var x = setInterval(function() {
+function getTimeRemaining(endtime) {
+    var t = Date.parse(endtime) - Date.parse(new Date());
+    var seconds = Math.floor((t / 1000) % 60);
+    var minutes = Math.floor((t / 1000 / 60) % 60);
+    var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+    var days = Math.floor(t / (1000 * 60 * 60 * 24));
+    return {
+        'total': t,
+        'days': days,
+        'hours': hours,
+        'minutes': minutes,
+        'seconds': seconds
+    };
+}
 
-    var now = new Date().getTime();
+function initializeClock(id, endtime) {
+    var clock = document.getElementById(id);
+    var daysSpan = clock.querySelector('.days');
+    var hoursSpan = clock.querySelector('.hours');
+    var minutesSpan = clock.querySelector('.minutes');
+    var secondsSpan = clock.querySelector('.seconds');
 
-    var distance = countDownDate - now;
+    function updateClock() {
+        var t = getTimeRemaining(endtime);
 
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        daysSpan.innerHTML = t.days;
+        hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+        minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+        secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
-    document.getElementById("countdown").innerHTML = '<p>' + days + "<span>дней</span></p><p>" + hours + "<span>часов</span></p><p> " +
-        minutes + "<span>минут</span></p><p> " + seconds + "<span>секунд</span></p>";
-
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("countdown").innerHTML = "EXPIRED";
+        if (t.total <= 0) {
+            clearInterval(timeinterval);
+        }
     }
-}, 0);
+
+    updateClock();
+    var timeinterval = setInterval(updateClock, 1000);
+}
+//var countDownDate = new Date("Sep 1, 2020 15:37:25").getTime();
+var deadline = new Date(Date.parse(new Date("Sep 1, 2020 15:37:25")) + 0 * 0 * 0 * 0 * 1000);
+initializeClock('clockdiv', deadline);
 
 document.querySelector('.bakers__list li').classList.add('bakers__active');
 document.querySelectorAll('.bakers__list li').forEach(function(e) {
