@@ -1589,6 +1589,7 @@ input:focus {
 
 .directors__button svg {
     max-width: 40px;
+    height: 40px;
 }
 
 .directors__item img {
@@ -1604,13 +1605,8 @@ input:focus {
         border-radius: 10px;
     }
     .directors__button {
-        width: 32px;
-        height: 32px;
         top: 12px;
         right: 12px;
-    }
-    .directors__button svg {
-        max-width: 32px;
     }
 }
 
@@ -2802,7 +2798,7 @@ input:focus {
         padding-top: calc(345px + 36px);
     }
     .agent-page__play-btn {
-        max-width: 62px;
+        max-width: 52px;
         top: 290px;
         left: 15px;
         z-index: 10;
