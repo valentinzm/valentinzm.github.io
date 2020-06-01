@@ -1527,6 +1527,10 @@ input:focus {
     }
 }
 
+.subheading__directors {
+    line-height: 1;
+}
+
 .related__link {
     display: block;
     color: #fff;
