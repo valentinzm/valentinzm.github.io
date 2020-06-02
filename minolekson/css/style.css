@@ -702,8 +702,9 @@ sup {
     right: 15px;
     bottom: 15px;
     top: 15px;
-    width: calc(100% - 30px);
-    height: calc(100% - 30px);
+    width: 860px;
+    height: 515px;
+    margin: 0 auto;
 }
 
 .table {
