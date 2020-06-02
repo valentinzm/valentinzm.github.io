@@ -708,7 +708,7 @@ sup {
     bottom: 15px;
     top: 15px;
     width: 860px;
-    height: 515px;
+    height: 485px;
     margin: 0 auto;
 }
 
@@ -1202,8 +1202,8 @@ sup {
         line-height: 20px;
     }
     .video-block iframe {
-        width: 300px;
-        height: 235px;
+        width: 315px;
+        height: 195px;
     }
 }
 
