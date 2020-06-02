@@ -570,6 +570,11 @@ body {
     line-height: 44px;
 }
 
+
+/* .numeric-list .text-bold {
+    line-height: 1;
+} */
+
 sup {
     border: none;
     font-weight: normal;
@@ -875,6 +880,7 @@ sup {
 
 .numeric-list__indent li {
     display: flex;
+    line-height: 44px;
 }
 
 .numeric-list__indent li p {
@@ -1181,6 +1187,9 @@ sup {
     .numeric-list__indent li p {
         font-size: 12px;
     }
+    .numeric-list__indent li {
+        line-height: unset;
+    }
     .site-footer {
         height: auto;
         padding-top: 5px;
@@ -1191,6 +1200,10 @@ sup {
     .site-footer p {
         font-size: 16px;
         line-height: 20px;
+    }
+    .video-block iframe {
+        width: 300px;
+        height: 235px;
     }
 }
 
