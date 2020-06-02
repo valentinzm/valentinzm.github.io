@@ -865,6 +865,7 @@ sup {
     line-height: 38px;
     letter-spacing: 0.02em;
     color: #F8F8F8;
+    text-align: center;
 }
 
 .numeric-list__bold {
@@ -1166,6 +1167,18 @@ sup {
     }
     .section-border {
         padding-top: 50px;
+    }
+    .numeric-list {
+        margin-left: -10px;
+        margin-right: -10px;
+        font-size: 12px;
+    }
+    .numeric-list .text-bold {
+        flex: 0 0 5px;
+        margin-right: 5px;
+    }
+    .numeric-list__indent li p {
+        font-size: 12px;
     }
     .site-footer {
         height: auto;
