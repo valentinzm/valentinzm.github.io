@@ -1588,7 +1588,7 @@ input:focus {
 }
 
 .directors__button svg {
-    max-width: 40px;
+    width: 40px;
     height: 40px;
 }
 
