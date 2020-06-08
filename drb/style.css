@@ -1477,6 +1477,7 @@ textarea {
     font-size: 2.5rem;
     font-weight: 600;
     line-height: 2rem;
+    font-family: Proxima Nova Rg;
 }
 
 .pluses__descr {
@@ -1607,7 +1608,7 @@ textarea {
 .special {
     background: linear-gradient(0deg, #EEF2FF, #EEF2FF), #FFFFFF;
     border-radius: 10px;
-    min-height: 480px;
+    min-height: 536px;
     padding: 1.5rem 2rem;
 }
 
