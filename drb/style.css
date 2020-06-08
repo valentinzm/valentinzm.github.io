@@ -1756,7 +1756,7 @@ textarea {
     left: 0;
 }
 
-@media(max-width: 1024px) {
+@media(max-width: 1200px) {
     .container {
         padding-left: 10px;
         padding-right: 10px;
