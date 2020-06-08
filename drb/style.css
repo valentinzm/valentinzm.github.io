@@ -1551,8 +1551,8 @@ textarea {
     background-image: url(images/arrow.png);
     position: absolute;
     left: -20px;
-    width: 5px;
-    height: 6px;
+    width: 8px;
+    height: 11px;
     top: 10px;
     background-size: contain;
 }
