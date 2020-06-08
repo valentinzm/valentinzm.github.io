@@ -1380,7 +1380,7 @@ textarea {
 .banner {
     height: 480px;
     display: flex;
-    align-items: center;
+    padding-top: 55px;
     color: #fff;
     background: #eb01a5;
     background-position: center;
@@ -1389,7 +1389,7 @@ textarea {
 }
 
 .banner__content {
-    max-width: 950px;
+    max-width: 1100px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -1423,7 +1423,7 @@ textarea {
 
 .banner__descr {
     font-size: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .banner__btn {
@@ -1440,7 +1440,7 @@ textarea {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     font-weight: bold;
-    margin-top: 1.5rem;
+    margin-top: 1.3rem;
 }
 
 .breadcrumbs {
@@ -1470,7 +1470,11 @@ textarea {
 }
 
 .pluses__item {
-    margin-bottom: 3.75rem;
+    margin-bottom: 5.5rem;
+}
+
+.pluses__item:last-child {
+    margin-bottom: 3.5rem;
 }
 
 .pluses__title {
@@ -1492,6 +1496,7 @@ textarea {
     font-size: 1.5rem;
     line-height: 2.5rem;
     margin-bottom: 2.5rem;
+    margin-top: -5px;
 }
 
 .main-info__button {
@@ -1520,6 +1525,10 @@ textarea {
     margin-bottom: 3.5rem;
     font-weight: 300;
     font-family: Proxima Nova Lt;
+}
+
+.title__disciplines {
+    margin-bottom: 4.4rem;
 }
 
 .disciplines__title {
@@ -1561,7 +1570,13 @@ textarea {
     background: linear-gradient(0deg, #EEF2FF, #EEF2FF), #FFFFFF;
     border-radius: 10px;
     display: flex;
-    min-height: 385px;
+    min-height: 336px;
+}
+
+@media(max-width: 1400px) {
+    .entry {
+        height: 385px;
+    }
 }
 
 .entry__count {
@@ -1590,10 +1605,6 @@ textarea {
     margin-bottom: 4.625rem;
 }
 
-.title__documents {
-    margin-top: 30px!important;
-}
-
 .documents__block {
     display: flex;
     height: 350px;
@@ -1612,6 +1623,10 @@ textarea {
     line-height: 2rem;
     color: rgba(0, 0, 0, 0.9);
     font-weight: bold;
+}
+
+.title__special {
+    margin-bottom: 6rem;
 }
 
 .special {
@@ -1652,7 +1667,8 @@ textarea {
     height: 128px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    padding-left: 283px;
+    padding-right: 283px;
 }
 
 .form__group .form__input:last-child {
@@ -1663,7 +1679,7 @@ textarea {
     border: none;
     height: 48px;
     border-radius: 3px;
-    width: 15rem;
+    width: 347px;
     padding-left: 20px;
 }
 
@@ -1686,11 +1702,12 @@ textarea {
     justify-content: center;
     text-transform: uppercase;
     color: rgba(83, 122, 255, 0.75);
+    margin-left: auto;
 }
 
 .form__privacy {
     position: relative;
-    max-width: 915px;
+    max-width: 1050px;
     margin-left: auto;
     margin-right: auto;
     line-height: 2rem;
@@ -1723,6 +1740,8 @@ textarea {
     .banner {
         height: 232px;
         background-size: contain;
+        padding-top: 0;
+        align-items: center;
     }
     .banner__content {
         padding-left: 10px;
@@ -1808,7 +1827,7 @@ textarea {
     }
     .entry {
         border: 1px solid rgba(0, 0, 0, 0.1);
-        min-height: 200px;
+        height: 200px;
         margin-bottom: 1.35rem;
     }
     .entry__count {
@@ -1818,6 +1837,9 @@ textarea {
     }
     .entry__text {
         font-size: 1.165rem;
+    }
+    .title__documents {
+        margin-top: 30px!important;
     }
     .documents__descr {
         font-size: 14px;
@@ -1858,6 +1880,9 @@ textarea {
     }
     .form {
         height: 264px;
+        padding-top: 40px;
+        padding-left: 0;
+        padding-right: 0;
         flex-direction: column;
         align-items: center;
     }
@@ -1871,6 +1896,10 @@ textarea {
     .form__group .form__input:last-child {
         margin-left: 0;
         margin-top: 16px;
+    }
+    .form__submit {
+        margin-right: auto;
+        margin-top: 40px;
     }
     .form__privacy {
         font-size: 1rem;
