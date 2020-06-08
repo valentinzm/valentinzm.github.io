@@ -1543,6 +1543,7 @@ textarea {
     list-style: none;
     margin: 0;
     padding-left: 15px;
+    margin-bottom: 55px;
 }
 
 .disciplines__list li {
@@ -1598,6 +1599,10 @@ textarea {
     color: rgba(0, 0, 0, 0.9);
 }
 
+.title__documents {
+    margin-bottom: 3rem;
+}
+
 .documents__descr {
     font-size: 1.5rem;
     max-width: 915px;
@@ -1607,12 +1612,12 @@ textarea {
 
 .documents__block {
     display: flex;
-    height: 350px;
+    height: 230px;
 }
 
 .documents__symbol {
-    width: 50%;
-    flex: 0 0 50%;
+    width: 43%;
+    flex: 0 0 43%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1621,12 +1626,15 @@ textarea {
 .documents__block p {
     font-size: 1.5rem;
     line-height: 2rem;
+    margin-top: -15px;
+    margin-left: 22px;
     color: rgba(0, 0, 0, 0.9);
     font-weight: bold;
 }
 
 .title__special {
     margin-bottom: 6rem;
+    margin-top: 7rem;
 }
 
 .special {
@@ -1640,7 +1648,7 @@ textarea {
     margin-top: 0;
     font-size: 2.25rem;
     line-height: 2.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 20px;
     font-weight: bold;
     color: #537AFF;
     font-family: Proxima Nova Rg;
@@ -1648,7 +1656,7 @@ textarea {
 
 .special__subtitle {
     color: rgba(0, 0, 0, 0.9);
-    line-height: 2rem;
+    line-height: 32px;
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
@@ -1814,7 +1822,8 @@ textarea {
         line-height: 24px;
     }
     .title__disciplines {
-        margin-top: 15px;
+        margin-top: 25px;
+        line-height: 34px;
     }
     .disciplines__list {
         margin-bottom: 2.5rem;
@@ -1832,24 +1841,39 @@ textarea {
         line-height: 16px;
         margin-bottom: 16px;
     }
+    .disciplines__list li:before {
+        width: 5px;
+        height: 8px;
+    }
     .disciplines__list li:last-child {
         margin-bottom: 0;
+    }
+    .title__entry {
+        margin-top: 20px;
     }
     .entry {
         border: 1px solid rgba(0, 0, 0, 0.1);
         height: 200px;
         margin-bottom: 1.35rem;
+        min-height: unset;
     }
     .entry__count {
         font-size: 3rem;
         flex: 0 0 32px;
         width: 32px;
+        padding-top: 12px;
+        padding-right: 6px;
+        margin-right: 6px;
     }
     .entry__text {
-        font-size: 1.165rem;
+        font-size: 14px;
+        line-height: 24px;
+        padding-top: 19px;
     }
     .title__documents {
-        margin-top: 30px!important;
+        margin-top: 34px!important;
+        line-height: 35px;
+        margin-bottom: 15px;
     }
     .documents__descr {
         font-size: 14px;
@@ -1861,18 +1885,27 @@ textarea {
     .documents__symbol {
         width: 100%;
         flex: 0 0 100%;
+        padding-top: 5px;
     }
     .documents__block p {
         font-size: 14px;
         line-height: 16px;
+        margin-top: 30px;
+        margin-left: 0;
+    }
+    .title__special {
+        margin-top: -30px;
+        font-size: 30px;
+        line-height: 32px;
     }
     .special {
         margin-bottom: 1.35rem;
         min-height: 296px;
+        padding: 16px;
     }
     .special__title {
         font-size: 1.65rem;
-        margin-bottom: 3px;
+        margin-bottom: 7px;
         line-height: 24px;
     }
     .special__subtitle {
@@ -1881,9 +1914,9 @@ textarea {
         margin-bottom: 8px;
     }
     .special__text p {
-        font-size: 1.165rem;
-        line-height: 2rem;
-        margin-bottom: 0;
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 9px;
     }
     .title__form {
         margin-top: 30px;
