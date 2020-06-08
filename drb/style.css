@@ -1542,17 +1542,20 @@ textarea {
     font-size: 1.5rem;
     line-height: 2rem;
     position: relative;
-    margin-bottom: 1rem;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 16px;
 }
 
 .disciplines__list li:before {
     content: '';
     background-image: url(images/arrow.png);
     position: absolute;
-    left: -15px;
-    width: 8px;
-    height: 11px;
+    left: -20px;
+    width: 5px;
+    height: 6px;
     top: 10px;
+    background-size: contain;
 }
 
 .entry {
@@ -1586,6 +1589,10 @@ textarea {
     max-width: 915px;
     line-height: 2.5rem;
     margin-bottom: 4.625rem;
+}
+
+.title__documents {
+    margin-top: 30px!important;
 }
 
 .documents__block {
@@ -1622,6 +1629,7 @@ textarea {
     margin-bottom: 1.5rem;
     font-weight: bold;
     color: #537AFF;
+    font-family: Proxima Nova Rg;
 }
 
 .special__subtitle {
@@ -1630,6 +1638,7 @@ textarea {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    font-family: Proxima Nova Rg;
 }
 
 .special__text p {
@@ -1764,12 +1773,20 @@ textarea {
     }
     .main-info__content p {
         font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 22px;
+    }
+    .main-info__button {
+        display: none;
     }
     .title {
         font-size: 2.5rem;
         margin-bottom: 24px;
         margin-top: 0;
-        line-height: 2.65rem;
+        line-height: 24px;
+    }
+    .title__disciplines {
+        margin-top: 15px;
     }
     .disciplines__list {
         margin-bottom: 2.5rem;
@@ -1824,16 +1841,21 @@ textarea {
     }
     .special__title {
         font-size: 1.65rem;
+        margin-bottom: 3px;
+        line-height: 24px;
     }
     .special__subtitle {
         font-size: 1.165rem;
-        line-height: 1.35rem;
+        line-height: 16px;
         margin-bottom: 8px;
     }
     .special__text p {
         font-size: 1.165rem;
         line-height: 2rem;
         margin-bottom: 0;
+    }
+    .title__form {
+        margin-top: 30px;
     }
     .form {
         height: 264px;
@@ -1853,6 +1875,8 @@ textarea {
     }
     .form__privacy {
         font-size: 1rem;
-        padding-left: 36px;
+        padding-top: 4px;
+        padding-left: 40px;
+        line-height: 20px;
     }
 }
