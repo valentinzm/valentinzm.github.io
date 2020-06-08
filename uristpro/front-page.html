@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="font/stylesheet.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header site-header__front">
+        <div class="container">
+            <a href="#">
+                <img src="images/logo.svg" alt="">
+            </a>
+            <div class="">
+                <a href="#">+7(499) 393 35 33</a>
+            </div>
+        </div>
+    </header>
+    <main class="swiper-container frontpage-slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide front-slide" style="background-image: url('images/front/slide1.jpg');">
+                <div class="front-slide__item">
+                    <h1 class="front-slide__title">Юридическая фирма
+                    </h1>
+                    <p class="front-slide__descr">Помогаем решать возникшие вопросы правильно.</p>
+                    <a href="#" class="front-slide__button">Обратиться за помощью</a>
+                </div>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+    </main>
+
+
+    <!--scripts-->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.frontpage-slider', {
+            // Optional parameters
+            loop: true,
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        })
+    </script>
+</body>
+
+</html>
