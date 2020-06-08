@@ -1711,6 +1711,7 @@ textarea {
     }
     .banner {
         height: 232px;
+        background-size: contain;
     }
     .banner__content {
         padding-left: 10px;
@@ -1724,6 +1725,7 @@ textarea {
     .banner__faculty {
         font-weight: 300;
         font-size: 1rem;
+        margin-bottom: 3px;
     }
     .banner__title {
         font-size: 2.6rem;
@@ -1732,7 +1734,7 @@ textarea {
     .banner__descr {
         font-weight: 300;
         font-size: 1rem;
-        margin-top: 1rem;
+        margin-top: 1.5rem;
     }
     .banner__btn {
         margin-top: 6px;
@@ -1746,8 +1748,8 @@ textarea {
         flex-wrap: wrap;
     }
     .pluses__item {
-        width: 45%;
-        flex: 0 0 45%;
+        width: 50%;
+        flex: 0 0 50%;
         margin-bottom: 2.5rem;
     }
     .title {
