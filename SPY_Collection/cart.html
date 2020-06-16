@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spy collection cart</title>
+    <link rel="stylesheet" href="assets/css/agent-blonde.min.css">
+    <link rel="stylesheet" href="spy.css">
+</head>
+
+<body>
+    <header class="header spy-header">
+        <div class="header__wrapper">
+            <a href="" class="header__logo">
+                <img src="assets/img/spy/logo.svg" alt="">
+            </a>
+
+            <nav class="header__navbar">
+                <ul class="header__menu menu">
+                    <li class="menu__item"><a href="" class="menu__link">BUSINESS</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">SPY COLLECTION</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">SHOES</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">BAGS</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">ACCESSSORIES</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">PERFUMERIE</a></li>
+                </ul>
+
+                <div class="header__langswitch langswitch">
+                    <div class="langswitch__lang langswitch__lang--active">En</div>
+
+                    <ul class="langswitch__dropdown">
+                        <li class="langswitch__lang"><a href="" class="langswitch__link">En</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <button class="header__toggler"></button>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <aside class="cart-aside">
+                    <h4 class="cart-aside__title">Black dress</h4>
+                    <div class="cart-aside__head">
+                        <p><span>Категория:</span> Business</p>
+                        <p><span>Артикуль:</span> S6259</p>
+                    </div>
+                    <div class="cart-aside__bottom">
+                        <p><span>Модификация:</span> Хлопок 100%</p>
+                        <p><span>Цвет:</span> Серый</p>
+                        <p><span>Размер:</span> S</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="payment">
+                        <h4 class="payment__title">Cпособ оплаты:</h4>
+                        <ul class="payment__list">
+                            <li>
+                                <a href="#" class="payment__block">
+                                    <img src="assets/img/spy/visa.svg" alt=""> Visa, Master Card, Мир
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="payment__block">
+                                    <img src="assets/img/spy/google.svg" alt=""> Google pay
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="payment__block">
+                                    <img src="assets/img/spy/apple.svg" alt=""> Apple pay
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="payment__block">
+                                    <img src="assets/img/spy/btc.svg" alt=""> Btc / Usdt
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+            <!--#col3-->
+
+            <div class="col-md-9">
+                <form class="spy-form">
+                    <h4 class="spy-form__title">Адрес доставки</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Ваше имя" class="spy-form__input">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Страна / регион" class="spy-form__input">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Улица / Дом / Квартира" class="spy-form__input">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Край / Облсть / Регион" class="spy-form__input">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Город" class="spy-form__input">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Почтовый индекс" class="spy-form__input">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" placeholder="+7 (___) ___ - __ - __" class="spy-form__input">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Email" class="spy-form__input">
+                        </div>
+                        <div class="col-12 spy-form__total">
+                            <p>Цена товара</p>
+                            <p>44 000 ₽</p>
+                        </div>
+                        <div class="col-12">
+                            <div class="divider divider__form"></div>
+                        </div>
+                    </div>
+                    <!--#row-->
+                    <div class="spy-form__delivery">
+                        <p class="spy-form__delivery_title">Доставки </p>
+                        <label for="" class="spy-form__label not-that">
+                            <input type="radio" name="delivery" class="delivery-radio">
+                            <p> Почта России - до 30 дней    </p>
+                            <p>1 400 ₽</p>
+                        </label>
+                        <label for="" class="spy-form__label not-that">
+                            <input type="radio" name="delivery" class="delivery-radio">
+                            <p> DPD - до 7и дней     </p>
+                            <p> 400 ₽</p>
+                        </label>
+                        <label for="" class="spy-form__label not-that">
+                            <input type="radio" name="delivery" class="delivery-radio">
+                            <p> CDEK - до 3х дней     </p>
+                            <p>100 ₽</p>
+                        </label>
+                    </div>
+                    <div class="divider divider__form"></div>
+                    <div class="spy-form__bottom">
+                        <div class="coupon">
+                            <input type="text" class="coupon__input" placeholder="Введите промокод:">
+                            <input type="submit" class="coupon__submit" value="Применить">
+                        </div>
+                        <p class="total"><span>Итого:</span>45 400 ₽</p>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <!--#row-->
+    </div>
+    <footer class="spy-footer">
+        <div class="container">
+            <p>Copyright © 2019. AgentBlonde. Все права защищены.</p>
+            <a href="#">Наши реквизиты</a>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('.payment__list a').forEach(function(e) {
+            e.addEventListener('click', activePayment);
+        });
+
+        function activePayment(evt) {
+            evt.preventDefault();
+            this.classList.add('act-payment')
+        }
+        document.querySelectorAll('.delivery-radio').forEach(function(e) {
+            e.addEventListener('click', deliveryPriceColor);
+        });
+
+        function deliveryPriceColor() {
+            document.querySelectorAll('.spy-form__label').forEach(function(e) {
+                e.classList.add('not-that');
+            });
+            let currentRadio = document.querySelector('.delivery-radio:checked').parentElement;
+            currentRadio.classList.remove('not-that');
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
