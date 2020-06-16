@@ -87,28 +87,52 @@
                     <h4 class="spy-form__title">Адрес доставки</h4>
                     <div class="row">
                         <div class="col-md-6">
-                            <input type="text" placeholder="Ваше имя" class="spy-form__input">
+                            <label class="spy-form__label">
+                                <input type="text"  class="spy-form__input">
+                                <p class="spy-form__text">Ваше имя<span>*</span></p>
+                            </label>
                         </div>
                         <div class="col-md-6">
-                            <input type="text" placeholder="Страна / регион" class="spy-form__input">
+                            <label class="spy-form__label">
+                                <input type="text"  class="spy-form__input">
+                                <p class="spy-form__text">Страна / регион<span>*</span></p>
+                            </label>
                         </div>
                         <div class="col-md-6">
-                            <input type="text" placeholder="Улица / Дом / Квартира" class="spy-form__input">
+                            <label class="spy-form__label">
+                                <input type="text"  class="spy-form__input">
+                                <p class="spy-form__text">Улица / Дом / Квартира<span>*</span></p>
+                            </label>
                         </div>
                         <div class="col-md-6">
-                            <input type="text" placeholder="Край / Облсть / Регион" class="spy-form__input">
+                            <label class="spy-form__label">
+                                <input type="text"  class="spy-form__input">
+                                <p class="spy-form__text">Край / Облсть / Регион<span>*</span></p>
+                            </label>
                         </div>
                         <div class="col-md-6">
-                            <input type="text" placeholder="Город" class="spy-form__input">
+                            <label class="spy-form__label">
+                                <input type="text"  class="spy-form__input">
+                                <p class="spy-form__text">Город<span>*</span></p>
+                            </label>
                         </div>
                         <div class="col-md-6">
-                            <input type="text" placeholder="Почтовый индекс" class="spy-form__input">
+                            <label class="spy-form__label">
+                                <input type="text"  class="spy-form__input">
+                                <p class="spy-form__text">Почтовый индекс<span>*</span></p>
+                            </label>
                         </div>
                         <div class="col-md-6">
-                            <input type="text" placeholder="+7 (___) ___ - __ - __" class="spy-form__input">
+                            <label class="spy-form__label">
+                                <input type="text"  class="spy-form__input">
+                                <p class="spy-form__text">+7 (___) ___ - __ - __<span>*</span></p>
+                            </label>
                         </div>
                         <div class="col-md-6">
-                            <input type="text" placeholder="Email" class="spy-form__input">
+                            <label class="spy-form__label">
+                                <input type="text"  class="spy-form__input">
+                                <p class="spy-form__text">Email<span>*</span></p>
+                            </label>
                         </div>
                         <div class="col-12 spy-form__total">
                             <p>Цена товара</p>
@@ -121,17 +145,17 @@
                     <!--#row-->
                     <div class="spy-form__delivery">
                         <p class="spy-form__delivery_title">Доставки </p>
-                        <label for="" class="spy-form__label not-that">
+                        <label for="" class="delivery-label not-that">
                             <input type="radio" name="delivery" class="delivery-radio">
                             <p> Почта России - до 30 дней    </p>
                             <p>1 400 ₽</p>
                         </label>
-                        <label for="" class="spy-form__label not-that">
+                        <label for="" class="delivery-label not-that">
                             <input type="radio" name="delivery" class="delivery-radio">
                             <p> DPD - до 7и дней     </p>
                             <p> 400 ₽</p>
                         </label>
-                        <label for="" class="spy-form__label not-that">
+                        <label for="" class="delivery-label not-that">
                             <input type="radio" name="delivery" class="delivery-radio">
                             <p> CDEK - до 3х дней     </p>
                             <p>100 ₽</p>
@@ -158,6 +182,30 @@
         </div>
     </footer>
     <script>
+        document.querySelectorAll('.spy-form__input').forEach(function(e) {
+            e.addEventListener('focus', inputFocus);
+        });
+
+        function inputFocus() {
+            //console.log(this);
+            this.parentElement.classList.add('label-active');
+            let nextText = this.nextElementSibling;
+            nextText.classList.add('d-none');
+
+        }
+        document.querySelectorAll('.spy-form__input').forEach(function(e) {
+            e.addEventListener('blur', inputBlur);
+        });
+
+        function inputBlur() {
+            this.parentElement.classList.remove('label-active');
+            let nextText = this.nextElementSibling;
+            if (this.value == '' || this.value == null) {
+                nextText.classList.remove('d-none');
+            }
+
+        }
+
         document.querySelectorAll('.payment__list a').forEach(function(e) {
             e.addEventListener('click', activePayment);
         });
@@ -171,7 +219,7 @@
         });
 
         function deliveryPriceColor() {
-            document.querySelectorAll('.spy-form__label').forEach(function(e) {
+            document.querySelectorAll('.delivery-label').forEach(function(e) {
                 e.classList.add('not-that');
             });
             let currentRadio = document.querySelector('.delivery-radio:checked').parentElement;

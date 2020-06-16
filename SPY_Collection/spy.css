@@ -92,7 +92,42 @@
     margin-top: 0;
 }
 
+.spy-form__label {
+    position: relative;
+    margin: 0;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.label-active:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 44px;
+    height: 3px;
+    background-color: #D80027;
+}
+
+.spy-form__text {
+    position: absolute;
+    top: 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+    color: #888888;
+    z-index: 1;
+}
+
+.spy-form__text span {
+    color: #E5030B;
+}
+
 .spy-form__input {
+    position: relative;
     padding-bottom: 13px;
     font-weight: 300;
     font-size: 14px;
@@ -102,7 +137,17 @@
     position: relative;
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.3);
     width: 100%;
-    margin-bottom: 40px;
+    z-index: 10;
+}
+
+.spy-form__input:focus::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 44px;
+    background-attachment: red;
+    left: 0;
+    border: 1px solid red;
 }
 
 .spy-form__input::placeholder {
@@ -113,12 +158,21 @@
     color: #888888;
 }
 
+.input-border:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 44px;
+    height: 2px;
+    background: #D80027;
+    position: absolute;
+}
+
 .spy-form__input::-webkit-input-placeholder::after {
     content: '*';
 }
 
-
-/* #E5030B */
+.spy-form__input {}
 
 .spy-form__total {
     display: flex;
@@ -155,12 +209,12 @@
     margin-bottom: 10px!important;
 }
 
-.spy-form__label {
+.delivery-label {
     display: flex;
     align-items: center;
 }
 
-.spy-form__label input[type="radio"] {
+.delivery-label input[type="radio"] {
     position: relative;
     border: 1px solid #525252;
     box-sizing: border-box;
@@ -174,7 +228,7 @@
     -webkit-appearance: none;
 }
 
-.spy-form__label input[type="radio"]:checked:before {
+.delivery-label input[type="radio"]:checked:before {
     content: '';
     position: absolute;
     left: 0;
@@ -186,7 +240,7 @@
     background-repeat: no-repeat;
 }
 
-.spy-form__delivery p {
+.delivery-label p {
     margin-bottom: 0;
     font-weight: 300;
     font-size: 16px;
@@ -194,7 +248,7 @@
     color: #FFFFFF;
 }
 
-.spy-form__delivery p:last-child {
+.delivery-label p:last-child {
     margin-left: auto;
     opacity: 0.7;
 }
@@ -288,3 +342,5 @@
     margin: 0;
     color: #888888;
 }
+
+@media(max-width: 1024px) {}
