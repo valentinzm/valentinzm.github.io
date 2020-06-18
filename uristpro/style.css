@@ -1818,7 +1818,7 @@ pre code {
     align-items: center;
 }
 
-.site-header__phone {
+.phone {
     font-size: 22px;
     letter-spacing: 0.03em;
     color: #222222;
@@ -1890,4 +1890,81 @@ pre code {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+/*choice page*/
+
+.site-header__choice {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.site-header__choice .phone {
+    color: #fff;
+}
+
+.choice {
+    height: 100vh;
+    display: flex;
+}
+
+.choice-column {
+    width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+}
+
+.column-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+}
+
+.choice-column h4 {
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+
+.choice-column:hover h4 {
+    font-weight: bold;
+}
+
+.choice-column p {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FCFCFD;
+    opacity: 0.3;
+}
+
+.choice__left {
+    background: #eb01a5;
+    background-image: url("images/choice-left.jpg");
+    /* fallback */
+    background-image: url("images/choice-left.jpg"), linear-gradient(#eb01a5, #d13531);
+    /* W3C */
+}
+
+.choice__right {
+    background-image: url('images/choice-right.jpg');
 }
