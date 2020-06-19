@@ -835,7 +835,6 @@
     content: '';
     position: absolute;
     left: 0;
-    top: 0;
     background-image: url('assets/img/spy/flag.svg');
     width: 27.5px;
     height: 13px;
