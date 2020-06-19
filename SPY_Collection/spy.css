@@ -824,6 +824,23 @@
     margin-bottom: 20px;
 }
 
+.cart-banner__label {
+    position: relative;
+    padding-left: 37px;
+    display: flex;
+    align-items: center;
+}
+
+.cart-banner__label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url('assets/img/spy/flag.svg');
+    width: 27.5px;
+    height: 13px;
+}
+
 .cart-banner__content {
     display: flex;
     justify-content: space-between;
