@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="spy.css">
 </head>
 
-<body>
-    <header class="header spy-header">
+<body class="spy-body">
+    <header class="header">
         <div class="header__wrapper">
             <a href="" class="header__logo">
                 <img src="assets/img/spy/logo.svg" alt="">
@@ -40,14 +40,91 @@
             <button class="header__toggler"></button>
         </div>
     </header>
+    <div class="cart__banners banners">
+        <div class="banners__slider">
+            <div class="banners__banner" style="background-image: url(assets/img/spy/car-banner.png);">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="banner__content">
+                                <h1 class="banner__heading">Lamborgini agents edition</h1>
+                                <div class="banner__text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banners__banner" style="background-image: url(assets/img/spy/car-banner.png);">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="banner__content">
+                                <h1 class="banner__heading">Lamborgini agents edition</h1>
+                                <div class="banner__text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banners__banner" style="background-image: url(assets/img/spy/car-banner.png);">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="banner__content">
+                                <h1 class="banner__heading">Lamborgini agents edition</h1>
+                                <div class="banner__text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banners__banner" style="background-image: url(assets/img/spy/car-banner.png);">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="banner__content">
+                                <h1 class="banner__heading">Lamborgini agents edition</h1>
+                                <div class="banner__text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banners__banner" style="background-image: url(assets/img/spy/car-banner.png);">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="banner__content">
+                                <h1 class="banner__heading">Lamborgini agents edition</h1>
+                                <div class="banner__text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container banners__dots">
+
+        </div>
+    </div>
 
     <div class="container">
         <div class="row cart-info">
-            <div class="col-md-4 cart-title">
+            <div class="col-md-4 cart-title c">
                 <h4 class="title cart-title__title">Lamborgini aventador agent edition</h4>
                 <p class="cart-title__article"># 5665161</p>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5 choice">
                 <div>
                     <p class="choice__title">Выберите цвет</p>
                     <div class="choice__list">
@@ -70,27 +147,33 @@
                 <p class="cart-price__descr">Полная стоимость товара</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="spy-form__delivery">
-                    <p class="spy-form__delivery_title">Способ доставки</p>
-                    <label for="" class="delivery-label">
-                        <input type="radio" name="delivery" class="delivery-radio">
-                        <p> Почта России - до 30 дней    </p>
-                        <p>1 400 ₽</p>
-                    </label>
-                    <label for="" class="delivery-label">
-                        <input type="radio" name="delivery" class="delivery-radio">
-                        <p> DPD - до 7и дней     </p>
-                        <p> 400 ₽</p>
-                    </label>
-                    <label for="" class="delivery-label">
-                        <input type="radio" name="delivery" class="delivery-radio">
-                        <p> CDEK - до 3х дней     </p>
-                        <p>100 ₽</p>
-                    </label>
-                </div>
+        <div class="row cart-delivery">
+            <div class="col-md-12">
+                <p class="cart-delivery__title">Способ доставки</p>
             </div>
+            <div class="col-md-9 cart-delivery__labels">
+
+                <label for="" class="delivery-label">
+                <input type="radio" name="delivery" class="delivery-radio">
+                Почта России - до 3х дней | 334 ₽                       
+            </label>
+                <label for="" class="delivery-label">
+                <input type="radio" name="delivery" class="delivery-radio">
+                DPD - до 3х дней | 334 ₽
+                
+            </label>
+                <label for="" class="delivery-label">
+                <input type="radio" name="delivery" class="delivery-radio">
+                CDEK - до 3х дней | 334 ₽
+            </label>
+            </div>
+            <div class="col-md-3">
+
+                <a href="#" class="cart-btn__order">Оформить заказ</a>
+
+            </div>
+        </div>
+        <div class="row row-bg">
             <div class="col-md-6">
                 <h4 class="title">
                     Lamborgini aventador agent edition
@@ -100,8 +183,9 @@
                     in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </p>
             </div>
-            <div class="col-md-6 cart-image">
-                <img src="assets/img/spy/car.png" alt="">
+            <div class="col-md-6">
+                <img src="assets/img/spy/car-bg.png" class="row-bg__shine">
+                <img src="assets/img/spy/car.png" class="row-bg__car">
             </div>
         </div>
         <!--#row-->
@@ -116,28 +200,38 @@
         <h4 class="title">
             Товары из этой коллекции
         </h4>
-        <div class="cart-slider">
-            <div class="cart-slider__item">
+        <ul class="cart-slider cart-slider05">
+            <li class="cart-slider__item">
+                <div class="cart-slider__overlay"></div>
+                <img src="assets/img/spy/list-image.png" alt="">
                 <p class="cart-slider__title">Black bag agent</p>
                 <p class="cart-slider__price">95 ₽</p>
-            </div>
-            <div class="cart-slider__item">
+            </li>
+            <li class="cart-slider__item">
+                <div class="cart-slider__overlay"></div>
+                <img src="assets/img/spy/list-glases.png" alt="">
                 <p class="cart-slider__title">Agent black glasses</p>
                 <p class="cart-slider__price">95 ₽</p>
-            </div>
-            <div class="cart-slider__item">
-                <p class="cart-slider__title">Black dress agent</p>
+            </li>
+            <li class="cart-slider__item">
+                <div class="cart-slider__overlay"></div>
+                <img src="assets/img/spy/list-image.png" alt="">
+                <p class="cart-slider__title">Black bag agent</p>
                 <p class="cart-slider__price">95 ₽</p>
-            </div>
-            <div class="cart-slider__item">
-                <p class="cart-slider__title">Black watch agent</p>
+            </li>
+            <li class="cart-slider__item">
+                <div class="cart-slider__overlay"></div>
+                <img src="assets/img/spy/list-image.png" alt="">
+                <p class="cart-slider__title">Black bag agent</p>
                 <p class="cart-slider__price">95 ₽</p>
-            </div>
-            <div class="cart-slider__item">
-                <p class="cart-slider__title">text</p>
+            </li>
+            <li class="cart-slider__item">
+                <div class="cart-slider__overlay"></div>
+                <img src="assets/img/spy/list-image.png" alt="">
+                <p class="cart-slider__title">Black bag agent</p>
                 <p class="cart-slider__price">95 ₽</p>
-            </div>
-        </div>
+            </li>
+        </ul>
     </div>
 
     <footer class="spy-footer">
@@ -152,8 +246,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
+        //cart__banners
         $(document).ready(function() {
-            $('.cart-slider').slick({
+            $('.cart-slider05').slick({
+
+                prevArrow: '<button class="cart__controls cart__controls--prev"><svg width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.5 30L1 15.5L15.5 1" stroke="white" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+                nextArrow: '<button class="cart__controls cart__controls--next"><svg width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L15.5 15.5L0.999995 30" stroke="white" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
                 dots: true,
                 slidesToShow: 4,
             });
