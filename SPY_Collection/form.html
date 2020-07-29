@@ -40,7 +40,7 @@
     </header>
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-lg-4">
                 <aside class="form-aside">
                     <div class="form-aside__images">
                         <img src="assets/img/spy/car-bg.png" class="row-bg__shine">
@@ -72,7 +72,7 @@
             </div>
             <!--#col3-->
 
-            <div class="col-md-8">
+            <div class="col-lg-8">
                 <form class="spy-form">
                     <h4 class="spy-form__title">Адрес доставки</h4>
                     <div class="row row__mobile-line">
@@ -136,17 +136,17 @@
                     <div class="spy-form__delivery">
                         <p class="spy-form__delivery_title">Доставки </p>
                         <label for="" class="delivery-label not-that">
-                            <input type="radio" name="delivery" class="delivery-radio">
+                            <input type="radio" name="delivery" class="delivery-radio" data-delivery="1400">
                             <p> Почта России - до 30 дней    </p>
                             <p>1 400 ₽</p>
                         </label>
                         <label for="" class="delivery-label not-that">
-                            <input type="radio" name="delivery" class="delivery-radio">
+                            <input type="radio" name="delivery" class="delivery-radio" data-delivery="400">
                             <p> DPD - до 7и дней     </p>
                             <p> 400 ₽</p>
                         </label>
                         <label for="" class="delivery-label not-that">
-                            <input type="radio" name="delivery" class="delivery-radio">
+                            <input type="radio" name="delivery" class="delivery-radio" data-delivery="100">
                             <p> CDEK - до 3х дней     </p>
                             <p>100 ₽</p>
                         </label>
@@ -159,7 +159,7 @@
                         </div>
                         <div class="spy-form__sum_item">
                             <p>Почта России до 3х дней</p>
-                            <p>334 Р</p>
+                            <p><span id="delivery-price">334</span> Р</p>
                         </div>
                     </div>
                     <div class="spy-form__bottom">
@@ -239,9 +239,12 @@
 
         function activePayment(evt) {
             evt.preventDefault();
-            this.classList.add('act-payment')
+            document.querySelectorAll('.payment__list a').forEach(function(e) {
+                e.classList.remove('active-payment');
+            });
+            this.classList.add('active-payment')
         }
-        document.querySelectorAll('.delivery-radio').forEach(function(e) {
+        document.querySelectorAll('.delivery-label').forEach(function(e) {
             e.addEventListener('click', deliveryPriceColor);
         });
 
@@ -249,8 +252,11 @@
             document.querySelectorAll('.delivery-label').forEach(function(e) {
                 e.classList.add('not-that');
             });
-            let currentRadio = document.querySelector('.delivery-radio:checked').parentElement;
-            currentRadio.classList.remove('not-that');
+            this.classList.remove('not-that');
+            let radioButton = this.firstElementChild;
+            radioButton.checked = true;
+            let delPrice = radioButton.dataset.delivery;
+            document.querySelector('#delivery-price').textContent = delPrice;
         }
     </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

@@ -1048,7 +1048,8 @@
     margin-bottom: 0px;
 }
 
-.payment__block:hover {
+.payment__block:hover,
+.active-payment {
     text-decoration: none;
     color: #fff;
     border-bottom: 1.5px solid #E5030B;
@@ -1668,8 +1669,8 @@
         content: '';
         position: absolute;
         bottom: 0;
-        left: -40px;
-        right: -40px;
+        left: -25px;
+        right: -25px;
         height: 0.5px;
         background-color: #F42210;
     }
@@ -1770,5 +1771,15 @@
         height: auto;
         padding-top: 5px;
         padding-bottom: 5px;
+    }
+    .payment {
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    .payment__title {
+        display: none;
+    }
+    .spy-footer {
+        display: none;
     }
 }
