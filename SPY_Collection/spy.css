@@ -958,6 +958,10 @@
     color: #FFFFFF;
 }
 
+.form-aside__mobile-text {
+    display: none;
+}
+
 .form-aside__head {
     list-style: none;
     padding: 0;
@@ -1052,6 +1056,16 @@
 
 .payment__block img {
     margin-right: 12px;
+}
+
+.payment__disabled {
+    opacity: 0.3;
+}
+
+.payment__disabled .payment__block:hover {
+    pointer-events: none;
+    cursor: default;
+    border-bottom: none;
 }
 
 .spy-form {
@@ -1324,6 +1338,10 @@
     color: #888888;
 }
 
+.spy-form__sum {
+    display: none;
+}
+
 @media(max-width: 1024px) {
     .spy-banner {
         padding-left: 28px;
@@ -1463,11 +1481,84 @@
     .slick-dots {
         margin-top: 25px;
     }
+    .form-aside .divider {
+        display: none;
+    }
+    .form-aside__title {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .form-aside__mobile-text {
+        display: block;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        color: #FFFFFF;
+        opacity: 0.7;
+        max-width: 262px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 32px;
+    }
+    .form-aside__head {
+        position: relative;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-bottom: 0;
+        margin-right: -15px;
+        margin-left: -15px;
+        padding-left: 40px;
+        padding-right: 40px;
+        border-bottom: 1px solid #313131;
+        border-top: 1px solid #313131;
+    }
+    .form-aside__head:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        background-image: url(assets/img/spy/mobile_arrow.svg);
+        width: 10px;
+        height: 5px;
+        background-position: center;
+        left: 0;
+        right: 0;
+        display: block;
+        margin: 0 auto;
+        width: 32px;
+        height: 32px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #131313;
+        top: -15px;
+        z-index: 9;
+        border-radius: 50px;
+    }
+    /* .form-aside__head:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 0.2px;
+        opacity: 0.5;
+        background: #fff;
+    } */
+    .form-aside__text {
+        display: none;
+    }
     .spy-form__bottom {
         flex-direction: column-reverse;
+        margin-left: -40px;
+        margin-right: -40px;
+        background: #131313;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #313131;
     }
     .coupon {
         flex-wrap: wrap;
+        padding-left: 40px;
+        padding-right: 40px;
     }
     .coupon__input {
         margin-right: 0;
@@ -1487,7 +1578,192 @@
         margin-bottom: 20px;
     }
     .spy-form {
-        padding: 0;
+        position: relative;
+        margin: 0 -15px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 110px;
+        padding-bottom: 0;
+    }
+    .spy-form__title {
+        position: absolute;
+        top: 0;
+        height: 60px;
+        left: 0;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 0;
+        background: #131313;
+    }
+    .delivery-label input[type="radio"] {
+        width: 17px;
+        flex: 0 0 17px;
+        height: 17px;
+    }
+    .spy-form__delivery_title {
+        background: #131313;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 14px;
+        opacity: 1;
+    }
+    .spy-form__delivery {
+        margin-left: -40px;
+        margin-right: -40px;
+        padding-bottom: 38px;
+        padding-top: 110px;
+        padding-left: 40px;
+        padding-right: 40px;
+        position: relative;
+    }
+    .spy-form__delivery:after {
+        content: '';
+        position: absolute;
+        background-image: url(assets/img/spy/mobile_red_arrow.svg);
+        width: 32px;
+        height: 32px;
+        background-color: #161616;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 50px;
+        bottom: -16px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    .row__mobile-line {
+        position: relative;
+    }
+    .row__mobile-line:after {
+        content: '';
+        position: absolute;
+        background-image: url(assets/img/spy/mobile_red_arrow.svg);
+        width: 32px;
+        height: 32px;
+        background-color: #161616;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 50px;
+        bottom: -16px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    .row__mobile-line:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: -40px;
+        right: -40px;
+        height: 0.5px;
+        background-color: #F42210;
+    }
+    .spy-form__delivery:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 0.5px;
+        background-color: #F42210;
+    }
+    .delivery-label {
+        white-space: nowrap;
+        margin-bottom: 25px;
+    }
+    .delivery-label:last-child {
+        margin-bottom: 0;
+    }
+    .delivery-label p {
+        font-size: 14px;
+    }
+    .not-that p:last-child,
+    .delivery-label p:last-child {
+        margin-left: unset;
+        opacity: 1;
+    }
+    .not-that p {
+        opacity: 0.3;
+    }
+    .not-that p:last-child:before,
+    .delivery-label p:last-child:before {
+        content: '|';
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .spy-form__total {
+        display: none;
+    }
+    .spy-form__sum {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -40px;
+        margin-right: -40px;
+        background: #131313;
+        padding: 25px 40px;
+    }
+    .spy-form__sum_title {
+        max-width: 145px;
+    }
+    .spy-form__sum_price {
+        white-space: nowrap;
+    }
+    .spy-form__sum_item {
+        margin-bottom: 15px;
+        display: flex;
+        flex: 0 0 100%;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .spy-form__sum_item:last-child {
+        margin-bottom: 0;
+    }
+    .spy-form__sum p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 0;
+        color: #FFFFFF;
+        opacity: 0.5;
+    }
+    .total {
+        border-top: 1px solid #313131;
+        border-bottom: 1px solid #313131;
+        padding-left: 40px;
+        padding-right: 40px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        height: 75px;
+        align-items: center;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+    .total span {
+        font-weight: 300;
+        margin: unset;
+    }
+    .divider__form {
+        display: none;
     }
     .spy-footer .container {
         flex-wrap: wrap;
