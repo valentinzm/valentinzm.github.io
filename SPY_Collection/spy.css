@@ -943,11 +943,12 @@
 
 .form-aside__images {
     position: relative;
+    padding-top: 30px;
 }
 
 .form-aside__images .row-bg__shine {
     max-width: 100%;
-    bottom: 40px;
+    bottom: 25px;
 }
 
 .form-aside__title {
@@ -1324,9 +1325,7 @@
 .spy-footer {
     border-top: 1px solid #313131;
     margin-top: 80px;
-}
-
-.spy-footer .container {
+    padding: 0 80px;
     height: 46px;
     display: flex;
     justify-content: space-between;
@@ -1337,6 +1336,7 @@
 .spy-footer a {
     margin: 0;
     color: #888888;
+    font-size: 14px;
 }
 
 .spy-form__sum {
