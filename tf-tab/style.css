@@ -2451,11 +2451,11 @@ only screen and (min-resolution:120dpi) {
         max-width: 53px;
     }
     .flex-land-wrap .swiper-reviews {
-        width: auto;
+        width: 110%;
         margin-right: -20px;
     }
     .flex-land-wrap .swiper-user-videos {
-        width: auto;
+        width: 110%;
         margin-right: -20px;
     }
     .flex-land-wrap .user-videos_title {
