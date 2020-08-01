@@ -2051,6 +2051,10 @@ only screen and (min-resolution:120dpi) {
     color: #5E6373;
 }
 
+.tab-set__mobile {
+    display: none;
+}
+
 .flex-land-wrap .swiper-reviews {
     width: 94%;
     height: 400px
@@ -2187,6 +2191,7 @@ only screen and (min-resolution:120dpi) {
     .flex-land-wrap .tab-wrap {
         padding-left: 20px;
         padding-right: 20px;
+        overflow: hidden;
     }
     .flex-land-wrap .tab-video::before {
         opacity: 0.84;
@@ -2287,8 +2292,8 @@ only screen and (min-resolution:120dpi) {
         overflow-y: hidden;
     }
     .flex-land-wrap .tab-products__col {
-        max-width: 245px;
-        flex: 0 0 245px;
+        max-width: 227px;
+        flex: 0 0 227px;
         margin-right: 30px;
     }
     .flex-land-wrap .tab-products__text {
@@ -2311,10 +2316,32 @@ only screen and (min-resolution:120dpi) {
     }
     .flex-land-wrap .tab-set__steam {
         order: 1;
+        margin-bottom: 32px;
     }
     .flex-land-wrap .tab-set__steam_title {
-        font-size: 24px;
+        font-size: 22px;
         line-height: 24px;
+    }
+    .tab-set__mobile {
+        display: flex;
+        align-items: center;
+        order: 2;
+        margin-bottom: 32px;
+    }
+    .tab-set__mobile_title {
+        font-size: 21px;
+        line-height: 23px;
+        letter-spacing: -0.03em;
+        max-width: 148px;
+        color: #3E4352;
+        margin-bottom: 16px;
+    }
+    .tab-set__mobile_text {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+        max-width: 163px;
+        color: #5E6373;
     }
     .flex-land-wrap .tab-set__rags {
         order: 3;
@@ -2331,5 +2358,107 @@ only screen and (min-resolution:120dpi) {
     }
     .flex-land-wrap .tab-set__shlang p {
         position: relative;
+    }
+}
+
+.flex-land-wrap .user-videos {
+    padding: 0
+}
+
+.flex-land-wrap .swiper-user-videos {
+    width: 95%
+}
+
+.flex-land-wrap .arrow-user-videos-prev {
+    left: -32px
+}
+
+.flex-land-wrap .arrow-user-videos-next {
+    right: -32px
+}
+
+.flex-land-wrap .user-videos-card_author-img {
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+    margin-right: 16px
+}
+
+.flex-land-wrap .user-videos-card_author-date,
+.flex-land-wrap .user-videos-card_author-wrap {
+    display: flex;
+    align-items: center
+}
+
+.flex-land-wrap .user-videos-card_title {
+    font-size: var(--submain-size);
+    text-decoration: underline
+}
+
+.flex-land-wrap .user-videos-card_author-date {
+    font-size: var(--submain-size);
+    justify-content: space-between
+}
+
+.flex-land-wrap .user-videos-card_author {
+    display: flex
+}
+
+.flex-land-wrap .user-videos-card_date {
+    color: var(--more-grey-color)
+}
+
+.flex-land-wrap .user-videos-card_img {
+    height: 230px
+}
+
+@media (max-width:1023px) {
+    .flex-land-wrap .user-videos-card_img {
+        height: 140px;
+    }
+    .flex-land-wrap .arrow-user-videos-next,
+    .flex-land-wrap .arrow-user-videos-prev {
+        width: 32px;
+        height: 32px
+    }
+    .flex-land-wrap .arrow-user-videos-prev {
+        left: -25px
+    }
+    .flex-land-wrap .arrow-user-videos-next {
+        right: -25px
+    }
+    .flex-land-wrap .swiper-user-videos {
+        width: 85%
+    }
+    .flex-land-wrap .user-videos_title {
+        margin-bottom: 32px;
+        font-size: var(--subtitle-size-2)
+    }
+}
+
+@media (max-width:991px) {
+    .flex-land-wrap .user-videos-card_date,
+    .flex-land-wrap .user-videos-card_title {
+        font-size: var(--submedium-size)
+    }
+    .flex-land-wrap .arrow-reviews-next,
+    .flex-land-wrap .arrow-reviews-prev,
+    .flex-land-wrap .arrow-user-videos-next,
+    .flex-land-wrap .arrow-user-videos-prev {
+        display: none;
+    }
+    .flex-land-wrap .slider-block-card_play {
+        max-width: 53px;
+    }
+    .flex-land-wrap .swiper-reviews {
+        width: auto;
+        margin-right: -20px;
+    }
+    .flex-land-wrap .swiper-user-videos {
+        width: auto;
+        margin-right: -20px;
+    }
+    .flex-land-wrap .user-videos_title {
+        text-align: left;
     }
 }
