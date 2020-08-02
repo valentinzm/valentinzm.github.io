@@ -103,18 +103,18 @@
                         Обзоры товара
                     </h4>
                     <div class="tab-products__row">
-                        <div class="tab-products__col">
+                        <a href="#" class="tab-products__col">
                             <img src="images/rew1.jpg" alt="" class="tab-products__img">
                             <p class="tab-products__text">Тест-драйв нового парового пылесоса Clean&Steam Multi</p>
-                        </div>
-                        <div class="tab-products__col">
+                        </a>
+                        <a href="#" class="tab-products__col">
                             <img src="images/rew2.jpg" alt="" class="tab-products__img">
                             <p class="tab-products__text">Как я купила паровой пылесос и избавилась от пыли</p>
-                        </div>
-                        <div class="tab-products__col">
+                        </a>
+                        <a href="#" class="tab-products__col">
                             <img src="images/rew3.jpg" alt="" class="tab-products__img">
                             <p class="tab-products__text">Что делать если ты аллергик? Выход есть!</p>
-                        </div>
+                        </a>
                     </div>
                 </section>
 
@@ -258,7 +258,9 @@
                 breakpoints: {
                     // when window width is >= 320px
                     1140: {
-                        slidesPerView: 4
+                        slidesPerView: 4,
+                        loop: true,
+                        centeredMode: true,
                     }
                 },
                 loop: true,
