@@ -1802,7 +1802,7 @@ only screen and (min-resolution:120dpi) {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-63px, -84px);
 }
 
 .flex-land-wrap .tab-row {
