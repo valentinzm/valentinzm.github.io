@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snedok - главная страница</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@6.1.1/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <nav class="header__top_nav">
+                    <a href="#">Пресс-центр</a>
+                    <a href="#">Доставка и оплата</a>
+                    <a href="#">Поддержка</a>
+                    <a href="#">Возврат</a>
+                    <a href="#">COVID-19</a>
+                </nav>
+                <div class="header__top_contacts">
+                    <a href="#" class="header__phone">+7 (999) 999-99-99</a>
+                    <a href="#" class="header__mail">message@online.snedok.ru</a>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <a href="#" class="header__logo">
+                    <img src="images/logo.svg" alt="Снедок - логотип">
+                </a>
+                <a href="#" class="header__city">
+                    <span class="header__city_border">Москва</span>
+                </a>
+                <div class="header__user">
+                    <a href="#" class="header__user_login js-modal" data-modal="#login">Войти</a>
+                    <a href="#" class="header__user_reg">Регистрация</a>
+                </div>
+                <p class="header__price">
+                    116,93 руб.
+                </p>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="swiper-container front-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('images/front-slide.jpg');">
+                    <div class="front-slider__item">
+                        <h1 class="front-slider__title">Продукты с грядки</h1>
+                        <p class="front-slider__descr">Успейте на летний урожай</p>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url('images/front-slide.jpg');"></div>
+                <div class="swiper-slide" style="background-image: url('images/front-slide.jpg');"></div>
+            </div>
+            <div class="front-slider__buttons">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+        <div class="search search__slider">
+            <button class="catalog__button">
+                Каталог товаров
+            </button>
+            <form action="#" class="search__form">
+                <input type="text" class="search__input" placeholder="Какие продукты вы ищите?">
+            </form>
+
+            <div class="catalog__content">
+                <div class="catalog__list">
+                    <a href="#">Молочные продукты, яйцо</a>
+                    <a href="#">Молочные продукты, яйцо</a>
+                    <a href="#">Молочные продукты, яйцо</a>
+                    <a href="#">Молочные продукты, яйцо</a>
+                    <a href="#">Молочные продукты, яйцо</a>
+                    <a href="#">Молочные продукты, яйцо</a>
+                    <a href="#">Молочные продукты, яйцо</a>
+                    <a href="#">Молочные продукты, яйцо</a>
+                    <a href="#">Молочные продукты, яйцо</a>
+                    <a href="#">Молочные продукты, яйцо</a>
+                    <a href="#">Молочные продукты, яйцо</a>
+                </div>
+            </div>
+
+        </div>
+        <section class="categories container">
+            <div class="categories__item">
+                <div class="categories__image">
+                    <img src="images/categories/cat1.png" alt="Молоко, сыр, яйцо">
+                </div>
+                <h4 class="categories__title">Молоко, сыр, яйцо</h4>
+                <p class="categories__descr">Более 1503 товара</p>
+            </div>
+
+            <div class="categories__item">
+                <div class="categories__image">
+                    <img src="images/categories/cat2.png" alt="Выпечка, хлеб">
+                </div>
+                <h4 class="categories__title">Выпечка, хлеб</h4>
+                <p class="categories__descr">Более 1503 товара</p>
+            </div>
+
+            <div class="categories__item">
+                <div class="categories__image">
+                    <img src="images/categories/cat3.png" alt="Кондитерская">
+                </div>
+                <h4 class="categories__title">Кондитерская</h4>
+                <p class="categories__descr">Более 1503 товара</p>
+            </div>
+
+            <div class="categories__item">
+                <div class="categories__image">
+                    <img src="images/categories/cat4.png" alt="Бакалея">
+                </div>
+                <h4 class="categories__title">Бакалея</h4>
+                <p class="categories__descr">Более 1503 товара</p>
+            </div>
+
+            <div class="categories__item">
+                <div class="categories__image">
+                    <img src="images/categories/cat5.png" alt="Мясо">
+                </div>
+                <h4 class="categories__title">Мясо</h4>
+                <p class="categories__descr">Более 1503 товара</p>
+            </div>
+
+            <div class="categories__item">
+                <div class="categories__image">
+                    <img src="images/categories/cat6.png" alt="Рыба">
+                </div>
+                <h4 class="categories__title">Рыба</h4>
+                <p class="categories__descr">Более 1503 товара</p>
+            </div>
+
+            <div class="categories__item">
+                <div class="categories__image">
+                    <img src="images/categories/cat7.png" alt="Фрукты">
+                </div>
+                <h4 class="categories__title">Фрукты</h4>
+                <p class="categories__descr">Более 1503 товара</p>
+            </div>
+
+            <div class="categories__item">
+                <div class="categories__image">
+                    <img src="images/categories/cat8.png" alt="Овощи">
+                </div>
+                <h4 class="categories__title">Овощи</h4>
+                <p class="categories__descr">Более 1503 товара</p>
+            </div>
+
+            <div class="categories__item">
+                <div class="categories__image">
+                    <img src="images/categories/cat9.png" alt="Чай">
+                </div>
+                <h4 class="categories__title">Чай</h4>
+                <p class="categories__descr">Более 1503 товара</p>
+            </div>
+
+            <div class="categories__item">
+                <div class="categories__image">
+                    <img src="images/categories/cat10.png" alt="Кофе">
+                </div>
+                <h4 class="categories__title">Кофе</h4>
+                <p class="categories__descr">Более 1503 товара</p>
+            </div>
+
+            <div class="categories__item">
+                <div class="categories__image">
+                    <img src="images/categories/cat11.png" alt="Масла">
+                </div>
+                <h4 class="categories__title">Масла</h4>
+                <p class="categories__descr">Более 1503 товара</p>
+            </div>
+
+            <div class="categories__item">
+                <div class="categories__image">
+                    <img src="images/categories/cat12.png" alt="Добавки и специи">
+                </div>
+                <h4 class="categories__title">Добавки и специи</h4>
+                <p class="categories__descr">Более 1503 товара</p>
+            </div>
+
+
+        </section>
+        <!--categories-->
+        <section class="about-banner container">
+            <h4 class="about-banner__title">Снедок — это настоящий вкус, удобство и выгода!</h4>
+            <p class="about-banner__text">Почему мы так хотим познакомиться? Потому что дальше еда делает всё сама. Люди видят, что она вкусная, и возвращаются снова!</p>
+            <a href="#" class="about-banner__button">Перейти к покупкам</a>
+
+        </section>
+        <section class="pluses container">
+            <div class="pluses__item">
+                <div class="pluses__icon">
+                    <img src="images/icons/sale.svg" alt="Приятные цены">
+                </div>
+                <h5 class="pluses__title">Приятные цены</h5>
+                <p class="pluses__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp.</p>
+            </div>
+
+            <div class="pluses__item">
+                <div class="pluses__icon">
+                    <img src="images/icons/courier.svg" alt="Высокое качество">
+                </div>
+                <h5 class="pluses__title">Высокое качество</h5>
+                <p class="pluses__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp.</p>
+            </div>
+
+            <div class="pluses__item">
+                <div class="pluses__icon">
+                    <img src="images/icons/package.svg" alt="Удобство">
+                </div>
+                <h5 class="pluses__title">Удобство</h5>
+                <p class="pluses__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp.</p>
+            </div>
+
+            <div class="pluses__item">
+                <div class="pluses__icon">
+                    <img src="images/icons/truck.svg" alt="Экономия энергии">
+                </div>
+                <h5 class="pluses__title">Экономия энергии</h5>
+                <p class="pluses__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp.</p>
+            </div>
+            <div class="pluses__banner pluses__banner_green">
+                <h5 class="pluses__banner_text"><span class="text-bold">Кэшбек 10%</span> с нашей картой лояльности</h5>
+                <a href="#" class="pluses__banner_button">Оформить карту</a>
+                <img src="images/green_woman.svg" alt="">
+            </div>
+            <div class="pluses__banner pluses__banner_orange">
+                <h5 class="pluses__banner_text"><span class="text-bold">Быстрая доставка</span> до вашей двери</h5>
+                <a href="#" class="pluses__banner_button">Оформить карту</a>
+                <img src="images/orange_man.svg" alt="">
+            </div>
+        </section>
+        <!--pluses-->
+    </main>
+    <footer class="footer container">
+        <div class="footer__top">
+            <div class="footer__nav">
+                <p class="footer__nav_title">Покупателям</p>
+                <a href="#">Программа лояльности</a>
+                <a href="#">Подарочные карты</a>
+                <a href="#">Личный кабинет</a>
+                <a href="#">COVID-19</a>
+            </div>
+            <div class="footer__nav">
+                <p class="footer__nav_title">Партнёрам</p>
+                <a href="#">Поставщикам</a>
+                <a href="#">Документы</a>
+            </div>
+            <div class="footer__nav">
+                <p class="footer__nav_title">Разделы</p>
+                <a href="#">Каталог</a>
+                <a href="#">О компании</a>
+                <a href="#">Контакты</a>
+                <a href="#">Бренды</a>
+            </div>
+            <div class="footer__nav">
+                <p class="footer__nav_title">Информация</p>
+                <a href="#">Доставка</a>
+                <a href="#">Как заказать</a>
+                <a href="#">Возврат</a>
+                <a href="#">FAQ</a>
+            </div>
+            <div class="footer__nav">
+                <p class="footer__nav_title">Документы</p>
+                <a href="#">Конфиденциальность</a>
+                <a href="#">Политка сайта</a>
+                <a href="#">Реквизиты</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__copyright">
+                <a href="#">
+                    <img src="images/logo.svg" alt="">
+                </a>
+                <p>Copyright © 2010-2020 Snedok marktplace. All rights reserved.</p>
+            </div>
+            <div class="footer__contact footer__contact_mx">
+                <p>Почта поддержки:</p>
+                <a href="#">Support@snedoc.ru</a>
+            </div>
+            <div class="footer__contact">
+                <p>Телефон поддержки:</p>
+                <a href="#">+7 (999) 999-99-99</a>
+            </div>
+        </div>
+    </footer>
+    <div class="modal" id="login">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <a href="#" class="modal__close">
+                <img src="images/icons/modal_close.svg" alt="">
+            </a>
+            <h4 class="modal__title">Вход</h4>
+            <form action="#">
+                <label for="" class="modal__label">
+                    <input type="text" class="modal__input" placeholder="E-mail или номер телефона">
+                </label>
+                <label for="" class="modal__label">
+                    <input type="password" class="modal__input" placeholder="Введите пароль">
+                </label>
+                <div class="modal__remember">
+                    <label>
+                        <input type="checkbox">
+                        Запомнить меня
+                    </label>
+                    <a href="#">Забыли пароль ?</a>
+                </div>
+                <input type="submit" class="modal__submit" value="Войти в аккаунт">
+                <p class="modal__text">
+                    У вас нет аккаунта? <a href="#">Создать аккаунт</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper@6.1.1/swiper-bundle.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

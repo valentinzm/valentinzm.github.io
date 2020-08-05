@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snedok - главная страница</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@6.1.1/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <nav class="header__top_nav">
+                    <a href="#">Пресс-центр</a>
+                    <a href="#">Доставка и оплата</a>
+                    <a href="#">Поддержка</a>
+                    <a href="#">Возврат</a>
+                    <a href="#">COVID-19</a>
+                </nav>
+                <div class="header__top_contacts">
+                    <a href="#" class="header__phone">+7 (999) 999-99-99</a>
+                    <a href="#" class="header__mail">message@online.snedok.ru</a>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <a href="#" class="header__logo">
+                    <img src="images/logo.svg" alt="Снедок - логотип">
+                </a>
+                <a href="#" class="header__city">
+                    <span class="header__city_border">Москва</span>
+                </a>
+                <div class="header__user">
+                    <a href="#" class="header__user_login">Войти</a>
+                    <a href="#" class="header__user_reg">Регистрация</a>
+                </div>
+                <p class="header__price">
+                    116,93 руб.
+                </p>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="breadcrumbs">
+            <div class="container">
+                <nav class="breadcrumbs__container">
+                    <a href="#">Главная</a>
+                    <a href="#">Фрукты</a>
+                    <span>Бананы, Эквадор</span>
+                </nav>
+                <a href="#" class="breadcrumbs__back"><span>Вернуться в каталог</span></a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="search search__page">
+                <button class="catalog__button">
+                    Каталог товаров
+                </button>
+                <form action="#" class="search__form">
+                    <input type="text" class="search__input" placeholder="Какие продукты вы ищите?">
+                </form>
+
+                <div class="catalog__content">
+                    <div class="catalog__list">
+                        <a href="#">Молочные продукты, яйцо</a>
+                        <a href="#">Молочные продукты, яйцо</a>
+                        <a href="#">Молочные продукты, яйцо</a>
+                        <a href="#">Молочные продукты, яйцо</a>
+                        <a href="#">Молочные продукты, яйцо</a>
+                        <a href="#">Молочные продукты, яйцо</a>
+                        <a href="#">Молочные продукты, яйцо</a>
+                        <a href="#">Молочные продукты, яйцо</a>
+                        <a href="#">Молочные продукты, яйцо</a>
+                        <a href="#">Молочные продукты, яйцо</a>
+                        <a href="#">Молочные продукты, яйцо</a>
+                    </div>
+                </div>
+
+            </div>
+            <section class="single-product">
+                <div class="single-product__gallery">
+                    <div class="products__header">
+                        <p class="products__sale">
+                            Скидка
+                        </p>
+                        <a href="#" class="products__heart">
+                            <img src="images/icons/heart.svg" alt="">
+                        </a>
+                        <a href="#" class="products__star">
+                            <img src="images/icons/star.svg" alt="">
+                        </a>
+                        <p class="products__rating">
+                            5.5
+                        </p>
+                    </div>
+                    <style>
+                        .swiper-container {
+                            width: 100%;
+                            height: 300px;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                        
+                        .single-product__top .swiper-slide {
+                            text-align: center;
+                        }
+                        
+                        .swiper-slide {
+                            background-size: cover;
+                            background-position: center;
+                        }
+                        
+                        .gallery-top {
+                            height: 80%;
+                            width: 100%;
+                        }
+                        
+                        .gallery-thumbs {
+                            height: 20%;
+                            box-sizing: border-box;
+                            padding: 10px 0;
+                        }
+                        
+                        .single-product__thumbs .swiper-slide {
+                            opacity: 0.1;
+                            border: 0.5px solid #000000;
+                            box-sizing: border-box;
+                            border-radius: 3px;
+                            max-width: 65px;
+                            height: 65px;
+                        }
+                        
+                        .single-product__thumbs .swiper-wrapper {
+                            display: flex;
+                            justify-content: center;
+                        }
+                        
+                        .single-product__thumbs .swiper-slide-thumb-active {
+                            opacity: 1;
+                        }
+                        
+                        .swiper-button__single {
+                            width: 45px;
+                            height: 45px;
+                            border: 1px solid #43B02A;
+                            border-radius: 50%;
+                        }
+                    </style>
+                    <div class="swiper-container single-product__top">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/image24.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/image24.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/image24.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/image24.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/image24.png" alt="">
+                            </div>
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next swiper-button__single"></div>
+                        <div class="swiper-button-prev swiper-button__single"></div>
+                    </div>
+                    <div class="swiper-container single-product__thumbs">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background-image:url('images/image24.png')"></div>
+                            <div class="swiper-slide" style="background-image:url('images/image24.png')"></div>
+                            <div class="swiper-slide" style="background-image:url('images/image24.png')"></div>
+                            <div class="swiper-slide" style="background-image:url('images/image24.png')"></div>
+                            <div class="swiper-slide" style="background-image:url('images/image24.png')"></div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+                <!--single-product__gallery-->
+                <div class="single-product__content">
+                    <h4 class="single-product__title">
+                        Бананы, Эквадор
+                    </h4>
+                    <p class="single-product__category">Фрукты</p>
+                    <p class="single-product__text">Спелые бананы — прекрасный перекус, который наполнит силами и поднимет настроение. Можно использовать для приготовления десертов и оригинальных мясных блюд.</p>
+                    <p class="single-product__sale">80,00 руб.</p>
+                    <div class="single-product__info">
+                        <p class="single-product__price">
+                            69,00 руб.
+                        </p>
+                        <span class="single-product__count">
+                            1 шт. (1000 г.) 
+                        </span>
+                    </div>
+                    <div class="single-product__quanity">
+                        <span class="single-product__mark js-minus">-</span>
+                        <input class="single-product__input" type="numeric" value="1" min="1">
+                        <span class="single-product__mark js-plus">+</span>
+                    </div>
+                    <div class="single-product__buttons">
+                        <a href="#" class="single-product__button_cart">В корзину</a>
+                        <a href="#" class="single-product__button_order">Купить в 1 клик</a>
+                    </div>
+                </div>
+            </section>
+            <!--single-product-->
+            <section class="tabs">
+                <div class="tabs__buttons">
+                    <a href="#" class="tabs__item tabs__item_active" data-tab="#tab1">Отзывы</a>
+                    <a href="#" class="tabs__item" data-tab="#tab1">Описание</a>
+                    <a href="#" class="tabs__item" data-tab="#tab1">Оплата и доставка</a>
+                </div>
+                <div class="">
+                    <div class="tabs__content tabs__content_active" id="tab1">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+
+                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="tabs__content" id="tab2">
+                        <p>tab 2</p>
+                    </div>
+                    <div class="tabs__content" id="tab3">
+                        <p>tab 3</p>
+                    </div>
+                </div>
+            </section>
+            <section class="watched">
+                <h4 class="title">Вы недавно смотрели</h4>
+                <div class="products">
+                    <div class="products__item">
+                        <div class="products__header">
+                            <p class="products__sale">
+                                Скидка
+                            </p>
+                            <a href="#" class="products__heart">
+                                <img src="images/icons/heart.svg" alt="">
+                            </a>
+                            <a href="#" class="products__star">
+                                <img src="images/icons/star.svg" alt="">
+                            </a>
+                            <p class="products__rating">
+                                5.5
+                            </p>
+                        </div>
+                        <div class="products__image">
+                            <img src="images/prod1.jpg" alt="">
+                        </div>
+                        <h4 class="products__title">Апельсины вкусные "Снедок фрукты"</h4>
+                        <div class="products__info">
+                            <div class="products__info_hidden">
+                                <div class="products__quanity">
+                                    <span class="products__mark products-minus">-</span>
+                                    <input type="number" class="products__input" value="1">
+                                    <span class="products__mark products-plus">+</span>
+
+                                </div>
+                                <p class="products__qty">1 шт. = 0,5 кг.</p>
+                            </div>
+                            <div class="products__price">
+                                <p class="products__price_regular">336,60 руб</p>
+                                <p class="products__price_sale">
+                                    <span class="text-overline">500 руб</span> за кг.
+                                </p>
+                            </div>
+                            <a href="#" class="products__add">
+                                <img src="images/icons/product-cart.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__header">
+                            <p class="products__sale">
+                                Скидка
+                            </p>
+                            <a href="#" class="products__heart">
+                                <img src="images/icons/heart.svg" alt="">
+                            </a>
+                            <a href="#" class="products__star">
+                                <img src="images/icons/star.svg" alt="">
+                            </a>
+                            <p class="products__rating">
+                                5.5
+                            </p>
+                        </div>
+                        <div class="products__image">
+                            <img src="images/prod1.jpg" alt="">
+                        </div>
+                        <h4 class="products__title">Апельсины вкусные "Снедок фрукты"</h4>
+                        <div class="products__info">
+                            <div class="products__info_hidden">
+                                <div class="products__quanity">
+                                    <span class="products__mark products-minus">-</span>
+                                    <input type="number" class="products__input" value="1">
+                                    <span class="products__mark products-plus">+</span>
+
+                                </div>
+                                <p class="products__qty">1 шт. = 0,5 кг.</p>
+                            </div>
+                            <div class="products__price">
+                                <p class="products__price_regular">336,60 руб</p>
+                                <p class="products__price_sale">
+                                    <span class="text-overline">500 руб</span> за кг.
+                                </p>
+                            </div>
+                            <a href="#" class="products__add">
+                                <img src="images/icons/product-cart.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__header">
+                            <p class="products__sale">
+                                Скидка
+                            </p>
+                            <a href="#" class="products__heart">
+                                <img src="images/icons/heart.svg" alt="">
+                            </a>
+                            <a href="#" class="products__star">
+                                <img src="images/icons/star.svg" alt="">
+                            </a>
+                            <p class="products__rating">
+                                5.5
+                            </p>
+                        </div>
+                        <div class="products__image">
+                            <img src="images/prod1.jpg" alt="">
+                        </div>
+                        <h4 class="products__title">Апельсины вкусные "Снедок фрукты"</h4>
+                        <div class="products__info">
+                            <div class="products__info_hidden">
+                                <div class="products__quanity">
+                                    <span class="products__mark products-minus">-</span>
+                                    <input type="number" class="products__input" value="1">
+                                    <span class="products__mark products-plus">+</span>
+
+                                </div>
+                                <p class="products__qty">1 шт. = 0,5 кг.</p>
+                            </div>
+                            <div class="products__price">
+                                <p class="products__price_regular">336,60 руб</p>
+                                <p class="products__price_sale">
+                                    <span class="text-overline">500 руб</span> за кг.
+                                </p>
+                            </div>
+                            <a href="#" class="products__add">
+                                <img src="images/icons/product-cart.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__header">
+                            <p class="products__sale">
+                                Скидка
+                            </p>
+                            <a href="#" class="products__heart">
+                                <img src="images/icons/heart.svg" alt="">
+                            </a>
+                            <a href="#" class="products__star">
+                                <img src="images/icons/star.svg" alt="">
+                            </a>
+                            <p class="products__rating">
+                                5.5
+                            </p>
+                        </div>
+                        <div class="products__image">
+                            <img src="images/prod1.jpg" alt="">
+                        </div>
+                        <h4 class="products__title">Апельсины вкусные "Снедок фрукты"</h4>
+                        <div class="products__info">
+                            <div class="products__info_hidden">
+                                <div class="products__quanity">
+                                    <span class="products__mark products-minus">-</span>
+                                    <input type="number" class="products__input" value="1">
+                                    <span class="products__mark products-plus">+</span>
+
+                                </div>
+                                <p class="products__qty">1 шт. = 0,5 кг.</p>
+                            </div>
+                            <div class="products__price">
+                                <p class="products__price_regular">336,60 руб</p>
+                                <p class="products__price_sale">
+                                    <span class="text-overline">500 руб</span> за кг.
+                                </p>
+                            </div>
+                            <a href="#" class="products__add">
+                                <img src="images/icons/product-cart.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__header">
+                            <p class="products__sale">
+                                Скидка
+                            </p>
+                            <a href="#" class="products__heart">
+                                <img src="images/icons/heart.svg" alt="">
+                            </a>
+                            <a href="#" class="products__star">
+                                <img src="images/icons/star.svg" alt="">
+                            </a>
+                            <p class="products__rating">
+                                5.5
+                            </p>
+                        </div>
+                        <div class="products__image">
+                            <img src="images/prod1.jpg" alt="">
+                        </div>
+                        <h4 class="products__title">Апельсины вкусные "Снедок фрукты"</h4>
+                        <div class="products__info">
+                            <div class="products__info_hidden">
+                                <div class="products__quanity">
+                                    <span class="products__mark products-minus">-</span>
+                                    <input type="number" class="products__input" value="1">
+                                    <span class="products__mark products-plus">+</span>
+
+                                </div>
+                                <p class="products__qty">1 шт. = 0,5 кг.</p>
+                            </div>
+                            <div class="products__price">
+                                <p class="products__price_regular">336,60 руб</p>
+                                <p class="products__price_sale">
+                                    <span class="text-overline">500 руб</span> за кг.
+                                </p>
+                            </div>
+                            <a href="#" class="products__add">
+                                <img src="images/icons/product-cart.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+        </div>
+        <!--container-->
+    </main>
+    <footer class="footer container">
+        <div class="footer__top">
+            <div class="footer__nav">
+                <p class="footer__nav_title">Покупателям</p>
+                <a href="#">Программа лояльности</a>
+                <a href="#">Подарочные карты</a>
+                <a href="#">Личный кабинет</a>
+                <a href="#">COVID-19</a>
+            </div>
+            <div class="footer__nav">
+                <p class="footer__nav_title">Партнёрам</p>
+                <a href="#">Поставщикам</a>
+                <a href="#">Документы</a>
+            </div>
+            <div class="footer__nav">
+                <p class="footer__nav_title">Разделы</p>
+                <a href="#">Каталог</a>
+                <a href="#">О компании</a>
+                <a href="#">Контакты</a>
+                <a href="#">Бренды</a>
+            </div>
+            <div class="footer__nav">
+                <p class="footer__nav_title">Информация</p>
+                <a href="#">Доставка</a>
+                <a href="#">Как заказать</a>
+                <a href="#">Возврат</a>
+                <a href="#">FAQ</a>
+            </div>
+            <div class="footer__nav">
+                <p class="footer__nav_title">Документы</p>
+                <a href="#">Конфиденциальность</a>
+                <a href="#">Политка сайта</a>
+                <a href="#">Реквизиты</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__copyright">
+                <a href="#">
+                    <img src="images/logo.svg" alt="">
+                </a>
+                <p>Copyright © 2010-2020 Snedok marktplace. All rights reserved.</p>
+            </div>
+            <div class="footer__contact footer__contact_mx">
+                <p>Почта поддержки:</p>
+                <a href="#">Support@snedoc.ru</a>
+            </div>
+            <div class="footer__contact">
+                <p>Телефон поддержки:</p>
+                <a href="#">+7 (999) 999-99-99</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper@6.1.1/swiper-bundle.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/single-product.js"></script>
+</body>
+
+</html>
