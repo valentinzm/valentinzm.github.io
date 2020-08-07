@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <div class="overlay"></div>
     <header class="header">
         <div class="header__top">
             <div class="container">
@@ -33,19 +34,37 @@
                     <img src="images/logo.svg" alt="Снедок - логотип">
                 </a>
                 <a href="#" class="header__city">
+                    <img src="images/icons/marker.svg" alt="">
                     <span class="header__city_border">Москва</span>
                 </a>
                 <div class="header__user">
-                    <a href="#" class="header__user_login js-modal" data-modal="#login">Войти</a>
+                    <a href="#" class="header__user_login js-modal" data-modal="#login">
+                        <img src="images/icons/login.svg" alt="">
+                        <span>Войти</span>
+                    </a>
                     <a href="#" class="header__user_reg">Регистрация</a>
                 </div>
-                <p class="header__price">
+                <a href="#" class="header__price">
                     116,93 руб.
-                </p>
+                    <img src="images/icons/cart.svg" alt="">
+                </a>
 
+                <div class="burger">
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </div>
             </div>
         </div>
     </header>
+    <aside class="aside-cart">
+        <div class="aside-cart__content">
+            <p class="aside-cart__title">Корзина</p>
+            <div class="aside-cart__sum">
+                <p class="aside-cart__sum-"></p>
+            </div>
+        </div>
+    </aside>
     <main>
         <section class="swiper-container front-slider">
             <div class="swiper-wrapper">

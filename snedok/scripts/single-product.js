@@ -38,10 +38,11 @@ function productTabs(event) {
     document.querySelectorAll('.tabs__item').forEach(function(e) {
         e.classList.remove('tabs__item_active');
     });
+    document.querySelectorAll('.tabs__content').forEach(function(e) {
+        e.classList.remove('tabs__content_active');
+    });
     this.classList.add('tabs__item_active');
     let tab = this.dataset.tab;
-    // document.querySelectorAll('tabs__content').forEach(function(e) {
-    //     e.classList.remove('tabs__content_active');
-    // });
+
     document.querySelector(tab).classList.add('tabs__content_active');
 }

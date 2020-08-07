@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snedok - главная страница</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@6.1.1/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <nav class="header__top_nav">
+                    <a href="#">Пресс-центр</a>
+                    <a href="#">Доставка и оплата</a>
+                    <a href="#">Поддержка</a>
+                    <a href="#">Возврат</a>
+                    <a href="#">COVID-19</a>
+                </nav>
+                <div class="header__top_contacts">
+                    <a href="#" class="header__phone">+7 (999) 999-99-99</a>
+                    <a href="#" class="header__mail">message@online.snedok.ru</a>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <a href="#" class="header__logo">
+                    <img src="images/logo.svg" alt="Снедок - логотип">
+                </a>
+                <a href="#" class="header__city">
+                    <span class="header__border">Москва</span>
+                </a>
+                <a href="#" class="header__courier">
+                    <span class="header__border">Заказать курьера</span>
+                </a>
+                <div class="header__user">
+                    <a href="#" class="header__user_login">Войти</a>
+                    <a href="#" class="header__user_reg">Регистрация</a>
+                </div>
+                <p class="header__price">
+                    116,93 руб.
+                </p>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="breadcrumbs">
+            <div class="container">
+                <nav class="breadcrumbs__container">
+                    <a href="#">Главная</a>
+                    <span>Корзина</span>
+
+                </nav>
+                <a href="#" class="breadcrumbs__back"><span>Вернуться к выбору</span></a>
+            </div>
+        </div>
+        <section class="cart-page">
+            <div class="container">
+                <h1 class="title cart-page__title">
+                    Ваша корзина
+                </h1>
+                <div class="cart-page__warning">
+                    <img src="images/icons/warning.svg" alt="Предупреждение">
+                    <p class="cart-page__warning_text">Минимальная сумма заказа 1000 руб. Вам нехватает товаров на 883.07 руб. Пожалуйста, добавть в вашу корзину что-нибудь еще. </p>
+                    <a class="cart-page__warning_link" href="#">Перейти в каталог</a>
+                </div>
+                <div class="cart-table">
+                    <div class="cart-table__head">
+                        <p class="cart-table__head_item">Наименование</p>
+                        <p class="cart-table__head_price">Цена</p>
+                        <p class="cart-table__head_qty">Количество</p>
+                        <p class="cart-table__head_sum">Сумма</p>
+
+                    </div>
+                    <div class="cart-table__item">
+                        <div class="cart-table__image">
+                            <img src="images/image24.png" alt="">
+                        </div>
+                        <div class="cart-table__info">
+                            <h4 class="cart-table__title">Томаты Бакинские</h4>
+                            <p class="cart-table__category">Овощи</p>
+                            <p class="cart-table__article">Артикуль 23090423</p>
+                        </div>
+                        <div class="cart-table__price">
+                            <p class="cart-table__price_value">116,93 руб</p>
+                            <p class="cart-table__price_count">500 руб. за кг</p>
+                        </div>
+                        <div class="cart-table__qty">
+                            <div class="products__quanity">
+                                <span class="products__mark products-minus">-</span>
+                                <input type="number" class="products__input" value="1">
+                                <span class="products__mark products-plus">+</span>
+
+                            </div>
+                        </div>
+                        <div class="cart-table__sum">
+                            <p>116,93 руб</p>
+                        </div>
+                    </div>
+                    <div class="cart-table__item">
+                        <div class="cart-table__image">
+                            <img src="images/image24.png" alt="">
+                        </div>
+                        <div class="cart-table__info">
+                            <h4 class="cart-table__title">Томаты Бакинские</h4>
+                            <p class="cart-table__category">Овощи</p>
+                            <p class="cart-table__article">Артикуль 23090423</p>
+                        </div>
+                        <div class="cart-table__price">
+                            <p class="cart-table__price_value">116,93 руб</p>
+                            <p class="cart-table__price_count">500 руб. за кг</p>
+                        </div>
+                        <div class="cart-table__qty">
+                            <div class="products__quanity">
+                                <span class="products__mark products-minus">-</span>
+                                <input type="number" class="products__input" value="1">
+                                <span class="products__mark products-plus">+</span>
+
+                            </div>
+                        </div>
+                        <div class="cart-table__sum">
+                            <p>116,93 руб</p>
+                        </div>
+                    </div>
+                    <!--item-->
+                </div>
+            </div>
+            <!--container-->
+        </section>
+        <section class="cart-order">
+            <div class="container">
+                <h4 class="title">
+                    Оформление закза
+                </h4>
+                <form action="#" class="order">
+                    <div class="order__form">
+                        <label class="order__label">
+                            <input type="text" class="order__input">
+                            <p class="order__placeholder">Ваше имя<span>*</span></p>
+                        </label>
+                        <label class="order__label">
+                            <input type="text" class="order__input">
+                            <p class="order__placeholder">Фамилия<span>*</span></p>
+                        </label>
+                        <label class="order__label">
+                            <input type="text" class="order__input">
+                            <p class="order__placeholder">Телефон<span>*</span></p>
+                        </label>
+                        <label class="order__label">
+                            <input type="text" class="order__input">
+                            <p class="order__placeholder">E-mail</p>
+                        </label>
+                        <h4 class="order__subtitle">Адрес доставки</h4>
+                        <label class="order__label">
+                            <input type="text" class="order__input">
+                            <p class="order__placeholder">E-mail</p>
+                        </label>
+                        <label class="order__label">
+                            <input type="text" class="order__input">
+                            <p class="order__placeholder">E-mail</p>
+                        </label>
+                        <label class="order__label">
+                            <input type="text" class="order__input">
+                            <p class="order__placeholder">E-mail</p>
+                        </label>
+                        <label class="order__label">
+                            <input type="text" class="order__input">
+                            <p class="order__placeholder">E-mail</p>
+                        </label>
+                        <label class="order__label">
+                            <input type="text" class="order__input">
+                            <p class="order__placeholder">E-mail</p>
+                        </label>
+                        <textarea name="" id="" class="order__textarea"></textarea>
+                        <h4 class="order__subtitle">Дата и время доставки</h4>
+                        <h4 class="order__subtitle">Способ оплаты</h4>
+                        <div class="order__delivery">
+
+                            <p>Банковской картой курьеру
+                            </p>
+                        </div>
+                        <div class="order__delivery">
+
+                            <p>Банковской картой онлайн
+                            </p>
+                        </div>
+                        <div class="order__delivery">
+
+                            <p>Наличными курьеру
+                            </p>
+                        </div>
+
+                        <input type="submit" class="order__submit">
+                    </div>
+                    <!--ordering__form-->
+
+                    <!-- <div class="ordering__total">
+                        <div class="ordering__total_item">
+                            <p>Итого</p>
+                            <p>116,93 руб</p>
+                        </div>
+                        <div class="ordering__total_item">
+                            <p>Доставка</p>
+                            <p>250 руб.</p>
+                        </div>
+                        <div class="ordering__total_item">
+                            <p>Промокод</p>
+                            <input type="text">
+                        </div>
+                    </div> -->
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer container">
+        <div class="footer__top">
+            <div class="footer__nav">
+                <p class="footer__nav_title">Покупателям</p>
+                <a href="#">Программа лояльности</a>
+                <a href="#">Подарочные карты</a>
+                <a href="#">Личный кабинет</a>
+                <a href="#">COVID-19</a>
+            </div>
+            <div class="footer__nav">
+                <p class="footer__nav_title">Партнёрам</p>
+                <a href="#">Поставщикам</a>
+                <a href="#">Документы</a>
+            </div>
+            <div class="footer__nav">
+                <p class="footer__nav_title">Разделы</p>
+                <a href="#">Каталог</a>
+                <a href="#">О компании</a>
+                <a href="#">Контакты</a>
+                <a href="#">Бренды</a>
+            </div>
+            <div class="footer__nav">
+                <p class="footer__nav_title">Информация</p>
+                <a href="#">Доставка</a>
+                <a href="#">Как заказать</a>
+                <a href="#">Возврат</a>
+                <a href="#">FAQ</a>
+            </div>
+            <div class="footer__nav">
+                <p class="footer__nav_title">Документы</p>
+                <a href="#">Конфиденциальность</a>
+                <a href="#">Политка сайта</a>
+                <a href="#">Реквизиты</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__copyright">
+                <a href="#">
+                    <img src="images/logo.svg" alt="">
+                </a>
+                <p>Copyright © 2010-2020 Snedok marktplace. All rights reserved.</p>
+            </div>
+            <div class="footer__contact footer__contact_mx">
+                <p>Почта поддержки:</p>
+                <a href="#">Support@snedoc.ru</a>
+            </div>
+            <div class="footer__contact">
+                <p>Телефон поддержки:</p>
+                <a href="#">+7 (999) 999-99-99</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper@6.1.1/swiper-bundle.min.js"></script>
+    <!-- <script src="scripts/main.js"></script> -->
+
+</body>
+
+</html>
