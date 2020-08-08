@@ -2067,6 +2067,22 @@ body {
     .header__phone {
         margin-right: unset;
     }
+    .front-slider__item {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .header__bottom .container {
+        justify-content: space-between;
+    }
+    .front-slider__title {
+        font-size: 36px;
+        line-height: 100%;
+    }
+    .header__city,
+    .header__user,
+    .header__price {
+        display: none;
+    }
     .search {
         display: none;
     }
