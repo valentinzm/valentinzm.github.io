@@ -21,6 +21,10 @@ a {
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body,
 html {
     position: relative;
@@ -427,6 +431,11 @@ body {
     bottom: 0;
     top: -56px;
     background: #EB322F;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.flex-land-wrap .detail__picked .detail__overlay {
     opacity: 0.4;
 }
 
@@ -1259,7 +1268,7 @@ body {
 
 .compare .details__title {
     color: #4d4d4d;
-    font-size: 1.6rem
+    font-size: 14px;
 }
 
 .compare .details__title--main {
@@ -1469,21 +1478,8 @@ body {
     border-bottom-left-radius: 10px
 }
 
-.compare__fixed td {
-    /* position: -webkit-sticky!important;
-    position: sticky!important;
-    top: 90px;
-    z-index: 100 */
-}
-
 .compare td {
     position: relative
-}
-
-@media (max-width: 1600px) {
-    .compare__fixed td {
-        top: 80px
-    }
 }
 
 @media (max-width: 1280px) {
