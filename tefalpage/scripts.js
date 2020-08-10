@@ -69,7 +69,13 @@ function showSmartSlide(evt) {
 
 }
 
+// document.querySelectorAll('input[name="filter"]').forEach(function(e) {
+//     e.addEventListener('change', retry);
+// });
 
+// function retry() {
+
+// }
 document.querySelectorAll('.pick__button').forEach(function(e) {
     e.addEventListener('click', filter);
 });
@@ -77,28 +83,24 @@ document.querySelectorAll('.pick__button').forEach(function(e) {
 function filter(event) {
     event.preventDefault();
     let tag = this.dataset.tag;
-    if (this.classList.contains('pick__button--active')) {
-        this.classList.remove('pick__button--active');
-        document.querySelectorAll(tag).forEach(function(e) {
-            e.classList.remove('detail__picked');
-        })
+    document.querySelectorAll('.pick__button').forEach(function(e) {
+        e.classList.remove('pick__button--active');
+    });
+    this.classList.add('pick__button--active');
+    document.querySelectorAll('.detail').forEach(function(e) {
+        e.classList.remove('detail__picked');
+    })
+    document.querySelector(tag).classList.add('detail__picked');
 
-    } else {
-        this.classList.add('pick__button--active');
-        // let tag = this.dataset.tag;
-
-        document.querySelectorAll(tag).forEach(function(e) {
-            e.classList.add('detail__picked');
-        })
-        setTimeout(function() {
-            $(".details").slideDown();
-            $(".pick__show-btn--open").slideDown().hide();
-            const block = document.querySelector('#details');
-            block.scrollIntoView();
-        }, 1000)
-    }
-
+    setTimeout(function() {
+        $(".details").slideDown();
+        $(".pick__show-btn--open").slideDown().hide();
+        const block = document.querySelector('#details');
+        block.scrollIntoView();
+    }, 1000)
 }
+
+
 document.querySelector('.pick__reset').addEventListener('click', resetFiler);
 
 function resetFiler(event) {

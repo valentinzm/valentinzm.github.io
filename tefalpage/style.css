@@ -246,8 +246,8 @@ body {
 .flex-land-wrap .pick__button:hover,
 .flex-land-wrap .pick__button--active {
     background: #EB322F;
+    border: 1px solid #EB322F;
     color: #fff;
-    border: none;
 }
 
 .flex-land-wrap .pick__row {
@@ -471,6 +471,9 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 } */
 
+.flex-land-wrap .detail__info,
+.flex-land-wrap .detail__mode,
+.flex-land-wrap .detail__power,
 .flex-land-wrap .detail--centered .detail__info,
 .flex-land-wrap .detail--centered .detail__mode,
 .flex-land-wrap .detail--centered .detail__power {
