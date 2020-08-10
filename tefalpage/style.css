@@ -429,7 +429,7 @@ body {
     left: -30px;
     right: -30px;
     bottom: 0;
-    top: -56px;
+    top: 0px;
     background: #EB322F;
     opacity: 0;
     transition: opacity .3s;
