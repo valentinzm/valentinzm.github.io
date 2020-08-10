@@ -70,12 +70,17 @@ body {
     top: 29px;
 }
 
+.flex-land-wrap .banner__container {
+    max-width: 1340px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .flex-land-wrap .banner__main {
     position: relative;
-    width: calc(671px + 90px);
+    width: 671px;
     height: calc(390px + 155px);
     padding-top: 155px;
-    padding-left: 90px;
     margin-bottom: 125px;
 }
 
@@ -603,7 +608,9 @@ body {
 
 .flex-land-wrap .effective__content {
     padding-top: 195px;
-    padding-left: 125px;
+    max-width: 1270px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .flex-land-wrap .effective__title {
@@ -639,14 +646,18 @@ body {
 .flex-land-wrap .cleaning__content {
     margin-left: auto;
     padding-top: 170px;
-    margin-right: 220px;
-    max-width: 448px;
+    max-width: 1080px;
+    /* margin-right: 220px; */
+    /* max-width: 448px; */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .flex-land-wrap .cleaning__title {
     max-width: 448px;
     margin-bottom: 24px;
     color: #fff;
+    margin-left: auto;
 }
 
 .flex-land-wrap .cleaning__text {
@@ -657,6 +668,7 @@ body {
     color: #222222;
     margin-bottom: 0;
     color: #fff;
+    margin-left: auto;
 }
 
 .flex-land-wrap .smart {
@@ -666,7 +678,9 @@ body {
 
 .flex-land-wrap .smart__content {
     padding-top: 160px;
-    padding-left: 125px;
+    max-width: 1270px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .flex-land-wrap .smart__title {
@@ -690,6 +704,24 @@ body {
     color: #EB322F;
     display: inline-flex;
     margin-bottom: 48px;
+    align-items: center;
+}
+
+.flex-land-wrap .smart__more:after {
+    content: '';
+    background-image: url(images/red_chevron.svg);
+    display: inline-flex;
+    width: 16px;
+    height: 8px;
+    margin-left: 14px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(0);
+    transition: transform .3s;
+}
+
+.flex-land-wrap .smart__more--rotate:after {
+    transform: rotate(180deg);
 }
 
 .flex-land-wrap .smart__image {
@@ -700,8 +732,9 @@ body {
 
 .flex-land-wrap .smart__slide {
     /* max-width: 1120px; */
-    margin-left: 125px;
-    margin-right: 125px;
+    max-width: 1270px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     height: 0;
     overflow: hidden;
@@ -781,19 +814,24 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     background-image: url(images/allergen.jpg);
+    background-position: center;
 }
 
 .flex-land-wrap .allergen__content {
     padding-top: 193px;
     margin-left: auto;
-    max-width: 448px;
-    margin-right: 220px;
+    /* max-width: 448px;
+    margin-right: 220px; */
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .flex-land-wrap .allergen__title {
     max-width: 448px;
     margin-bottom: 24px;
     color: #fff;
+    margin-left: auto;
 }
 
 .flex-land-wrap .allergen__text {
@@ -804,6 +842,7 @@ body {
     color: #222222;
     margin-bottom: 0;
     color: #fff;
+    margin-left: auto;
 }
 
 .flex-land-wrap .control {

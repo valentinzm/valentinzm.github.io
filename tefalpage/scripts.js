@@ -55,22 +55,17 @@ function showSmartSlide(evt) {
     evt.preventDefault();
     const slide = document.querySelector('.smart__slide');
     if (slide.classList.contains('smart__slide--on')) {
+        this.textContent = 'Узнать больше о системах навигации';
+        this.classList.remove('smart__more--rotate');
         slide.classList.add('smart__slide--off');
         slide.classList.remove('smart__slide--on');
     } else {
+        this.textContent = 'Скрыть';
+        this.classList.add('smart__more--rotate');
         slide.classList.add('smart__slide--on');
         slide.classList.remove('smart__slide--off');
     }
-    // slide.classList.add('smart__slide--on');
-    // this.textContent = 'Скрыть';
-    // if (slide.classList.contains('smart__slide--on')) {
-    //     slide.classList.add('smart__slide--off');
 
-    // } else {
-    //     slide.classList.add('smart__slide--on');
-
-
-    // }
 
 }
 
