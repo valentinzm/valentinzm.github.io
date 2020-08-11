@@ -69,28 +69,62 @@ function showSmartSlide(evt) {
 
 }
 
-// document.querySelectorAll('input[name="filter"]').forEach(function(e) {
-//     e.addEventListener('change', retry);
-// });
 
-// function retry() {
-
-// }
 document.querySelectorAll('.pick__button').forEach(function(e) {
     e.addEventListener('click', filter);
 });
 
 function filter(event) {
     event.preventDefault();
-    let tag = this.dataset.tag;
-    document.querySelectorAll('.pick__button').forEach(function(e) {
-        e.classList.remove('pick__button--active');
-    });
     this.classList.add('pick__button--active');
-    document.querySelectorAll('.detail').forEach(function(e) {
-        e.classList.remove('detail__picked');
-    })
-    document.querySelector(tag).classList.add('detail__picked');
+    let tag = this.dataset.tag;
+    if (tag === '1') {
+        if (!document.querySelector('.one').classList.contains('detail__picked')) {
+            document.querySelector('.two').classList.add('detail__picked');
+        }
+
+    }
+    if (tag === '2') {
+
+        document.querySelector('.two').classList.remove('detail__picked');
+        document.querySelector('.one').classList.add('detail__picked');
+    }
+    if (tag === '3') {
+        if (!document.querySelector('.three').classList.contains('detail__picked')) {
+            document.querySelector('.one').classList.remove('detail__picked');
+            document.querySelector('.two').classList.add('detail__picked');
+        }
+    }
+
+    if (tag === '4') {
+        document.querySelector('.one').classList.remove('detail__picked');
+        document.querySelector('.two').classList.remove('detail__picked');
+        document.querySelector('.three').classList.add('detail__picked');
+    }
+
+    if (tag === '4') {
+        document.querySelector('.one').classList.remove('detail__picked');
+        document.querySelector('.two').classList.remove('detail__picked');
+        document.querySelector('.three').classList.add('detail__picked');
+    }
+
+    if (tag === '5') {
+        document.querySelector('.one').classList.remove('detail__picked');
+        document.querySelector('.three').classList.remove('detail__picked');
+        document.querySelector('.two').classList.add('detail__picked');
+    }
+
+    if (tag === '6') {
+        document.querySelector('.one').classList.remove('detail__picked');
+        document.querySelector('.two').classList.remove('detail__picked');
+        document.querySelector('.three').classList.add('detail__picked');
+    }
+
+    if (tag === '7') {
+        document.querySelector('.one').classList.remove('detail__picked');
+        document.querySelector('.three').classList.remove('detail__picked');
+        document.querySelector('.two').classList.add('detail__picked');
+    }
 
     setTimeout(function() {
         $(".details").slideDown();

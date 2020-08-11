@@ -10,6 +10,24 @@
 
 <body>
     <div class="flex-land-wrap">
+        <div class="fixed-buy">
+            <a href="#" class="fixed-buy__button">Купить</a>
+        </div>
+        <header class="header">
+            <div class="header__container">
+                <a href="/">
+                    <img src="images/logo.svg" alt="Логотип">
+                </a>
+                <nav class="header__nav">
+                    <a href="#" class="header__item">Обзор</a>
+                    <a href="#" class="header__item">Выберите свой Explorer</a>
+                    <a href="#" class="header__item">Советы по эксплуатации</a>
+                </nav>
+                <a href="#" class="header__button">
+                    Купить
+                </a>
+            </div>
+        </header>
         <section class="banner">
             <img src="images/banner.png" alt="" class="banner__image">
             <div class="banner__container">
@@ -77,17 +95,17 @@
             </h4>
             <div class="pick__filter">
                 <nav class="pick__buttons">
-                    <a href="#" class="pick__button" data-tag=".one"># Студия / однокомнатная квартира</a>
-                    <a href="#" class="pick__button" data-tag=".two"># Двухкомнтая квартира</a>
-                    <a href="#" class="pick__button" data-tag=".three"># Трехкомнатная квартира и больше</a>
-                    <a href="#" class="pick__button" data-tag=".three"># Дом</a>
-                    <a href="#" class="pick__button" data-tag=".two"># Твердые покрытия (паркет, ламинат, линолеум)</a>
-                    <a href="#" class="pick__button" data-tag=".two"># Ковровые покрытия</a>
-                    <a href="#" class="pick__button" data-tag=".two"># Мебель с низкой посадкой</a>
-                    <a href="#" class="pick__button" data-tag=".three"># Много мебели и препятствий</a>
-                    <a href="#" class="pick__button" data-tag=".three"># Маленькие дети</a>
-                    <a href="#" class="pick__button" data-tag=".two"># Аллергия на пыль и (или) шерсть</a>
-                    <a href="#" class="pick__button" data-tag=".two"># Домашний питомец</a>
+                    <a href="#" class="pick__button" data-tag="2"># Студия / однокомнатная квартира</a>
+                    <a href="#" class="pick__button" data-tag="3"># Двухкомнтая квартира</a>
+                    <a href="#" class="pick__button" data-tag="4"># Трехкомнатная квартира и больше</a>
+                    <a href="#" class="pick__button" data-tag="4"># Дом</a>
+                    <a href="#" class="pick__button" data-tag="1"># Твердые покрытия (паркет, ламинат, линолеум)</a>
+                    <a href="#" class="pick__button" data-tag="5"># Ковровые покрытия</a>
+                    <a href="#" class="pick__button" data-tag="7"># Мебель с низкой посадкой</a>
+                    <a href="#" class="pick__button" data-tag="6"># Много мебели и препятствий</a>
+                    <a href="#" class="pick__button" data-tag="6"># Маленькие дети</a>
+                    <a href="#" class="pick__button" data-tag="1"># Аллергия на пыль и (или) шерсть</a>
+                    <a href="#" class="pick__button" data-tag="1"># Домашний питомец</a>
                 </nav>
                 <a href="#" class="pick__reset">
                     <img src="images/reroll.svg" alt="">
@@ -172,26 +190,15 @@
 
 
         <section class="details" id="details">
-            <!-- <div class="details__header">
-                <div class="details__row">
-                    <div class="details__header--item">
-                        <span class="triangle"></span>
-                        <p>Explorer Serie 40</p>
-                    </div>
-                    <div class="details__header--item">
-                        <span class="triangle"></span>
-                        <p>Explorer Serie 60</p>
-                    </div>
-                    <div class="details__header--item">
-                        <span class="triangle"></span>
-                        <p>Explorer Serie 80</p>
-                    </div>
-                </div>
-            </div> -->
+
             <div class="details__content">
                 <div class="details__row">
                     <div class="detail one">
+
                         <div class="detail__overlay"></div>
+                        <div class="detail__header">
+                            <p class="detail__header--title">Explorer Serie 40</p>
+                        </div>
                         <div class="detail__info">
                             <div class="detail__image">
                                 <img src="images/detail1.png" alt="">
@@ -247,8 +254,11 @@
                         </div>
                     </div>
                     <!--detail-->
-                    <div class="detail detail--centered two" id="kover">
+                    <div class="detail detail--centered two">
                         <div class="detail__overlay"></div>
+                        <div class="detail__header">
+                            <p class="detail__header--title">Explorer Serie 60</p>
+                        </div>
                         <div class="detail__info">
                             <div class="detail__image">
                                 <img src="images/detail_mode/detail2.png" alt="">
@@ -303,20 +313,24 @@
                     <!--detail-->
                     <div class="detail three">
                         <div class="detail__overlay"></div>
-                        <div class="detail__image">
-                            <img src="images/detail_mode/detail3.png" alt="">
+                        <div class="detail__header">
+                            <p class="detail__header--title">Explorer Serie 80</p>
                         </div>
-                        <p class="detail__tag">
-                            smart exploration 8.0
-                        </p>
-                        <h4 class="detail__title">
-                            Интеллектуальная навигация
-                        </h4>
-                        <p class="detail__text">
-                            Топовые и инновационные технологии камеры и лазера обеспечивают сверхточную навигацию робота-пылесоса. Робот сканирует помещение и строит подробную карту дома вплоть до комнаты и расположения мебели, чтобы осуществлять уборку по продуманному маршруту
-                            , покрывая каждый сантиметр и уголок для обеспечения наилучшего качества уборки.
-                        </p>
-
+                        <div class="detail__info">
+                            <div class="detail__image">
+                                <img src="images/detail_mode/detail3.png" alt="">
+                            </div>
+                            <p class="detail__tag">
+                                smart exploration 8.0
+                            </p>
+                            <h4 class="detail__title">
+                                Интеллектуальная навигация
+                            </h4>
+                            <p class="detail__text">
+                                Топовые и инновационные технологии камеры и лазера обеспечивают сверхточную навигацию робота-пылесоса. Робот сканирует помещение и строит подробную карту дома вплоть до комнаты и расположения мебели, чтобы осуществлять уборку по продуманному маршруту
+                                , покрывая каждый сантиметр и уголок для обеспечения наилучшего качества уборки.
+                            </p>
+                        </div>
                         <div class="detail__mode">
                             <h4 class="detail__title detail__mode--title">
                                 Режимы уборки S80
