@@ -77,6 +77,7 @@ document.querySelectorAll('.pick__button').forEach(function(e) {
 function filter(event) {
     event.preventDefault();
     this.classList.add('pick__button--active');
+    document.querySelector('.pick__product--best').classList.add('pick__product--show');
     let tag = this.dataset.tag;
     if (tag === '1') {
         if (!document.querySelector('.one').classList.contains('detail__picked')) {
@@ -126,7 +127,8 @@ function filter(event) {
         document.querySelector('.two').classList.add('detail__picked');
         document.querySelector('.two').classList.add('detail__picked');
     }
-
+    $(".details").slideDown();
+    $(".pick__show-btn--open").slideDown().hide();
     // setTimeout(function() {
     //     $(".details").slideDown();
     //     $(".pick__show-btn--open").slideDown().hide();
@@ -140,6 +142,7 @@ document.querySelector('.pick__reset').addEventListener('click', resetFiler);
 
 function resetFiler(event) {
     event.preventDefault();
+    document.querySelector('.pick__product--best').classList.remove('pick__product--show');
     document.querySelectorAll('.pick__button').forEach(function(e) {
         e.classList.remove('pick__button--active');
     });
