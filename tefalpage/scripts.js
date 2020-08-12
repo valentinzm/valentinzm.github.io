@@ -55,12 +55,12 @@ function showSmartSlide(evt) {
     evt.preventDefault();
     const slide = document.querySelector('.smart__slide');
     if (slide.classList.contains('smart__slide--on')) {
-        this.textContent = 'Узнать больше о системах навигации';
+        //this.textContent = 'Узнать больше о системах навигации';
         this.classList.remove('smart__more--rotate');
         slide.classList.add('smart__slide--off');
         slide.classList.remove('smart__slide--on');
     } else {
-        this.textContent = 'Скрыть';
+        //this.textContent = 'Скрыть';
         this.classList.add('smart__more--rotate');
         slide.classList.add('smart__slide--on');
         slide.classList.remove('smart__slide--off');
@@ -127,12 +127,12 @@ function filter(event) {
         document.querySelector('.two').classList.add('detail__picked');
     }
 
-    setTimeout(function() {
-        $(".details").slideDown();
-        $(".pick__show-btn--open").slideDown().hide();
-        const block = document.querySelector('#details');
-        block.scrollIntoView();
-    }, 1000)
+    // setTimeout(function() {
+    //     $(".details").slideDown();
+    //     $(".pick__show-btn--open").slideDown().hide();
+    //     const block = document.querySelector('#details');
+    //     block.scrollIntoView();
+    // }, 1000)
 }
 
 
@@ -173,26 +173,40 @@ function navScroll() {
     console.log();
     let tips = document.querySelector('#tips').offsetTop;
     let compare = document.querySelector('#compare').offsetTop;
-    if (window.pageYOffset >= 56) {
+    if (window.pageYOffset >= 56 && window.pageYOffset <= 4700) {
         document.querySelectorAll('.header__item').forEach(function(e) {
             e.classList.remove('header__item--active');
 
         });
         document.querySelector('.item_main').classList.add('header__item--active');
-    }
-    if (window.pageYOffset >= tips) {
-        document.querySelectorAll('.item_main').forEach(function(e) {
-            e.classList.remove('header__item--active');
-
-        });
-        document.querySelector('.item_tips').classList.add('header__item--active');
-    }
-
-    if (window.pageYOffset >= compare) {
+    } else if (window.pageYOffset >= 4700 && window.pageYOffset <= 6050) {
         document.querySelectorAll('.header__item').forEach(function(e) {
             e.classList.remove('header__item--active');
 
         });
         document.querySelector('.item_ep').classList.add('header__item--active');
+    } else if (window.pageYOffset >= 6050) {
+        document.querySelectorAll('.header__item').forEach(function(e) {
+            e.classList.remove('header__item--active');
+
+        });
+        document.querySelector('.item_tips').classList.add('header__item--active');
+    }
+}
+
+document.querySelector('.tips__clone').addEventListener('click', cloneBlocks);
+
+function cloneBlocks(e) {
+    e.preventDefault();
+
+    var itm = document.querySelector('.tips__row');
+
+
+    var cln = itm.cloneNode(true);
+
+
+    document.querySelector(".cloned").appendChild(cln);
+    if (document.querySelectorAll('.tips__item').length == 9) {
+        document.querySelector('.tips__clone').remove();
     }
 }
