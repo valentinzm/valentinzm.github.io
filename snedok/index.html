@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="bg-light">
     <div class="overlay"></div>
     <header class="header">
         <div class="header__top">
@@ -57,14 +57,65 @@
             </div>
         </div>
     </header>
-    <!-- <aside class="aside-cart">
+    <div class="overlay"></div>
+    <aside class="aside-cart">
         <div class="aside-cart__content">
             <p class="aside-cart__title">Корзина</p>
             <div class="aside-cart__sum">
-                <p class="aside-cart__sum-"></p>
+                <p class="aside-cart__sum--descr">Сумма покупок:</p>
+                <p class="aside-cart__sum--total">116,93 руб.</p>
             </div>
+            <a href="/cart" class="aside-cart__submit">
+                оформить заказ
+            </a>
+            <a href="#" class="aside-cart__promo">
+                Ввести промокод
+            </a>
+            <div class="aside-cart__divider"></div>
+            <p class="">
+                Товары
+            </p>
+            <div class="aside-cart__products">
+                <div class="aside-cart__product">
+                    <div class="aside-cart__product--image">
+                        <img src="images/cart/prod1.jpg" alt="">
+                    </div>
+                    <div class="aside-cart__product--info">
+                        <p class="aside-cart__product--price">116,93 руб.</p>
+                        <span class="aside-cart__product--weight">1 кг. </span>
+                    </div>
+                    <div class="aside-cart__product--count">
+                        <div class="products__quanity">
+                            <span class="products__mark products-minus">-</span>
+                            <input type="number" class="products__input" value="1">
+                            <span class="products__mark products-plus">+</span>
+
+                        </div>
+                        <a href="#" class="aside-cart__product--remove">Удалить</a>
+                    </div>
+                </div>
+                <div class="aside-cart__product">
+                    <div class="aside-cart__product--image">
+                        <img src="images/cart/prod1.jpg" alt="">
+                    </div>
+                    <div class="aside-cart__product--info">
+                        <p class="aside-cart__product--price">0 руб.</p>
+                        <span class="aside-cart__product--weight">1 кг. </span>
+                    </div>
+                    <div class="aside-cart__product--count">
+                        <div class="products__quanity">
+                            <span class="products__mark products-minus">-</span>
+                            <input type="number" class="products__input" value="1">
+                            <span class="products__mark products-plus">+</span>
+
+                        </div>
+                        <a href="#" class="aside-cart__product--remove">Удалить</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </aside> -->
+    </aside>
     <main>
         <section class="swiper-container front-slider">
             <div class="swiper-wrapper">
@@ -86,12 +137,43 @@
             <button class="catalog__button">
                 Каталог товаров
             </button>
-            <form action="#" class="search__form">
-                <input type="text" class="search__input" placeholder="Какие продукты вы ищите?">
-            </form>
+            <div class="search__block">
+                <form action="#" class="search__form">
+                    <input type="text" class="search__input" placeholder="Какие продукты вы ищите?">
+                    <input type="submit" class="search__button" value="">
+                </form>
+                <div class="search__result">
+                    <p>
+                        Товары
+                    </p>
+                    <div class="search__item">
+                        <div class="search__item--img">
+                            <img src="images/prod1.jpg" alt="">
+                        </div>
+                        <div class="search__item--info">
+                            <p class="search__item--title">
+                                <span>Апельсины</span> красные вес
+                            </p>
+                            <p class="search__item--price">
+                                282 <span>руб./кг</span>
+                            </p>
+                        </div>
+                        <div class="search__item--buttons">
+                            <a href="#" class="search__item--like">
+                                <img src="images/like_btn.svg" alt="">
+                            </a>
+                            <a href="#" class="search__item--add">
+                                В корзину
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div class="catalog__content">
                 <div class="catalog__list">
+                    <a href="#" data-cat="cat1">Молочные продукты, яйцо</a>
+                    <a href="#" data-cat="cat2">Молочные продукты, яйцо</a>
                     <a href="#">Молочные продукты, яйцо</a>
                     <a href="#">Молочные продукты, яйцо</a>
                     <a href="#">Молочные продукты, яйцо</a>
@@ -101,8 +183,14 @@
                     <a href="#">Молочные продукты, яйцо</a>
                     <a href="#">Молочные продукты, яйцо</a>
                     <a href="#">Молочные продукты, яйцо</a>
-                    <a href="#">Молочные продукты, яйцо</a>
-                    <a href="#">Молочные продукты, яйцо</a>
+                </div>
+                <div class="catalog__tabs">
+                    <div class="catalog__tab" id="cat1">
+                        online
+                    </div>
+                    <!-- <div class="catalog__tab" id="cat2">
+                        two
+                    </div> -->
                 </div>
             </div>
 
@@ -340,6 +428,8 @@
     </div>
 
     <script src="https://unpkg.com/swiper@6.1.1/swiper-bundle.min.js"></script>
+
+    <script src="scripts/search_trash.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 

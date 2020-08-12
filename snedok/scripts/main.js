@@ -75,3 +75,17 @@ function closeModals(evt) {
         e.classList.remove('modal__show');
     })
 }
+
+document.querySelector('.header__price').addEventListener('click', showCart);
+
+function showCart(e) {
+    e.preventDefault();
+    document.querySelector('.overlay').classList.add('overlay__show');
+    document.querySelector('.aside-cart').classList.add('aside-cart__show')
+}
+document.querySelector('.overlay').addEventListener('click', overlayClose);
+
+function overlayClose() {
+    document.querySelector('.overlay').classList.remove('overlay__show');
+    document.querySelector('.aside-cart').classList.remove('aside-cart__show')
+}
