@@ -1380,6 +1380,7 @@ body {
     .flex-land-wrap .banner__image {
         top: -20px;
         right: -20px;
+        max-width: 100%;
     }
     .flex-land-wrap .banner {
         height: auto;
@@ -2127,4 +2128,20 @@ body {
     }
 }
 
-@media(max-width: 1
+@media(max-width: 1050px) {
+    .flex-land-wrap .cleaning {
+        background: linear-gradient(180deg, rgba(34, 34, 34, 0) 0%, rgba(34, 34, 34, 0.4) 87.33%), url(images/cleaning3.jpg);
+    }
+}
+
+@media(max-width: 768px) {
+    .flex-land-wrap .cleaning {
+        height: 480px;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        background: linear-gradient(180deg, rgba(34, 34, 34, 0) 0%, rgba(34, 34, 34, 0.4) 87.33%), url(images/cleaning2.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+}
