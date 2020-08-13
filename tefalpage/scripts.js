@@ -77,9 +77,17 @@ document.querySelectorAll('.pick__button').forEach(function(e) {
 function filter(event) {
     event.preventDefault();
     this.classList.add('pick__button--active');
+    let best = this.dataset.best;
+
+    document.querySelectorAll('.pick__product').forEach(function(e) {
+        e.classList.remove('pick__product--show');
+    });
+    document.querySelector(best).classList.add('pick__product--show');
     //document.querySelector('.pick__product--best').classList.add('pick__product--show');
     document.querySelector('.pick').classList.add('pick__open');
     let tag = this.dataset.tag;
+
+    let seven = document.querySelector('.seven').classList.contains('pick__button--active');
     if (tag === '1') {
         if (!document.querySelector('.one').classList.contains('detail__picked')) {
             document.querySelector('.two').classList.add('detail__picked');
@@ -111,39 +119,42 @@ function filter(event) {
     }
 
     if (tag === '5') {
-        document.querySelector('.one').classList.remove('detail__picked');
-        document.querySelector('.three').classList.remove('detail__picked');
-        document.querySelector('.two').classList.add('detail__picked');
+        if (!seven) {
+            document.querySelector('.one').classList.remove('detail__picked');
+            document.querySelector('.two').classList.add('detail__picked');
+
+        }
     }
 
     if (tag === '6') {
+
+        if (!seven) {
+            document.querySelector('.one').classList.remove('detail__picked');
+            document.querySelector('.two').classList.add('detail__picked');
+        }
+
+    }
+
+    if (tag === '7') {
+
         document.querySelector('.one').classList.remove('detail__picked');
         document.querySelector('.two').classList.remove('detail__picked');
         document.querySelector('.three').classList.add('detail__picked');
     }
-
-    if (tag === '7') {
-        document.querySelector('.one').classList.remove('detail__picked');
-        document.querySelector('.three').classList.remove('detail__picked');
-        document.querySelector('.two').classList.add('detail__picked');
-        document.querySelector('.two').classList.add('detail__picked');
-    }
     $(".details").slideDown();
     $(".pick__show-btn--open").slideDown().hide();
 
-    document.querySelectorAll('.pick__button--active').forEach(function(e) {
-        e.addEventListener('click', removeActive);
-    })
+
 
 }
 
-document.querySelectorAll('.pick__button--active').forEach(function(e) {
-    e.addEventListener('click', removeActive);
-});
+// document.querySelectorAll('.pick__button--active').forEach(function(e) {
+//     e.addEventListener('click', removeActive);
+// });
 
-function removeActive() {
-    this.classList.remove('pick__button--active');
-}
+// function removeActive() {
+//     this.classList.remove('pick__button--active');
+// }
 
 document.querySelectorAll('.pick__reset').forEach(function(e) {
     e.addEventListener('click', resetFiler);
@@ -163,6 +174,9 @@ function resetFiler(event) {
     })
     $(".details").slideUp();
     $('.pick__show-btn--open').show();
+    document.querySelectorAll('.pick__product').forEach(function(e) {
+        e.classList.remove('pick__product--show');
+    });
 }
 
 

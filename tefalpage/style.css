@@ -351,7 +351,7 @@ body {
     color: #FFFFFF;
 }
 
-.flex-land-wrap .pick__product--show {
+.flex-land-wrap .pick__product--show .pick__product--best {
     display: flex;
 }
 
@@ -1987,12 +1987,12 @@ body {
 
 .btn--round {
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
     border-radius: 10px;
     text-transform: uppercase;
     background: #EB322F;
     border-radius: 20px;
-    padding: 10px 20px;
+    padding: 16px 20px;
     /* border-radius:10px; */
     /* -webkit-transition:background-color .3s ease-in-out; */
     -o-transition: background-color .3s ease-in-out;
