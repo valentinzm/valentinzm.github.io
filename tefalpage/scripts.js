@@ -77,7 +77,7 @@ document.querySelectorAll('.pick__button').forEach(function(e) {
 function filter(event) {
     event.preventDefault();
     this.classList.add('pick__button--active');
-    document.querySelector('.pick__product--best').classList.add('pick__product--show');
+    //document.querySelector('.pick__product--best').classList.add('pick__product--show');
     document.querySelector('.pick').classList.add('pick__open');
     let tag = this.dataset.tag;
     if (tag === '1') {
@@ -131,19 +131,29 @@ function filter(event) {
     $(".details").slideDown();
     $(".pick__show-btn--open").slideDown().hide();
 
+    document.querySelectorAll('.pick__button--active').forEach(function(e) {
+        e.addEventListener('click', removeActive);
+    })
 
 }
 
+document.querySelectorAll('.pick__button--active').forEach(function(e) {
+    e.addEventListener('click', removeActive);
+});
 
-function removeButton(e) {
-    e.preventDefault();
+function removeActive() {
     this.classList.remove('pick__button--active');
 }
-document.querySelector('.pick__reset').addEventListener('click', resetFiler);
+
+document.querySelectorAll('.pick__reset').forEach(function(e) {
+    e.addEventListener('click', resetFiler);
+})
 
 function resetFiler(event) {
     event.preventDefault();
-    document.querySelector('.pick__product--best').classList.remove('pick__product--show');
+    document.querySelectorAll('.pick__product--best').forEach(function(e) {
+        e.classList.remove('pick__product--show');
+    });
     document.querySelector('.pick').classList.remove('pick__open');
     document.querySelectorAll('.pick__button').forEach(function(e) {
         e.classList.remove('pick__button--active');
