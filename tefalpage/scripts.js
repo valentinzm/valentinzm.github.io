@@ -179,7 +179,7 @@ function filter(event) {
         document.querySelector(best).classList.add('pick__product--show');
     }
     $(".details").slideDown();
-    $(".pick__show-btn--open").slideDown().hide();
+
 
 
 
