@@ -89,6 +89,8 @@ function filter(event) {
 
     let six = document.querySelector('.six').classList.contains('pick__button--active');
     let seven = document.querySelector('.seven').classList.contains('pick__button--active');
+    let dvuha = document.querySelector('.dvuha').classList.contains('pick__button--active');
+    let dom = document.querySelector('.dom').classList.contains('pick__button--active');
     if (tag === '1') {
         if (!document.querySelector('.one').classList.contains('detail__picked') && !seven) {
             document.querySelector('.two').classList.add('detail__picked');
@@ -100,7 +102,7 @@ function filter(event) {
 
     }
     if (tag === '2') {
-        if (!seven) {
+        if (!seven && !dvuha) {
             document.querySelector('.two').classList.remove('detail__picked');
             document.querySelector('.one').classList.add('detail__picked');
             document.querySelectorAll('.pick__product').forEach(function(e) {
@@ -111,9 +113,10 @@ function filter(event) {
 
     }
     if (tag === '3') {
-        if (!seven) {
+        if (!seven && !dom) {
             document.querySelector('.one').classList.remove('detail__picked');
             document.querySelector('.two').classList.add('detail__picked');
+
             document.querySelectorAll('.pick__product').forEach(function(e) {
                 e.classList.remove('pick__product--show');
             });
@@ -122,9 +125,15 @@ function filter(event) {
     }
 
     if (tag === '4') {
-        document.querySelector('.one').classList.remove('detail__picked');
-        document.querySelector('.two').classList.remove('detail__picked');
-        document.querySelector('.three').classList.add('detail__picked');
+        if (!seven) {
+            document.querySelector('.one').classList.remove('detail__picked');
+            document.querySelector('.two').classList.remove('detail__picked');
+            document.querySelector('.three').classList.add('detail__picked');
+            document.querySelectorAll('.pick__product').forEach(function(e) {
+                e.classList.remove('pick__product--show');
+            });
+            document.querySelector(best).classList.add('pick__product--show');
+        }
     }
 
 
