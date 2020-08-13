@@ -2165,6 +2165,12 @@ body {
     position: relative
 }
 
+@media(max-width: 1400px) {
+    .compare__name {
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 1024px) {
     .compare .text-wrapper {
         padding: 0 30px
@@ -2193,20 +2199,15 @@ body {
     .compare__image {
         max-width: 80%
     }
-    /* .compare__image--80 {
+    .compare__image--80 {
         max-width: 100%;
-    } */
+    }
     .compare__name {
         font-size: 12px;
     }
     .btn--round {
         padding: 12px 8px;
-    }
-}
-
-@media(max-width: 1400px) {
-    .compare__name {
-        font-size: 14px;
+        font-size: 8px;
     }
 }
 
