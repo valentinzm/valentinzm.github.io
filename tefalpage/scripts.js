@@ -79,30 +79,45 @@ function filter(event) {
     this.classList.add('pick__button--active');
     let best = this.dataset.best;
 
-    document.querySelectorAll('.pick__product').forEach(function(e) {
-        e.classList.remove('pick__product--show');
-    });
-    document.querySelector(best).classList.add('pick__product--show');
-    //document.querySelector('.pick__product--best').classList.add('pick__product--show');
+    // document.querySelectorAll('.pick__product').forEach(function(e) {
+    //     e.classList.remove('pick__product--show');
+    // });
+
+
     document.querySelector('.pick').classList.add('pick__open');
     let tag = this.dataset.tag;
 
+    let six = document.querySelector('.six').classList.contains('pick__button--active');
     let seven = document.querySelector('.seven').classList.contains('pick__button--active');
     if (tag === '1') {
-        if (!document.querySelector('.one').classList.contains('detail__picked')) {
+        if (!document.querySelector('.one').classList.contains('detail__picked') && !seven) {
             document.querySelector('.two').classList.add('detail__picked');
+            document.querySelectorAll('.pick__product').forEach(function(e) {
+                e.classList.remove('pick__product--show');
+            });
+            document.querySelector(best).classList.add('pick__product--show');
         }
 
     }
     if (tag === '2') {
+        if (!seven) {
+            document.querySelector('.two').classList.remove('detail__picked');
+            document.querySelector('.one').classList.add('detail__picked');
+            document.querySelectorAll('.pick__product').forEach(function(e) {
+                e.classList.remove('pick__product--show');
+            });
+            document.querySelector(best).classList.add('pick__product--show');
+        }
 
-        document.querySelector('.two').classList.remove('detail__picked');
-        document.querySelector('.one').classList.add('detail__picked');
     }
     if (tag === '3') {
-        if (!document.querySelector('.three').classList.contains('detail__picked')) {
+        if (!seven) {
             document.querySelector('.one').classList.remove('detail__picked');
             document.querySelector('.two').classList.add('detail__picked');
+            document.querySelectorAll('.pick__product').forEach(function(e) {
+                e.classList.remove('pick__product--show');
+            });
+            document.querySelector(best).classList.add('pick__product--show');
         }
     }
 
@@ -112,17 +127,16 @@ function filter(event) {
         document.querySelector('.three').classList.add('detail__picked');
     }
 
-    if (tag === '4') {
-        document.querySelector('.one').classList.remove('detail__picked');
-        document.querySelector('.two').classList.remove('detail__picked');
-        document.querySelector('.three').classList.add('detail__picked');
-    }
+
 
     if (tag === '5') {
-        if (!seven) {
+        if (!seven && !six) {
             document.querySelector('.one').classList.remove('detail__picked');
             document.querySelector('.two').classList.add('detail__picked');
-
+            document.querySelectorAll('.pick__product').forEach(function(e) {
+                e.classList.remove('pick__product--show');
+            });
+            document.querySelector(best).classList.add('pick__product--show');
         }
     }
 
@@ -131,6 +145,10 @@ function filter(event) {
         if (!seven) {
             document.querySelector('.one').classList.remove('detail__picked');
             document.querySelector('.two').classList.add('detail__picked');
+            document.querySelectorAll('.pick__product').forEach(function(e) {
+                e.classList.remove('pick__product--show');
+            });
+            document.querySelector(best).classList.add('pick__product--show');
         }
 
     }
@@ -140,6 +158,10 @@ function filter(event) {
         document.querySelector('.one').classList.remove('detail__picked');
         document.querySelector('.two').classList.remove('detail__picked');
         document.querySelector('.three').classList.add('detail__picked');
+        document.querySelectorAll('.pick__product').forEach(function(e) {
+            e.classList.remove('pick__product--show');
+        });
+        document.querySelector(best).classList.add('pick__product--show');
     }
     $(".details").slideDown();
     $(".pick__show-btn--open").slideDown().hide();
