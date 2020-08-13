@@ -88,11 +88,13 @@ function filter(event) {
     let tag = this.dataset.tag;
 
     let six = document.querySelector('.six').classList.contains('pick__button--active');
+    let six1 = document.querySelector('.six1').classList.contains('pick__button--active');
     let seven = document.querySelector('.seven').classList.contains('pick__button--active');
     let dvuha = document.querySelector('.dvuha').classList.contains('pick__button--active');
     let dom = document.querySelector('.dom').classList.contains('pick__button--active');
     if (tag === '1') {
-        if (!document.querySelector('.one').classList.contains('detail__picked') && !seven) {
+        if (!seven && !six && !six1) {
+            console.log('log 1');
             document.querySelector('.two').classList.add('detail__picked');
             document.querySelectorAll('.pick__product').forEach(function(e) {
                 e.classList.remove('pick__product--show');
@@ -104,6 +106,7 @@ function filter(event) {
     if (tag === '2') {
         if (!seven && !dvuha) {
             document.querySelector('.two').classList.remove('detail__picked');
+            document.querySelector('.three').classList.remove('detail__picked');
             document.querySelector('.one').classList.add('detail__picked');
             document.querySelectorAll('.pick__product').forEach(function(e) {
                 e.classList.remove('pick__product--show');
@@ -115,6 +118,7 @@ function filter(event) {
     if (tag === '3') {
         if (!seven && !dom) {
             document.querySelector('.one').classList.remove('detail__picked');
+            document.querySelector('.three').classList.remove('detail__picked');
             document.querySelector('.two').classList.add('detail__picked');
 
             document.querySelectorAll('.pick__product').forEach(function(e) {
@@ -139,8 +143,9 @@ function filter(event) {
 
 
     if (tag === '5') {
-        if (!seven && !six) {
+        if (!seven && !six && !six1) {
             document.querySelector('.one').classList.remove('detail__picked');
+            document.querySelector('.three').classList.remove('detail__picked');
             document.querySelector('.two').classList.add('detail__picked');
             document.querySelectorAll('.pick__product').forEach(function(e) {
                 e.classList.remove('pick__product--show');
@@ -153,6 +158,7 @@ function filter(event) {
 
         if (!seven) {
             document.querySelector('.one').classList.remove('detail__picked');
+            document.querySelector('.two').classList.remove('detail__picked');
             document.querySelector('.three').classList.add('detail__picked');
             document.querySelectorAll('.pick__product').forEach(function(e) {
                 e.classList.remove('pick__product--show');
