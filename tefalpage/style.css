@@ -125,8 +125,14 @@ body {
 
 .flex-land-wrap .banner__image {
     position: absolute;
-    right: 50px;
+    right: 300px;
     top: 29px;
+}
+
+@media(max-width: 1600px) {
+    .flex-land-wrap .banner__image {
+        right: 50px;
+    }
 }
 
 @media(max-width: 1200px) {
@@ -908,7 +914,6 @@ body {
     margin-right: auto;
     display: flex;
     height: 0;
-    justify-content: space-between;
 }
 
 .flex-land-wrap .smart__slide--on {
@@ -947,6 +952,7 @@ body {
     max-width: 352px;
     width: 100%;
     padding-bottom: 80px;
+    margin-right: 32px;
 }
 
 .flex-land-wrap .smart__slide--image {
@@ -1056,7 +1062,8 @@ body {
     .flex-land-wrap .allergen {
         background-image: url(images/allergen.jpg);
         display: flex;
-        align-items: center
+        align-items: center;
+        background-size: cover;
     }
     .flex-land-wrap .allergen__content {
         width: 100%;
@@ -1153,7 +1160,6 @@ body {
     flex-wrap: wrap;
     margin-left: -16px;
     margin-right: -16px;
-    margin-bottom: 32px;
 }
 
 .tips__item {
@@ -1161,11 +1167,14 @@ body {
     margin-left: 16px;
     margin-right: 16px;
     cursor: pointer;
-    margin-bottom: 24px;
 }
 
 .tips__item--hidden {
     display: none;
+}
+
+.tips__row--added .tips__item {
+    margin-bottom: 24px;
 }
 
 .tips__item--image {
@@ -1383,6 +1392,9 @@ body {
         max-width: 1024px;
         padding-left: 15px;
         padding-right: 15px;
+    }
+    .flex-land-wrap .smart {
+        min-height: auto;
     }
 }
 
@@ -1991,12 +2003,26 @@ body {
     border-radius: 10px;
     text-transform: uppercase;
     background: #EB322F;
-    border-radius: 20px;
+    border-radius: 32px;
     padding: 16px 20px;
     /* border-radius:10px; */
     /* -webkit-transition:background-color .3s ease-in-out; */
     -o-transition: background-color .3s ease-in-out;
     transition: background-color .3s ease-in-out;
+}
+
+@media(max-width: 1400px) {
+    .btn--round {
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
+
+@media(max-width: 1200px) {
+    .btn--round {
+        font-size: 10px;
+        font-weight: bold;
+    }
 }
 
 .btn--round:focus,
@@ -2145,7 +2171,10 @@ body {
         max-width: 80%
     }
     .compare__name {
-        font-size: 12px;
+        font-size: 18px;
+    }
+    .btn--round {
+        padding: 12px 8px;
     }
 }
 

@@ -141,7 +141,7 @@ function filter(event) {
     if (tag === '5') {
         if (!seven && !six) {
             document.querySelector('.one').classList.remove('detail__picked');
-            document.querySelector('.two').classList.add('detail__picked');
+            document.querySelector('.three').classList.add('detail__picked');
             document.querySelectorAll('.pick__product').forEach(function(e) {
                 e.classList.remove('pick__product--show');
             });
@@ -165,8 +165,8 @@ function filter(event) {
     if (tag === '7') {
 
         document.querySelector('.one').classList.remove('detail__picked');
-        document.querySelector('.two').classList.remove('detail__picked');
-        document.querySelector('.three').classList.add('detail__picked');
+        document.querySelector('.three').classList.remove('detail__picked');
+        document.querySelector('.two').classList.add('detail__picked');
         document.querySelectorAll('.pick__product').forEach(function(e) {
             e.classList.remove('pick__product--show');
         });
