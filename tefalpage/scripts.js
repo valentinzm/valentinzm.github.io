@@ -130,15 +130,15 @@ function filter(event) {
     }
     $(".details").slideDown();
     $(".pick__show-btn--open").slideDown().hide();
-    // setTimeout(function() {
-    //     $(".details").slideDown();
-    //     $(".pick__show-btn--open").slideDown().hide();
-    //     const block = document.querySelector('#details');
-    //     block.scrollIntoView();
-    // }, 1000)
+
+
 }
 
 
+function removeButton(e) {
+    e.preventDefault();
+    this.classList.remove('pick__button--active');
+}
 document.querySelector('.pick__reset').addEventListener('click', resetFiler);
 
 function resetFiler(event) {
@@ -185,13 +185,13 @@ function navScroll() {
 
         });
         document.querySelector('.item_main').classList.add('header__item--active');
-    } else if (window.pageYOffset >= 4700 && window.pageYOffset <= 6050) {
+    } else if (window.pageYOffset >= 4700 && window.pageYOffset <= 5800) {
         document.querySelectorAll('.header__item').forEach(function(e) {
             e.classList.remove('header__item--active');
 
         });
         document.querySelector('.item_ep').classList.add('header__item--active');
-    } else if (window.pageYOffset >= 6050) {
+    } else if (window.pageYOffset >= 5800) {
         document.querySelectorAll('.header__item').forEach(function(e) {
             e.classList.remove('header__item--active');
 
@@ -204,15 +204,13 @@ document.querySelector('.tips__clone').addEventListener('click', cloneBlocks);
 
 function cloneBlocks(e) {
     e.preventDefault();
+    document.querySelector('.tips__row').classList.add('tips__row--added');
+    document.querySelectorAll('.tips__item').forEach(function(e) {
+        e.classList.remove('tips__item--hidden');
+    })
 
-    var itm = document.querySelector('.tips__row');
 
 
-    var cln = itm.cloneNode(true);
-    document.querySelector(".cloned").appendChild(cln);
-    document.querySelector(".cloned").appendChild(cln);
     document.querySelector('.tips__clone').remove();
-    // if (document.querySelectorAll('.tips__item').length == 9) {
 
-    // }
 }
