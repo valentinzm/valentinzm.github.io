@@ -11,7 +11,20 @@
 </head>
 
 <body class="bg-light">
-    <div class="overlay"></div>
+
+    <div class="mobile-nav">
+        <div class="mobile-nav__content">
+            <nav class="mobile-nav__menu">
+                <a href="#">Пресс-центр</a>
+                <a href="#">Доставка и оплата</a>
+                <a href="#">Поддержка</a>
+                <a href="#">Возврат</a>
+                <a href="#">COVID-19</a>
+                <div class="mobile-nav__divider"></div>
+
+            </nav>
+        </div>
+    </div>
     <header class="header">
         <div class="header__top">
             <div class="container">
@@ -33,17 +46,21 @@
                 <a href="#" class="header__logo">
                     <img src="images/logo.svg" alt="Снедок - логотип">
                 </a>
-                <a href="#" class="header__city">
+                <a href="#" class="header__city js-modal" data-modal="#test">
                     <img src="images/icons/marker.svg" alt="">
-                    <span class="header__city_border">Москва</span>
+                    <span class="header__border">Москва</span>
                 </a>
-                <div class="header__user">
-                    <a href="#" class="header__user_login js-modal" data-modal="#login">
-                        <img src="images/icons/login.svg" alt="">
-                        <span>Войти</span>
-                    </a>
-                    <a href="#" class="header__user_reg">Регистрация</a>
-                </div>
+                <a href="#" class="header__courier js-modal" data-modal="#test">
+                    <span class="header__border">Заказать курьера</span>
+                </a>
+
+                <a href="#" class="header__login js-modal" data-modal="#login">
+                    <img src="images/icons/login.svg" alt="">
+                    <span>Войти</span>
+                </a>
+                <span class="header__divider">/</span>
+                <a href="#" class="header__signup">Регистрация</a>
+
                 <a href="#" class="header__price">
                     116,93 руб.
                     <img src="images/icons/cart.svg" alt="">
@@ -167,31 +184,164 @@
                             </a>
                         </div>
                     </div>
+                    <div class="search__item">
+                        <div class="search__item--img">
+                            <img src="images/prod1.jpg" alt="">
+                        </div>
+                        <div class="search__item--info">
+                            <p class="search__item--title">
+                                <span>Апельсины</span> красные вес
+                            </p>
+                            <p class="search__item--price">
+                                282 <span>руб./кг</span>
+                            </p>
+                        </div>
+                        <div class="search__item--buttons">
+                            <a href="#" class="search__item--like">
+                                <img src="images/like_btn.svg" alt="">
+                            </a>
+                            <a href="#" class="search__item--add">
+                                В корзину
+                            </a>
+                        </div>
+                    </div>
+                    <div class="search__item">
+                        <div class="search__item--img">
+                            <img src="images/prod1.jpg" alt="">
+                        </div>
+                        <div class="search__item--info">
+                            <p class="search__item--title">
+                                <span>Апельсины</span> красные вес
+                            </p>
+                            <p class="search__item--price">
+                                282 <span>руб./кг</span>
+                            </p>
+                        </div>
+                        <div class="search__item--buttons">
+                            <a href="#" class="search__item--like">
+                                <img src="images/like_btn.svg" alt="">
+                            </a>
+                            <a href="#" class="search__item--add">
+                                В корзину
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="catalog__content">
                 <div class="catalog__list">
-                    <a href="#" data-cat="cat1">Молочные продукты, яйцо</a>
-                    <a href="#" data-cat="cat2">Молочные продукты, яйцо</a>
-                    <a href="#">Молочные продукты, яйцо</a>
-                    <a href="#">Молочные продукты, яйцо</a>
-                    <a href="#">Молочные продукты, яйцо</a>
-                    <a href="#">Молочные продукты, яйцо</a>
-                    <a href="#">Молочные продукты, яйцо</a>
-                    <a href="#">Молочные продукты, яйцо</a>
-                    <a href="#">Молочные продукты, яйцо</a>
-                    <a href="#">Молочные продукты, яйцо</a>
-                    <a href="#">Молочные продукты, яйцо</a>
+                    <a href="#" data-cat="#cat1">Молочные продукты, яйцо</a>
+                    <a href="#" data-cat="#cat2">Детское питание</a>
+                    <a href="#">Овощи, фрукты, зелень, грибы</a>
+                    <a href="#">Сыры и Калбасы</a>
+                    <a href="#">Мясо и птица</a>
+                    <a href="#">Рыба</a>
+                    <a href="#">Хлеб и Выпечка</a>
+                    <a href="#">Кондитерские изделия</a>
+                    <a href="#">Бакалея</a>
+                    <a href="#">Напитки, соки, воды</a>
+                    <a href="#">Майонез, соусы, специи</a>
+                    <a href="#">Заморозка</a>
+                    <a href="#">Сопутствующие товары</a>
+
                 </div>
                 <div class="catalog__tabs">
-                    <div class="catalog__tab" id="cat1">
-                        online
+                    <div class="catalog__tab catalog__tab--show" id="cat1">
+                        <a href="#" class="catalog__tab--link">Перейти в раздел</a>
+                        <ul class="catalog__tab--list">
+                            <li>
+                                <a href="#">Молоко</a>
+                            </li>
+                            <li>
+                                <a href="#">Творог</a>
+                            </li>
+                            <li>
+                                <a href="#">Сметана</a>
+                            </li>
+                            <li>
+                                <a href="#">Кефир, ряженка</a>
+                            </li>
+                            <li>
+                                <a href="#">Сливки</a>
+                            </li>
+                            <li>
+                                <a href="#">Йогурты, творожки, десерты</a>
+                            </li>
+                            <li>
+                                <a href="#">Масло сливочное, маргарин</a>
+                            </li>
+                            <li>
+                                <a href="#">Сгущённое молоко</a>
+                            </li>
+                            <li>
+                                <a href="#">Мороженое</a>
+                            </li>
+
+                        </ul>
+                        <div class="catalog__tab--btn-group">
+                            <a href="#" class="catalog__tab--btn">
+                                <img src="images/cat_cont1.jpg" alt="">
+                                <span>Летние, лёгкие коктели
+                                    на основе молока</span>
+                            </a>
+                            <a href="#" class="catalog__tab--btn">
+                                <img src="images/cat_cont2.jpg" alt="">
+                                <span>Домашнее молоко
+                                    теперь со скидко - 20%</span>
+                            </a>
+                        </div>
                     </div>
-                    <!-- <div class="catalog__tab" id="cat2">
-                        two
-                    </div> -->
+                    <!--catalog__tab-->
+
+                    <div class="catalog__tab" id="cat2">
+                        <a href="#" class="catalog__tab--link">Перейти в раздел 2</a>
+                        <ul class="catalog__tab--list">
+                            <li>
+                                <a href="#">Молоко</a>
+                            </li>
+                            <li>
+                                <a href="#">Творог</a>
+                            </li>
+                            <li>
+                                <a href="#">Сметана</a>
+                            </li>
+                            <li>
+                                <a href="#">Кефир, ряженка</a>
+                            </li>
+                            <li>
+                                <a href="#">Сливки</a>
+                            </li>
+                            <li>
+                                <a href="#">Йогурты, творожки, десерты</a>
+                            </li>
+                            <li>
+                                <a href="#">Масло сливочное, маргарин</a>
+                            </li>
+                            <li>
+                                <a href="#">Сгущённое молоко</a>
+                            </li>
+                            <li>
+                                <a href="#">Мороженое</a>
+                            </li>
+
+                        </ul>
+                        <div class="catalog__tab--btn-group">
+                            <a href="#" class="catalog__tab--btn">
+                                <img src="images/cat_cont1.jpg" alt="">
+                                <span>Летние, лёгкие коктели
+                                    на основе молока</span>
+                            </a>
+                            <a href="#" class="catalog__tab--btn">
+                                <img src="images/cat_cont2.jpg" alt="">
+                                <span>Домашнее молоко
+                                    теперь со скидко - 20%</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!--catalog__tab-->
                 </div>
+                <!--catalog__tabs-->
             </div>
 
         </div>
@@ -398,6 +548,14 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal" id="test">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <p>Text</p>
+        </div>
+    </div>
+
     <div class="modal" id="login">
         <div class="modal__overlay"></div>
         <div class="modal__body">

@@ -8,5 +8,9 @@ function testForm(event) {
 document.querySelector('.search__input').addEventListener('input', testSearchAjax);
 
 function testSearchAjax() {
-    console.log(this.value);
+    if (this.value !== '') {
+        document.querySelector('.search__result').style.display = 'block';
+    } else {
+        document.querySelector('.search__result').style.display = 'none';
+    }
 }

@@ -154,6 +154,11 @@
                             height: 45px;
                             border: 1px solid #43B02A;
                             border-radius: 50%;
+                            outline: none;
+                        }
+                        
+                        .swiper-button__single:after {
+                            content: none;
                         }
                     </style>
                     <div class="swiper-container single-product__top">
@@ -175,8 +180,17 @@
                             </div>
                         </div>
                         <!-- Add Arrows -->
-                        <div class="swiper-button-next swiper-button__single"></div>
-                        <div class="swiper-button-prev swiper-button__single"></div>
+                        <div class="swiper-button-next swiper-button__single">
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L7 7L1 13" stroke="#43B02A"/>
+                            </svg>
+
+                        </div>
+                        <div class="swiper-button-prev swiper-button__single">
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.5" d="M7 1L1 7L7 13" stroke="#43B02A"/>
+                            </svg>
+                        </div>
                     </div>
                     <div class="swiper-container single-product__thumbs">
                         <div class="swiper-wrapper">

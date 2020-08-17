@@ -11,6 +11,19 @@
 </head>
 
 <body>
+    <div class="mobile-nav">
+        <div class="mobile-nav__content">
+            <nav class="mobile-nav__menu">
+                <a href="#">Пресс-центр</a>
+                <a href="#">Доставка и оплата</a>
+                <a href="#">Поддержка</a>
+                <a href="#">Возврат</a>
+                <a href="#">COVID-19</a>
+                <div class="mobile-nav__divider"></div>
+
+            </nav>
+        </div>
+    </div>
     <header class="header">
         <div class="header__top">
             <div class="container">
@@ -32,20 +45,93 @@
                 <a href="#" class="header__logo">
                     <img src="images/logo.svg" alt="Снедок - логотип">
                 </a>
-                <a href="#" class="header__city">
-                    <span class="header__city_border">Москва</span>
+                <a href="#" class="header__city js-modal" data-modal="#test">
+                    <img src="images/icons/marker.svg" alt="">
+                    <span class="header__border">Москва</span>
                 </a>
-                <div class="header__user">
-                    <a href="#" class="header__user_login">Войти</a>
-                    <a href="#" class="header__user_reg">Регистрация</a>
-                </div>
-                <p class="header__price">
-                    116,93 руб.
-                </p>
+                <a href="#" class="header__courier js-modal" data-modal="#test">
+                    <span class="header__border">Заказать курьера</span>
+                </a>
 
+                <a href="#" class="header__login js-modal" data-modal="#login">
+                    <img src="images/icons/login.svg" alt="">
+                    <span>Войти</span>
+                </a>
+                <span class="header__divider">/</span>
+                <a href="#" class="header__signup">Регистрация</a>
+
+                <a href="#" class="header__price">
+                    116,93 руб.
+                    <img src="images/icons/cart.svg" alt="">
+                </a>
+
+                <div class="burger">
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </div>
             </div>
         </div>
     </header>
+    <div class="overlay"></div>
+    <aside class="aside-cart">
+        <div class="aside-cart__content">
+            <p class="aside-cart__title">Корзина</p>
+            <div class="aside-cart__sum">
+                <p class="aside-cart__sum--descr">Сумма покупок:</p>
+                <p class="aside-cart__sum--total">116,93 руб.</p>
+            </div>
+            <a href="/cart" class="aside-cart__submit">
+                оформить заказ
+            </a>
+            <a href="#" class="aside-cart__promo">
+                Ввести промокод
+            </a>
+            <div class="aside-cart__divider"></div>
+            <p class="">
+                Товары
+            </p>
+            <div class="aside-cart__products">
+                <div class="aside-cart__product">
+                    <div class="aside-cart__product--image">
+                        <img src="images/cart/prod1.jpg" alt="">
+                    </div>
+                    <div class="aside-cart__product--info">
+                        <p class="aside-cart__product--price">116,93 руб.</p>
+                        <span class="aside-cart__product--weight">1 кг. </span>
+                    </div>
+                    <div class="aside-cart__product--count">
+                        <div class="products__quanity">
+                            <span class="products__mark products-minus">-</span>
+                            <input type="number" class="products__input" value="1">
+                            <span class="products__mark products-plus">+</span>
+
+                        </div>
+                        <a href="#" class="aside-cart__product--remove">Удалить</a>
+                    </div>
+                </div>
+                <div class="aside-cart__product">
+                    <div class="aside-cart__product--image">
+                        <img src="images/cart/prod1.jpg" alt="">
+                    </div>
+                    <div class="aside-cart__product--info">
+                        <p class="aside-cart__product--price">0 руб.</p>
+                        <span class="aside-cart__product--weight">1 кг. </span>
+                    </div>
+                    <div class="aside-cart__product--count">
+                        <div class="products__quanity">
+                            <span class="products__mark products-minus">-</span>
+                            <input type="number" class="products__input" value="1">
+                            <span class="products__mark products-plus">+</span>
+
+                        </div>
+                        <a href="#" class="aside-cart__product--remove">Удалить</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </aside>
     <main>
         <div class="breadcrumbs">
             <div class="container">
@@ -57,7 +143,7 @@
                 <a href="#" class="breadcrumbs__back"><span>Вернуться к выбору</span></a>
             </div>
         </div>
-        <section>
+        <section class="bg-light">
             <div class="catalog-categories container">
                 <a href="#" class="catalog-categories__item">
                     <span class="catalog-categories__text">Фрукты</span>
@@ -66,63 +152,234 @@
 
                 <a href="#" class="catalog-categories__item">
                     <span class="catalog-categories__text">Овощи</span>
-                    <img src="images/catalog-list/item1.png" alt="Овощи" class="catalog-categories__image">
+                    <img src="images/catalog-list/item2.jpg" alt="Овощи" class="catalog-categories__image">
                 </a>
 
                 <a href="#" class="catalog-categories__item">
                     <span class="catalog-categories__text">Ягоды</span>
-                    <img src="images/catalog-list/item1.png" alt="Ягоды" class="catalog-categories__image">
+                    <img src="images/catalog-list/item3.jpg" alt="Ягоды" class="catalog-categories__image">
                 </a>
 
                 <a href="#" class="catalog-categories__item">
                     <span class="catalog-categories__text">Зелень</span>
-                    <img src="images/catalog-list/item1.png" alt="Зелень" class="catalog-categories__image">
+                    <img src="images/catalog-list/item4.jpg" alt="Зелень" class="catalog-categories__image">
                 </a>
 
                 <a href="#" class="catalog-categories__item">
                     <span class="catalog-categories__text">Грибы</span>
-                    <img src="images/catalog-list/item1.png" alt="Грибы" class="catalog-categories__image">
+                    <img src="images/catalog-list/item5.jpg" alt="Грибы" class="catalog-categories__image">
                 </a>
 
                 <a href="#" class="catalog-categories__item">
                     <span class="catalog-categories__text">Заморозка</span>
-                    <img src="images/catalog-list/item1.png" alt="Заморозка" class="catalog-categories__image">
+                    <img src="images/catalog-list/item6.jpg" alt="Заморозка" class="catalog-categories__image">
                 </a>
 
                 <a href="#" class="catalog-categories__item">
                     <span class="catalog-categories__text">Орехи</span>
-                    <img src="images/catalog-list/item1.png" alt="Орехи" class="catalog-categories__image">
+                    <img src="images/catalog-list/item7.jpg" alt="Орехи" class="catalog-categories__image">
                 </a>
 
                 <a href="#" class="catalog-categories__item">
                     <span class="catalog-categories__text">Сухофрукты</span>
-                    <img src="images/catalog-list/item1.png" alt="Сухофрукты" class="catalog-categories__image">
+                    <img src="images/catalog-list/item8.jpg" alt="Сухофрукты" class="catalog-categories__image">
                 </a>
             </div>
         </section>
         <div class="container">
+
             <div class="search search__page">
                 <button class="catalog__button">
-                    Каталог товаров
-                </button>
-                <form action="#" class="search__form">
-                    <input type="text" class="search__input" placeholder="Какие продукты вы ищите?">
-                </form>
+                        Каталог товаров
+                    </button>
+                <div class="search__block">
+                    <form action="#" class="search__form">
+                        <input type="text" class="search__input" placeholder="Какие продукты вы ищите?">
+                        <input type="submit" class="search__button" value="">
+                    </form>
+                    <div class="search__result">
+                        <p>
+                            Товары
+                        </p>
+                        <div class="search__item">
+                            <div class="search__item--img">
+                                <img src="images/prod1.jpg" alt="">
+                            </div>
+                            <div class="search__item--info">
+                                <p class="search__item--title">
+                                    <span>Апельсины</span> красные вес
+                                </p>
+                                <p class="search__item--price">
+                                    282 <span>руб./кг</span>
+                                </p>
+                            </div>
+                            <div class="search__item--buttons">
+                                <a href="#" class="search__item--like">
+                                    <img src="images/like_btn.svg" alt="">
+                                </a>
+                                <a href="#" class="search__item--add">
+                                        В корзину
+                                    </a>
+                            </div>
+                        </div>
+                        <div class="search__item">
+                            <div class="search__item--img">
+                                <img src="images/prod1.jpg" alt="">
+                            </div>
+                            <div class="search__item--info">
+                                <p class="search__item--title">
+                                    <span>Апельсины</span> красные вес
+                                </p>
+                                <p class="search__item--price">
+                                    282 <span>руб./кг</span>
+                                </p>
+                            </div>
+                            <div class="search__item--buttons">
+                                <a href="#" class="search__item--like">
+                                    <img src="images/like_btn.svg" alt="">
+                                </a>
+                                <a href="#" class="search__item--add">
+                                        В корзину
+                                    </a>
+                            </div>
+                        </div>
+                        <div class="search__item">
+                            <div class="search__item--img">
+                                <img src="images/prod1.jpg" alt="">
+                            </div>
+                            <div class="search__item--info">
+                                <p class="search__item--title">
+                                    <span>Апельсины</span> красные вес
+                                </p>
+                                <p class="search__item--price">
+                                    282 <span>руб./кг</span>
+                                </p>
+                            </div>
+                            <div class="search__item--buttons">
+                                <a href="#" class="search__item--like">
+                                    <img src="images/like_btn.svg" alt="">
+                                </a>
+                                <a href="#" class="search__item--add">
+                                        В корзину
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="catalog__content">
                     <div class="catalog__list">
-                        <a href="#">Молочные продукты, яйцо</a>
-                        <a href="#">Молочные продукты, яйцо</a>
-                        <a href="#">Молочные продукты, яйцо</a>
-                        <a href="#">Молочные продукты, яйцо</a>
-                        <a href="#">Молочные продукты, яйцо</a>
-                        <a href="#">Молочные продукты, яйцо</a>
-                        <a href="#">Молочные продукты, яйцо</a>
-                        <a href="#">Молочные продукты, яйцо</a>
-                        <a href="#">Молочные продукты, яйцо</a>
-                        <a href="#">Молочные продукты, яйцо</a>
-                        <a href="#">Молочные продукты, яйцо</a>
+                        <a href="#" data-cat="#cat1">Молочные продукты, яйцо</a>
+                        <a href="#" data-cat="#cat2">Детское питание</a>
+                        <a href="#">Овощи, фрукты, зелень, грибы</a>
+                        <a href="#">Сыры и Калбасы</a>
+                        <a href="#">Мясо и птица</a>
+                        <a href="#">Рыба</a>
+                        <a href="#">Хлеб и Выпечка</a>
+                        <a href="#">Кондитерские изделия</a>
+                        <a href="#">Бакалея</a>
+                        <a href="#">Напитки, соки, воды</a>
+                        <a href="#">Майонез, соусы, специи</a>
+                        <a href="#">Заморозка</a>
+                        <a href="#">Сопутствующие товары</a>
+
                     </div>
+                    <div class="catalog__tabs">
+                        <div class="catalog__tab catalog__tab--show" id="cat1">
+                            <a href="#" class="catalog__tab--link">Перейти в раздел</a>
+                            <ul class="catalog__tab--list">
+                                <li>
+                                    <a href="#">Молоко</a>
+                                </li>
+                                <li>
+                                    <a href="#">Творог</a>
+                                </li>
+                                <li>
+                                    <a href="#">Сметана</a>
+                                </li>
+                                <li>
+                                    <a href="#">Кефир, ряженка</a>
+                                </li>
+                                <li>
+                                    <a href="#">Сливки</a>
+                                </li>
+                                <li>
+                                    <a href="#">Йогурты, творожки, десерты</a>
+                                </li>
+                                <li>
+                                    <a href="#">Масло сливочное, маргарин</a>
+                                </li>
+                                <li>
+                                    <a href="#">Сгущённое молоко</a>
+                                </li>
+                                <li>
+                                    <a href="#">Мороженое</a>
+                                </li>
+
+                            </ul>
+                            <div class="catalog__tab--btn-group">
+                                <a href="#" class="catalog__tab--btn">
+                                    <img src="images/cat_cont1.jpg" alt="">
+                                    <span>Летние, лёгкие коктели
+                                            на основе молока</span>
+                                </a>
+                                <a href="#" class="catalog__tab--btn">
+                                    <img src="images/cat_cont2.jpg" alt="">
+                                    <span>Домашнее молоко
+                                            теперь со скидко - 20%</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!--catalog__tab-->
+
+                        <div class="catalog__tab" id="cat2">
+                            <a href="#" class="catalog__tab--link">Перейти в раздел 2</a>
+                            <ul class="catalog__tab--list">
+                                <li>
+                                    <a href="#">Молоко</a>
+                                </li>
+                                <li>
+                                    <a href="#">Творог</a>
+                                </li>
+                                <li>
+                                    <a href="#">Сметана</a>
+                                </li>
+                                <li>
+                                    <a href="#">Кефир, ряженка</a>
+                                </li>
+                                <li>
+                                    <a href="#">Сливки</a>
+                                </li>
+                                <li>
+                                    <a href="#">Йогурты, творожки, десерты</a>
+                                </li>
+                                <li>
+                                    <a href="#">Масло сливочное, маргарин</a>
+                                </li>
+                                <li>
+                                    <a href="#">Сгущённое молоко</a>
+                                </li>
+                                <li>
+                                    <a href="#">Мороженое</a>
+                                </li>
+
+                            </ul>
+                            <div class="catalog__tab--btn-group">
+                                <a href="#" class="catalog__tab--btn">
+                                    <img src="images/cat_cont1.jpg" alt="">
+                                    <span>Летние, лёгкие коктели
+                                            на основе молока</span>
+                                </a>
+                                <a href="#" class="catalog__tab--btn">
+                                    <img src="images/cat_cont2.jpg" alt="">
+                                    <span>Домашнее молоко
+                                            теперь со скидко - 20%</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!--catalog__tab-->
+                    </div>
+                    <!--catalog__tabs-->
                 </div>
 
             </div>
@@ -246,6 +503,88 @@
                     Рекомендации
                 </h4>
                 <div class="products">
+                    <div class="products__item">
+                        <div class="products__header">
+                            <p class="products__sale">
+                                Скидка
+                            </p>
+                            <a href="#" class="products__heart">
+                                <img src="images/icons/heart.svg" alt="">
+                            </a>
+                            <a href="#" class="products__star">
+                                <img src="images/icons/star.svg" alt="">
+                            </a>
+                            <p class="products__rating">
+                                5.5
+                            </p>
+                        </div>
+                        <div class="products__image">
+                            <img src="images/prod1.jpg" alt="">
+                        </div>
+                        <h4 class="products__title">Апельсины вкусные "Снедок фрукты"</h4>
+                        <div class="products__info">
+                            <div class="products__info_hidden">
+                                <div class="products__quanity">
+                                    <span class="products__mark products-minus">-</span>
+                                    <input type="number" class="products__input" value="1">
+                                    <span class="products__mark products-plus">+</span>
+
+                                </div>
+                                <p class="products__qty">1 шт. = 0,5 кг.</p>
+                            </div>
+                            <div class="products__price">
+                                <p class="products__price_regular">336,60 руб</p>
+                                <p class="products__price_sale">
+                                    <span class="text-overline">500 руб</span> за кг.
+                                </p>
+                            </div>
+                            <a href="#" class="products__add">
+                                <img src="images/icons/product-cart.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="products__item">
+                        <div class="products__header">
+                            <p class="products__sale">
+                                Скидка
+                            </p>
+                            <a href="#" class="products__heart">
+                                <img src="images/icons/heart.svg" alt="">
+                            </a>
+                            <a href="#" class="products__star">
+                                <img src="images/icons/star.svg" alt="">
+                            </a>
+                            <p class="products__rating">
+                                5.5
+                            </p>
+                        </div>
+                        <div class="products__image">
+                            <img src="images/prod1.jpg" alt="">
+                        </div>
+                        <h4 class="products__title">Апельсины вкусные "Снедок фрукты"</h4>
+                        <div class="products__info">
+                            <div class="products__info_hidden">
+                                <div class="products__quanity">
+                                    <span class="products__mark products-minus">-</span>
+                                    <input type="number" class="products__input" value="1">
+                                    <span class="products__mark products-plus">+</span>
+
+                                </div>
+                                <p class="products__qty">1 шт. = 0,5 кг.</p>
+                            </div>
+                            <div class="products__price">
+                                <p class="products__price_regular">336,60 руб</p>
+                                <p class="products__price_sale">
+                                    <span class="text-overline">500 руб</span> за кг.
+                                </p>
+                            </div>
+                            <a href="#" class="products__add">
+                                <img src="images/icons/product-cart.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+
                     <div class="products__item">
                         <div class="products__header">
                             <p class="products__sale">
@@ -553,6 +892,7 @@
 
 
     <script src="https://unpkg.com/swiper@6.1.1/swiper-bundle.min.js"></script>
+    <script src="scripts/search_trash.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 

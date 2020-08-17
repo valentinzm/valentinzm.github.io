@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snedok - главная страница</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@6.1.1/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="mobile-nav">
+        <div class="mobile-nav__content">
+            <nav class="mobile-nav__menu">
+                <a href="#">Пресс-центр</a>
+                <a href="#">Доставка и оплата</a>
+                <a href="#">Поддержка</a>
+                <a href="#">Возврат</a>
+                <a href="#">COVID-19</a>
+                <div class="mobile-nav__divider"></div>
+
+            </nav>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <nav class="header__top_nav">
+                    <a href="#">Пресс-центр</a>
+                    <a href="#">Доставка и оплата</a>
+                    <a href="#">Поддержка</a>
+                    <a href="#">Возврат</a>
+                    <a href="#">COVID-19</a>
+                </nav>
+                <div class="header__top_contacts">
+                    <a href="#" class="header__phone">+7 (999) 999-99-99</a>
+                    <a href="#" class="header__mail">message@online.snedok.ru</a>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <a href="#" class="header__logo">
+                    <img src="images/logo.svg" alt="Снедок - логотип">
+                </a>
+                <a href="#" class="header__city js-modal" data-modal="#test">
+                    <img src="images/icons/marker.svg" alt="">
+                    <span class="header__border">Москва</span>
+                </a>
+                <a href="#" class="header__courier js-modal" data-modal="#test">
+                    <span class="header__border">Заказать курьера</span>
+                </a>
+
+                <a href="#" class="header__login js-modal" data-modal="#login">
+                    <img src="images/icons/login.svg" alt="">
+                    <span>Войти</span>
+                </a>
+                <span class="header__divider">/</span>
+                <a href="#" class="header__signup">Регистрация</a>
+
+                <a href="#" class="header__price">
+                    116,93 руб.
+                    <img src="images/icons/cart.svg" alt="">
+                </a>
+
+                <div class="burger">
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="overlay"></div>
+    <aside class="aside-cart">
+        <div class="aside-cart__content">
+            <p class="aside-cart__title">Корзина</p>
+            <div class="aside-cart__sum">
+                <p class="aside-cart__sum--descr">Сумма покупок:</p>
+                <p class="aside-cart__sum--total">116,93 руб.</p>
+            </div>
+            <a href="/cart" class="aside-cart__submit">
+                оформить заказ
+            </a>
+            <a href="#" class="aside-cart__promo">
+                Ввести промокод
+            </a>
+            <div class="aside-cart__divider"></div>
+            <p class="">
+                Товары
+            </p>
+            <div class="aside-cart__products">
+                <div class="aside-cart__product">
+                    <div class="aside-cart__product--image">
+                        <img src="images/cart/prod1.jpg" alt="">
+                    </div>
+                    <div class="aside-cart__product--info">
+                        <p class="aside-cart__product--price">116,93 руб.</p>
+                        <span class="aside-cart__product--weight">1 кг. </span>
+                    </div>
+                    <div class="aside-cart__product--count">
+                        <div class="products__quanity">
+                            <span class="products__mark products-minus">-</span>
+                            <input type="number" class="products__input" value="1">
+                            <span class="products__mark products-plus">+</span>
+
+                        </div>
+                        <a href="#" class="aside-cart__product--remove">Удалить</a>
+                    </div>
+                </div>
+                <div class="aside-cart__product">
+                    <div class="aside-cart__product--image">
+                        <img src="images/cart/prod1.jpg" alt="">
+                    </div>
+                    <div class="aside-cart__product--info">
+                        <p class="aside-cart__product--price">0 руб.</p>
+                        <span class="aside-cart__product--weight">1 кг. </span>
+                    </div>
+                    <div class="aside-cart__product--count">
+                        <div class="products__quanity">
+                            <span class="products__mark products-minus">-</span>
+                            <input type="number" class="products__input" value="1">
+                            <span class="products__mark products-plus">+</span>
+
+                        </div>
+                        <a href="#" class="aside-cart__product--remove">Удалить</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </aside>
+    <main>
+        <div class="breadcrumbs">
+            <div class="container">
+                <nav class="breadcrumbs__container">
+                    <a href="#">Главная</a>
+                    <a href="#">Личный кабинет</a>
+                    <span>Мои данные</span>
+                </nav>
+
+            </div>
+        </div>
+        <div class="search search__page">
+            <button class="catalog__button">
+                Каталог товаров
+            </button>
+            <div class="search__block">
+                <form action="#" class="search__form">
+                    <input type="text" class="search__input" placeholder="Какие продукты вы ищите?">
+                    <input type="submit" class="search__button" value="">
+                </form>
+                <div class="search__result">
+                    <p>
+                        Товары
+                    </p>
+                    <div class="search__item">
+                        <div class="search__item--img">
+                            <img src="images/prod1.jpg" alt="">
+                        </div>
+                        <div class="search__item--info">
+                            <p class="search__item--title">
+                                <span>Апельсины</span> красные вес
+                            </p>
+                            <p class="search__item--price">
+                                282 <span>руб./кг</span>
+                            </p>
+                        </div>
+                        <div class="search__item--buttons">
+                            <a href="#" class="search__item--like">
+                                <img src="images/like_btn.svg" alt="">
+                            </a>
+                            <a href="#" class="search__item--add">
+                                В корзину
+                            </a>
+                        </div>
+                    </div>
+                    <div class="search__item">
+                        <div class="search__item--img">
+                            <img src="images/prod1.jpg" alt="">
+                        </div>
+                        <div class="search__item--info">
+                            <p class="search__item--title">
+                                <span>Апельсины</span> красные вес
+                            </p>
+                            <p class="search__item--price">
+                                282 <span>руб./кг</span>
+                            </p>
+                        </div>
+                        <div class="search__item--buttons">
+                            <a href="#" class="search__item--like">
+                                <img src="images/like_btn.svg" alt="">
+                            </a>
+                            <a href="#" class="search__item--add">
+                                В корзину
+                            </a>
+                        </div>
+                    </div>
+                    <div class="search__item">
+                        <div class="search__item--img">
+                            <img src="images/prod1.jpg" alt="">
+                        </div>
+                        <div class="search__item--info">
+                            <p class="search__item--title">
+                                <span>Апельсины</span> красные вес
+                            </p>
+                            <p class="search__item--price">
+                                282 <span>руб./кг</span>
+                            </p>
+                        </div>
+                        <div class="search__item--buttons">
+                            <a href="#" class="search__item--like">
+                                <img src="images/like_btn.svg" alt="">
+                            </a>
+                            <a href="#" class="search__item--add">
+                                В корзину
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="catalog__content">
+                <div class="catalog__list">
+                    <a href="#" data-cat="#cat1">Молочные продукты, яйцо</a>
+                    <a href="#" data-cat="#cat2">Детское питание</a>
+                    <a href="#">Овощи, фрукты, зелень, грибы</a>
+                    <a href="#">Сыры и Калбасы</a>
+                    <a href="#">Мясо и птица</a>
+                    <a href="#">Рыба</a>
+                    <a href="#">Хлеб и Выпечка</a>
+                    <a href="#">Кондитерские изделия</a>
+                    <a href="#">Бакалея</a>
+                    <a href="#">Напитки, соки, воды</a>
+                    <a href="#">Майонез, соусы, специи</a>
+                    <a href="#">Заморозка</a>
+                    <a href="#">Сопутствующие товары</a>
+
+                </div>
+                <div class="catalog__tabs">
+                    <div class="catalog__tab catalog__tab--show" id="cat1">
+                        <a href="#" class="catalog__tab--link">Перейти в раздел</a>
+                        <ul class="catalog__tab--list">
+                            <li>
+                                <a href="#">Молоко</a>
+                            </li>
+                            <li>
+                                <a href="#">Творог</a>
+                            </li>
+                            <li>
+                                <a href="#">Сметана</a>
+                            </li>
+                            <li>
+                                <a href="#">Кефир, ряженка</a>
+                            </li>
+                            <li>
+                                <a href="#">Сливки</a>
+                            </li>
+                            <li>
+                                <a href="#">Йогурты, творожки, десерты</a>
+                            </li>
+                            <li>
+                                <a href="#">Масло сливочное, маргарин</a>
+                            </li>
+                            <li>
+                                <a href="#">Сгущённое молоко</a>
+                            </li>
+                            <li>
+                                <a href="#">Мороженое</a>
+                            </li>
+
+                        </ul>
+                        <div class="catalog__tab--btn-group">
+                            <a href="#" class="catalog__tab--btn">
+                                <img src="images/cat_cont1.jpg" alt="">
+                                <span>Летние, лёгкие коктели
+                                    на основе молока</span>
+                            </a>
+                            <a href="#" class="catalog__tab--btn">
+                                <img src="images/cat_cont2.jpg" alt="">
+                                <span>Домашнее молоко
+                                    теперь со скидко - 20%</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!--catalog__tab-->
+
+                    <div class="catalog__tab" id="cat2">
+                        <a href="#" class="catalog__tab--link">Перейти в раздел 2</a>
+                        <ul class="catalog__tab--list">
+                            <li>
+                                <a href="#">Молоко</a>
+                            </li>
+                            <li>
+                                <a href="#">Творог</a>
+                            </li>
+                            <li>
+                                <a href="#">Сметана</a>
+                            </li>
+                            <li>
+                                <a href="#">Кефир, ряженка</a>
+                            </li>
+                            <li>
+                                <a href="#">Сливки</a>
+                            </li>
+                            <li>
+                                <a href="#">Йогурты, творожки, десерты</a>
+                            </li>
+                            <li>
+                                <a href="#">Масло сливочное, маргарин</a>
+                            </li>
+                            <li>
+                                <a href="#">Сгущённое молоко</a>
+                            </li>
+                            <li>
+                                <a href="#">Мороженое</a>
+                            </li>
+
+                        </ul>
+                        <div class="catalog__tab--btn-group">
+                            <a href="#" class="catalog__tab--btn">
+                                <img src="images/cat_cont1.jpg" alt="">
+                                <span>Летние, лёгкие коктели
+                                    на основе молока</span>
+                            </a>
+                            <a href="#" class="catalog__tab--btn">
+                                <img src="images/cat_cont2.jpg" alt="">
+                                <span>Домашнее молоко
+                                    теперь со скидко - 20%</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!--catalog__tab-->
+                </div>
+                <!--catalog__tabs-->
+            </div>
+
+        </div>
+        <section class="container">
+            <h4 class="title">Личный кабинет</h4>
+            <div class="row">
+                <aside class="sidebar">
+                    <nav class="profile__nav">
+                        <a href="/profile-history.html" class="profile__item profile__active">История покупок</a>
+                        <a href="#" class="profile__item">Избранное</a>
+                        <a href="#" class="profile__item">Мои данные</a>
+                        <a href="#" class="profile__item">Бонусы</a>
+                    </nav>
+                    <a href="#" class="profile__logout">Выйти из аккаунта</a>
+                </aside>
+                <div class="favorites">
+                    <form class="form-date">
+                        <h4 class="subtitle form-date__subtitle">
+                            Основные данные
+                        </h4>
+                        <label class="form-label form-date__label">
+                            <span>Имя</span>
+                            <input type="text" placeholder="" class="form-input form-date__input">
+                        </label>
+                        <label class="form-label form-date__label">
+                            <span>Фамилия</span>
+                            <input type="text" placeholder="" class="form-input form-date__input">
+                        </label>
+                        <label class="form-label form-date__label">
+                            <span>Электронный адрес/ E-mail</span>
+                            <input type="text" placeholder="" class="form-input form-date__input">
+                        </label>
+                        <label class="form-label form-date__label">
+                            <span>Номер телефона</span>
+                            <input type="text" placeholder="" class="form-input form-date__input">
+                        </label>
+                        <input type="submit" class="form-submit form-date__submit" value="Сохранить изменения">
+                    </form>
+                    <form></form>
+                </div>
+            </div>
+            <!--row-->
+            <section class="watched">
+                <h4 class="title">С этим товаром покупают</h4>
+                <div class="products">
+                    <div class="products__item">
+                        <div class="products__header">
+                            <p class="products__sale">
+                                Скидка
+                            </p>
+                            <a href="#" class="products__heart">
+                                <img src="images/icons/heart.svg" alt="">
+                            </a>
+                            <a href="#" class="products__star">
+                                <img src="images/icons/star.svg" alt="">
+                            </a>
+                            <p class="products__rating">
+                                5.5
+                            </p>
+                        </div>
+                        <div class="products__image">
+                            <img src="images/fruit1.jpg" alt="">
+                        </div>
+                        <h4 class="products__title">Яблоки балканские "Снедок фрукты"</h4>
+                        <div class="products__info">
+                            <div class="products__info_hidden">
+                                <div class="products__quanity">
+                                    <span class="products__mark products-minus">-</span>
+                                    <input type="number" class="products__input" value="1">
+                                    <span class="products__mark products-plus">+</span>
+
+                                </div>
+                                <p class="products__qty">1 шт. = 0,5 кг.</p>
+                            </div>
+                            <div class="products__price">
+                                <p class="products__price_regular">336,60 руб</p>
+                                <p class="products__price_sale">
+                                    <span class="text-overline">500 руб</span> за кг.
+                                </p>
+                            </div>
+                            <a href="#" class="products__add">
+                                <img src="images/icons/product-cart.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__header">
+                            <p class="products__sale">
+                                Скидка
+                            </p>
+                            <a href="#" class="products__heart">
+                                <img src="images/icons/heart.svg" alt="">
+                            </a>
+                            <a href="#" class="products__star">
+                                <img src="images/icons/star.svg" alt="">
+                            </a>
+                            <p class="products__rating">
+                                5.5
+                            </p>
+                        </div>
+                        <div class="products__image">
+                            <img src="images/fruit2.jpg" alt="">
+                        </div>
+                        <h4 class="products__title">Сливы балканские "Снедок фрукты"</h4>
+                        <div class="products__info">
+                            <div class="products__info_hidden">
+                                <div class="products__quanity">
+                                    <span class="products__mark products-minus">-</span>
+                                    <input type="number" class="products__input" value="1">
+                                    <span class="products__mark products-plus">+</span>
+
+                                </div>
+                                <p class="products__qty">1 шт. = 0,5 кг.</p>
+                            </div>
+                            <div class="products__price">
+                                <p class="products__price_regular">1024,60 руб</p>
+                                <p class="products__price_sale">
+                                    <span class="text-overline">500 руб</span> за кг.
+                                </p>
+                            </div>
+                            <a href="#" class="products__add">
+                                <img src="images/icons/product-cart.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__header">
+                            <p class="products__sale">
+                                Скидка
+                            </p>
+                            <a href="#" class="products__heart">
+                                <img src="images/icons/heart.svg" alt="">
+                            </a>
+                            <a href="#" class="products__star">
+                                <img src="images/icons/star.svg" alt="">
+                            </a>
+                            <p class="products__rating">
+                                5.5
+                            </p>
+                        </div>
+                        <div class="products__image">
+                            <img src="images/fruit3.jpg" alt="">
+                        </div>
+                        <h4 class="products__title">Виноград чёрный “Молдова”
+                        </h4>
+                        <div class="products__info">
+                            <div class="products__info_hidden">
+                                <div class="products__quanity">
+                                    <span class="products__mark products-minus">-</span>
+                                    <input type="number" class="products__input" value="1">
+                                    <span class="products__mark products-plus">+</span>
+
+                                </div>
+                                <p class="products__qty">1 шт. = 0,5 кг.</p>
+                            </div>
+                            <div class="products__price">
+                                <p class="products__price_regular">768,60 руб</p>
+                                <p class="products__price_sale">
+                                    <span class="text-overline">500 руб</span> за кг.
+                                </p>
+                            </div>
+                            <a href="#" class="products__add">
+                                <img src="images/icons/product-cart.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer class="footer container">
+        <div class="footer__top">
+            <div class="footer__nav">
+                <p class="footer__nav_title">Покупателям</p>
+                <a href="#">Программа лояльности</a>
+                <a href="#">Подарочные карты</a>
+                <a href="#">Личный кабинет</a>
+                <a href="#">COVID-19</a>
+            </div>
+            <div class="footer__nav">
+                <p class="footer__nav_title">Партнёрам</p>
+                <a href="#">Поставщикам</a>
+                <a href="#">Документы</a>
+            </div>
+            <div class="footer__nav">
+                <p class="footer__nav_title">Разделы</p>
+                <a href="#">Каталог</a>
+                <a href="#">О компании</a>
+                <a href="#">Контакты</a>
+                <a href="#">Бренды</a>
+            </div>
+            <div class="footer__nav">
+                <p class="footer__nav_title">Информация</p>
+                <a href="#">Доставка</a>
+                <a href="#">Как заказать</a>
+                <a href="#">Возврат</a>
+                <a href="#">FAQ</a>
+            </div>
+            <div class="footer__nav">
+                <p class="footer__nav_title">Документы</p>
+                <a href="#">Конфиденциальность</a>
+                <a href="#">Политка сайта</a>
+                <a href="#">Реквизиты</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__copyright">
+                <a href="#">
+                    <img src="images/logo.svg" alt="">
+                </a>
+                <p>Copyright © 2010-2020 Snedok marktplace. All rights reserved.</p>
+            </div>
+            <div class="footer__contact footer__contact_mx">
+                <p>Почта поддержки:</p>
+                <a href="#">Support@snedoc.ru</a>
+            </div>
+            <div class="footer__contact">
+                <p>Телефон поддержки:</p>
+                <a href="#">+7 (999) 999-99-99</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="test">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <p>Text</p>
+        </div>
+    </div>
+
+    <div class="modal" id="login">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <a href="#" class="modal__close">
+                <img src="images/icons/modal_close.svg" alt="">
+            </a>
+            <h4 class="modal__title">Вход</h4>
+            <form action="#">
+                <label for="" class="modal__label">
+                    <input type="text" class="modal__input" placeholder="E-mail или номер телефона">
+                </label>
+                <label for="" class="modal__label">
+                    <input type="password" class="modal__input" placeholder="Введите пароль">
+                </label>
+                <div class="modal__remember">
+                    <label>
+                        <input type="checkbox">
+                        Запомнить меня
+                    </label>
+                    <a href="#">Забыли пароль ?</a>
+                </div>
+                <input type="submit" class="modal__submit" value="Войти в аккаунт">
+                <p class="modal__text">
+                    У вас нет аккаунта? <a href="#">Создать аккаунт</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper@6.1.1/swiper-bundle.min.js"></script>
+
+    <script src="scripts/search_trash.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

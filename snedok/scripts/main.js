@@ -5,7 +5,7 @@ var swiper = new Swiper('.front-slider', {
     },
 });
 let swiperOffers = new Swiper('.offers__slider', {
-    slidesPerView: 4,
+    slidesPerView: 5,
     loop: true,
     spaceBetween: 25,
 })
@@ -87,5 +87,25 @@ document.querySelector('.overlay').addEventListener('click', overlayClose);
 
 function overlayClose() {
     document.querySelector('.overlay').classList.remove('overlay__show');
-    document.querySelector('.aside-cart').classList.remove('aside-cart__show')
+    document.querySelector('.aside-cart').classList.remove('aside-cart__show');
+    document.querySelector('.mobile-nav').classList.remove('mobile-nav__open');
+    document.querySelector('.burger').classList.remove('burger__open');
+}
+
+document.querySelector('.burger').addEventListener('click', mobileMenu);
+
+function mobileMenu() {
+    this.classList.add('burger__open');
+    document.querySelector('.overlay').classList.add('overlay__show');
+    document.querySelector('.mobile-nav').classList.add('mobile-nav__open');
+}
+
+document.querySelectorAll('.catalog__list a').forEach(function(e) {
+    e.addEventListener('mouseover', showCaterotyTab);
+});
+
+function showCaterotyTab() {
+    let cat_id = this.dataset.cat;
+    document.querySelectorAll('.catalog__tab').forEach((tab) => { tab.classList.remove('catalog__tab--show') });
+    document.querySelector(cat_id).classList.add('catalog__tab--show');
 }
