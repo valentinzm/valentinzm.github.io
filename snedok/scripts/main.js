@@ -3,11 +3,19 @@ var swiper = new Swiper('.front-slider', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+    pagination: {
+        el: '.front-slider__pagination',
+        type: 'bullets',
+    },
 });
 let swiperOffers = new Swiper('.offers__slider', {
     slidesPerView: 5,
     loop: true,
     spaceBetween: 25,
+    navigation: {
+        nextEl: '.offers__button-next',
+        prevEl: '.offers__button-prev',
+    },
 })
 document.querySelector('.catalog__button').addEventListener('click', function(e) {
     document.querySelector('.catalog__content').classList.toggle('catalog__show');
