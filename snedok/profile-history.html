@@ -352,71 +352,57 @@
                     <a href="#" class="profile__logout">Выйти из аккаунта</a>
                 </aside>
                 <div class="history">
-                    <div class="history__head">
-                        <p class="history__head--num">Номер заказа</p>
-                        <p class="history__head--time">Время</p>
-                        <p class="history__head--count">Кол-во товара</p>
-                        <p class="history__head--status">Статус</p>
-                        <p class="history__head--sum">Сумма</p>
-                    </div>
-                    <div class="history__list">
-                        <div class="history__item">
-                            <div class="">
-                                <p class="history__item--title">Заказ M-232340</p>
-                                <span class="history__item--date">28 июня 2020 г.</span>
-                            </div>
-                            <div class="history__item--time">
-                                13:34
-                            </div>
-                            <div class="history__item--count">
-                                5 шт.
-                            </div>
-                            <div class="history__item--status">
-                                Новый
-                            </div>
-                            <div class="history__item--sum">
-                                2 500 руб.
-                            </div>
-                        </div>
-                        <div class="history__item">
-                            <div class="">
-                                <p class="history__item--title">Заказ M-232340</p>
-                                <span class="history__item--date">28 июня 2020 г.</span>
-                            </div>
-                            <div class="history__item--time">
-                                13:34
-                            </div>
-                            <div class="history__item--count">
-                                5 шт.
-                            </div>
-                            <div class="history__item--status">
-                                Новый
-                            </div>
-                            <div class="history__item--sum">
-                                2 500 руб.
-                            </div>
-                        </div>
-                        <div class="history__item">
-                            <div class="">
-                                <p class="history__item--title">Заказ M-232340</p>
-                                <span class="history__item--date">28 июня 2020 г.</span>
-                            </div>
-                            <div class="history__item--time">
-                                13:34
-                            </div>
-                            <div class="history__item--count">
-                                5 шт.
-                            </div>
-                            <div class="history__item--status">
-                                Новый
-                            </div>
-                            <div class="history__item--sum">
-                                2 500 руб.
-                            </div>
-                        </div>
+                    <table class="history__table">
+                        <thead class="history__head">
+                            <tr>
+                                <th>Номер заказа</th>
+                                <th>Время</th>
+                                <th>Кол-во товара</th>
+                                <th>Статус</th>
+                                <th>Сумма</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="history__item js-modal" data-modal="#history_item">
+                                <td>
+                                    <h4 class="history__item--title">Заказ M-232340</h4>
+                                    <span class="history__item--date">28 июня 2020 г.</span>
+                                </td>
+                                <td>13:34</td>
+                                <td>5 шт.</td>
+                                <td>
+                                    <span class="history__status-new">Новый</span>
+                                </td>
+                                <td>2 500 руб.</td>
+                            </tr>
+                            <tr class="history__item">
+                                <td>
+                                    <h4 class="history__item--title">Заказ M-232340</h4>
+                                    <span class="history__item--date">28 июня 2020 г.</span>
+                                </td>
+                                <td>13:34</td>
+                                <td>5 шт.</td>
+                                <td>
+                                    <span class="history__status-on">Обрабатывается</span>
+                                </td>
+                                <td>2 500 руб.</td>
+                            </tr>
+                            <tr class="history__item">
+                                <td>
+                                    <h4 class="history__item--title">Заказ M-232340</h4>
+                                    <span class="history__item--date">28 июня 2020 г.</span>
+                                </td>
+                                <td>13:34</td>
+                                <td>5 шт.</td>
+                                <td>
+                                    <span class="history__status-done">Выполнен</span>
+                                </td>
+                                <td>2 500 руб.</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-                    </div>
-                    <!--history__list-->
+                    <!--history__table-->
                 </div>
             </div>
             <!--row-->
@@ -603,6 +589,81 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal" id="history_item">
+        <div class="modal__overlay"></div>
+        <div class="modal-history">
+            <h4 class="modal-history__title">
+                Заказ M-232340
+                <span class="modal-history__succes">(Выполнен)</span>
+            </h4>
+            <table class="modal-history__table">
+                <thead>
+                    <tr class="modal-history__head">
+                        <th>Товар</th>
+                        <th>Кол-во</th>
+                        <th>Статус</th>
+                        <th>Сумма</th>
+                    </tr>
+                </thead>
+                <tbody class="modal-history__body">
+                    <tr>
+                        <td>
+                            <h4>Томаты Бакинские</h4>
+                            <span>Артикуль 23090423</span>
+                        </td>
+                        <td>
+                            <p>5 шт</p>
+                            <span>1 шт = 0.5 кг</span>
+                        </td>
+                        <td>
+                            <span>В наличии</span>
+                        </td>
+                        <td>
+                            584,65 руб
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Томаты Бакинские</h4>
+                            <span>Артикуль 23090423</span>
+                        </td>
+                        <td>
+                            <p>5 шт</p>
+                            <span>1 шт = 0.5 кг</span>
+                        </td>
+                        <td>
+                            <span>В наличии</span>
+                        </td>
+                        <td>
+                            584,65 руб
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot class="modal-history__footer">
+                    <tr>
+                        <td colspan="2">
+                            <a href="#" class="modal-history__repeat">Повторить заказ</a>
+                            <a href="#" class="modal-history__remove">
+                                <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.3" d="M1.40039 16C1.40039 17.1 2.30039 18 3.40039 18H11.4004C12.5004 18 13.4004 17.1 13.4004 16V4H1.40039V16ZM14.4004 1H10.9004L9.90039 0H4.90039L3.90039 1H0.400391V3H14.4004V1Z" fill="black"/>
+                                </svg>
+                            </a>
+                        </td>
+                        <td>
+                            <p>Итого</p>
+                            <p>Доставка</p>
+                        </td>
+                        <td>
+                            <p>5 000 руб.</p>
+                            <p>250 руб.</p>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </div>
+    </div>
 
     <div class="modal" id="test">
         <div class="modal__overlay"></div>

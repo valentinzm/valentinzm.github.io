@@ -111,6 +111,11 @@ function mobileMenu() {
     document.querySelector('.mobile-nav').classList.add('mobile-nav__open');
 }
 
+document.querySelector('.mobile-search').addEventListener('click', mobileSearch);
+
+function mobileSearch(e) {
+    document.querySelector('.search').classList.toggle('search__show')
+}
 document.querySelectorAll('.catalog__list a').forEach(function(e) {
     e.addEventListener('mouseover', showCaterotyTab);
 });
@@ -119,4 +124,11 @@ function showCaterotyTab() {
     let cat_id = this.dataset.cat;
     document.querySelectorAll('.catalog__tab').forEach((tab) => { tab.classList.remove('catalog__tab--show') });
     document.querySelector(cat_id).classList.add('catalog__tab--show');
+}
+
+document.querySelector('.mobile-catalog').addEventListener('click', showCatalog);
+
+function showCatalog(e) {
+    e.preventDefault();
+    document.querySelector('.search').classList.add('catalog__content--show');
 }
