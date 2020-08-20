@@ -11,6 +11,8 @@ var swiper = new Swiper('.front-slider', {
 let swiperOffers = new Swiper('.offers__slider', {
     slidesPerView: 5,
     loop: true,
+    centeredSlides: true,
+
     spaceBetween: 25,
     navigation: {
         nextEl: '.offers__button-next',
