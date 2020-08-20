@@ -30,7 +30,8 @@
     position: relative;
 }
 
-.slider:before {
+
+/* .slider:before {
     display: block;
     content: attr(data-start-range);
     position: absolute;
@@ -43,41 +44,43 @@
     position: absolute;
     top: 30px;
     right: 0px;
-}
+} */
 
 .slider-track {
-    background-color: #ddd;
+    background-color: #EFEFEF;
     width: 100%;
-    height: 20px;
+    height: 3px;
     border-radius: 4px;
     position: relative;
     margin-bottom: 70px;
 }
 
 .slider-interval {
-    background-color: #0086b3;
-    height: 20px;
+    background-color: #43B02A;
+    height: 3px;
     position: absolute;
     left: 0px;
     right: 0px;
 }
 
 .slider-handle {
-    height: 30px;
-    width: 30px;
-    border-radius: 20%;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
     position: absolute;
-    background-color: magenta;
-    border: solid 1px white;
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.05), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0359427), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0298054), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.025), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0201946), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0140573);
     z-index: 1;
-    top: -5px;
+    top: -10px;
     cursor: ew-resize;
 }
 
-.slider-handle.active {
+
+/* .slider-handle.active {
     background-color: darkmagenta;
     z-index: 5;
-}
+} */
 
 .slider-handle[data-slider-handle="min"] {
     left: 0px;
@@ -87,12 +90,42 @@
     right: 0px;
 }
 
+.slider-handle-group {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 33px;
+}
+
+.slider-handle-label {
+    position: relative;
+    width: 109px;
+    height: 34px;
+}
+
 .slider-handle-input {
+    width: 109px;
+    height: 34px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #777777;
+    padding-left: 20px;
+    outline: none;
+    background: transparent;
+    border: none;
+}
+
+.slider-handle-label:before {
+    content: '';
     position: absolute;
-    top: -30px;
-    border: 1px solid #ccc;
-    width: 40px;
-    text-align: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #43B02A;
+    opacity: 0.03;
+    border-radius: 2px;
 }
 
 .clearfix:after {

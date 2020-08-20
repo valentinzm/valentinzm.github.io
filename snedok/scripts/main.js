@@ -97,6 +97,7 @@ document.querySelector('.overlay').addEventListener('click', overlayClose);
 
 function overlayClose() {
     document.querySelector('.overlay').classList.remove('overlay__show');
+
     document.querySelector('.aside-cart').classList.remove('aside-cart__show');
     document.querySelector('.mobile-nav').classList.remove('mobile-nav__open');
     document.querySelector('.burger').classList.remove('burger__open');

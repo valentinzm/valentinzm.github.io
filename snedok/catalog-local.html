@@ -248,11 +248,16 @@
                     </div>
                     <!--filter__group-->
                     <div class="slider-container filter__range">
+                        <div class="slider" data-component="RangeSlider" data-slider-values="0,5000" data-slider-percentages="0,100" data-start-value="500" data-end-value="4500">
 
-                        <div class="slider" data-component="RangeSlider" data-slider-values="0,40,60,100" data-slider-percentages="0,10,90,100" data-start-value="10" data-end-value="90">
-
-                            <input type class="slider-handle-input" data-slider-handle="min" />
-                            <input type class="slider-handle-input" data-slider-handle="max" />
+                            <div class="slider-handle-group">
+                                <label class="slider-handle-label">
+                                    <input type class="slider-handle-input" data-slider-handle="min" />
+                                </label>
+                                <label class="slider-handle-label">
+                                    <input type class="slider-handle-input" data-slider-handle="max" />
+                                </label>
+                            </div>
 
                             <div class="slider-track">
                                 <div class="slider-interval"></div>
@@ -269,6 +274,9 @@
                     <!--filter__group-->
                 </aside>
                 <div class="flex-container">
+                    <button class="filter-btn">
+                        Фильтр
+                    </button>
                     <div class="products products__column4">
                         <div class="products__item">
                             <div class="products__header">
@@ -794,6 +802,7 @@
 
     <script src="https://unpkg.com/swiper@6.1.1/swiper-bundle.min.js"></script>
     <script src="libs/bundle.js"></script>
+    <script src="scripts/catalog-local.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 
