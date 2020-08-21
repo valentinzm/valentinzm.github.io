@@ -44,7 +44,7 @@ body {
 
 .banner {
     height: 517px;
-    padding-top: 72px;
+    padding-top: 85px;
 }
 
 .banner .container {
@@ -61,7 +61,7 @@ body {
     line-height: 64px;
     color: #2D55D2;
     margin-top: 0;
-    margin-bottom: 64px;
+    margin-bottom: 54px;
     font-family: 'Proxima Nova Th';
     font-weight: 800;
 }
@@ -147,12 +147,11 @@ body {
 
 .what-do__title {
     padding-top: 72px;
-    padding-bottom: 48px;
 }
 
 .what-do__item--1 {
     width: 367px;
-    margin-right: 12px;
+    margin-right: 20px;
 }
 
 .what-do__item--1 p {
@@ -161,7 +160,7 @@ body {
 
 .what-do__item--2 {
     width: 289px;
-    margin-right: 89px;
+    margin-right: 98px;
 }
 
 .what-do__item--3 {
@@ -171,7 +170,8 @@ body {
 
 .what-do__item img {
     display: block;
-    margin-bottom: 24px;
+    margin-bottom: 9px;
+    transform: translate(-8px, -12px);
 }
 
 .what-do__item p {
@@ -184,7 +184,7 @@ body {
 }
 
 .spend__title {
-    margin-bottom: 32px;
+    margin-bottom: 24px;
     margin-top: 72px;
 }
 
@@ -197,8 +197,8 @@ body {
 
 .spend__row {
     display: flex;
-    margin-left: -5px;
-    margin-right: -5px;
+    margin-left: -10px;
+    margin-right: -10px;
     flex-wrap: wrap;
 }
 
@@ -206,8 +206,8 @@ body {
     width: 270px;
     background-color: #fff;
     height: 364px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
     box-shadow: 0px 0px 15px rgba(4, 14, 69, 0.09);
     margin-bottom: 20px;
 }
@@ -255,7 +255,8 @@ body {
 }
 
 .form-section {
-    padding-top: 36px;
+    margin-top: 33px;
+    padding-top: 41px;
     display: flex;
     border-top: 1px solid #AEB0B6;
 }
@@ -268,6 +269,7 @@ body {
     width: 270px;
     height: 48px;
     padding-right: 20px;
+    margin-top: -3px;
 }
 
 .form {
@@ -353,7 +355,7 @@ body {
 
 .parthners__title {
     margin-top: 72px;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
 }
 
 .parthners__descr {
@@ -383,7 +385,7 @@ body {
 
 @media(max-width: 1200px) {
     .banner {
-        padding-top: 40px;
+        padding-top: 45px;
         height: 845px;
     }
     .banner__title {
@@ -421,6 +423,13 @@ body {
     }
     .what-do__item--1 p {
         max-width: 100%;
+    }
+    .what-do__title {
+        margin-bottom: 36px;
+    }
+    .what-do__item img {
+        max-width: 100px;
+        margin-bottom: 12px;
     }
     .spend__item {
         width: 222px;
@@ -511,7 +520,7 @@ body {
         flex-wrap: wrap;
     }
     .what-do__item {
-        margin-bottom: 40px;
+        margin-bottom: 60px;
     }
     .what-do__item--1,
     .what-do__item--2,
@@ -556,12 +565,12 @@ body {
         line-height: 24px;
         display: flex;
         justify-content: center;
-        margin-top: 20px;
+        margin-top: 18px;
         text-align: right;
         letter-spacing: 0.04em;
         text-transform: uppercase;
         color: #498AED;
-        margin-bottom: 48px;
+        margin-bottom: 36px;
         text-decoration: none;
         align-items: center;
     }
