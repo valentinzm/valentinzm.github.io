@@ -157,14 +157,14 @@
     <main>
         <section class="swiper-container front-slider">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image: url('images/front-slide.jpg');">
+                <div class="swiper-slide front-slider__slide" style="background-image: url('images/front-slide.jpg');">
                     <div class="front-slider__item">
                         <h1 class="front-slider__title">Продукты с грядки</h1>
                         <p class="front-slider__descr">Успейте на летний урожай</p>
                     </div>
                 </div>
-                <div class="swiper-slide" style="background-image: url('images/front-slide.jpg');"></div>
-                <div class="swiper-slide" style="background-image: url('images/front-slide.jpg');"></div>
+                <div class="swiper-slide front-slider__slide" style="background-image: url('images/front-slide.jpg');"></div>
+                <div class="swiper-slide front-slider__slide" style="background-image: url('images/front-slide.jpg');"></div>
             </div>
             <div class="swiper-pagination front-slider__pagination"></div>
             <div class="front-slider__buttons">
@@ -199,10 +199,14 @@
                         </div>
                         <div class="search__item--buttons">
                             <a href="#" class="search__item--like">
-                                <img src="images/like_btn.svg" alt="">
+                                <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.7554 1.14929C13.3913 0.784935 12.9588 0.495898 12.4829 0.298699C12.007 0.101499 11.4969 0 10.9817 0C10.4666 0 9.95644 0.101499 9.48052 0.298699C9.00459 0.495898 8.57219 0.784935 8.208 1.14929L7.45218 1.90512L6.69636 1.14929C5.96072 0.413658 4.96298 0.000381306 3.92263 0.000381314C2.88229 0.000381322 1.88455 0.413658 1.14891 1.14929C0.413276 1.88493 7.75119e-09 2.88267 0 3.92302C-7.75119e-09 4.96336 0.413276 5.9611 1.14891 6.69674L1.90473 7.45256L7.45218 13L12.9996 7.45256L13.7554 6.69674C14.1198 6.33255 14.4088 5.90014 14.606 5.42422C14.8032 4.94829 14.9047 4.43818 14.9047 3.92302C14.9047 3.40785 14.8032 2.89774 14.606 2.42182C14.4088 1.94589 14.1198 1.51348 13.7554 1.14929Z"/>
+                                </svg>
                             </a>
                             <a href="#" class="search__item--add">
-                                В корзину
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.2 11.2C3.43 11.2 2.807 11.83 2.807 12.6C2.807 13.37 3.43 14 4.2 14C4.97 14 5.6 13.37 5.6 12.6C5.6 11.83 4.97 11.2 4.2 11.2ZM0.7 0C0.3134 0 0 0.313401 0 0.7C0 1.0866 0.313401 1.4 0.7 1.4H0.857594C1.18885 1.4 1.49049 1.59078 1.63245 1.89007L3.08085 4.9438C3.60775 6.05468 3.56836 7.35115 2.975 8.428C2.863 8.624 2.8 8.855 2.8 9.1C2.8 9.87 3.43 10.5 4.2 10.5H11.9C12.2866 10.5 12.6 10.1866 12.6 9.8C12.6 9.4134 12.2866 9.1 11.9 9.1H4.494C4.4104 9.1 4.34209 9.04397 4.32381 8.96667C4.31739 8.93951 4.32242 8.91131 4.32919 8.88422C4.33637 8.85553 4.34724 8.82789 4.36154 8.802L4.45408 8.6344C4.77238 8.05792 5.37885 7.7 6.03737 7.7H10.185C10.71 7.7 11.172 7.413 11.41 6.979L13.916 2.436C13.972 2.338 14 2.219 14 2.1C14 1.715 13.685 1.4 13.3 1.4H3.72046C3.24838 1.4 2.8188 1.12724 2.618 0.7C2.4172 0.272757 1.98762 0 1.51554 0H0.7ZM11.2 11.2C10.43 11.2 9.807 11.83 9.807 12.6C9.807 13.37 10.43 14 11.2 14C11.97 14 12.6 13.37 12.6 12.6C12.6 11.83 11.97 11.2 11.2 11.2Z"/>
+                                </svg> В корзину
                             </a>
                         </div>
                     </div>
@@ -219,11 +223,15 @@
                             </p>
                         </div>
                         <div class="search__item--buttons">
-                            <a href="#" class="search__item--like">
-                                <img src="images/like_btn.svg" alt="">
+                            <a href="#" class="search__item--like search__item--disabled">
+                                <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.7554 1.14929C13.3913 0.784935 12.9588 0.495898 12.4829 0.298699C12.007 0.101499 11.4969 0 10.9817 0C10.4666 0 9.95644 0.101499 9.48052 0.298699C9.00459 0.495898 8.57219 0.784935 8.208 1.14929L7.45218 1.90512L6.69636 1.14929C5.96072 0.413658 4.96298 0.000381306 3.92263 0.000381314C2.88229 0.000381322 1.88455 0.413658 1.14891 1.14929C0.413276 1.88493 7.75119e-09 2.88267 0 3.92302C-7.75119e-09 4.96336 0.413276 5.9611 1.14891 6.69674L1.90473 7.45256L7.45218 13L12.9996 7.45256L13.7554 6.69674C14.1198 6.33255 14.4088 5.90014 14.606 5.42422C14.8032 4.94829 14.9047 4.43818 14.9047 3.92302C14.9047 3.40785 14.8032 2.89774 14.606 2.42182C14.4088 1.94589 14.1198 1.51348 13.7554 1.14929Z"/>
+                                </svg>
                             </a>
                             <a href="#" class="search__item--add">
-                                В корзину
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.2 11.2C3.43 11.2 2.807 11.83 2.807 12.6C2.807 13.37 3.43 14 4.2 14C4.97 14 5.6 13.37 5.6 12.6C5.6 11.83 4.97 11.2 4.2 11.2ZM0.7 0C0.3134 0 0 0.313401 0 0.7C0 1.0866 0.313401 1.4 0.7 1.4H0.857594C1.18885 1.4 1.49049 1.59078 1.63245 1.89007L3.08085 4.9438C3.60775 6.05468 3.56836 7.35115 2.975 8.428C2.863 8.624 2.8 8.855 2.8 9.1C2.8 9.87 3.43 10.5 4.2 10.5H11.9C12.2866 10.5 12.6 10.1866 12.6 9.8C12.6 9.4134 12.2866 9.1 11.9 9.1H4.494C4.4104 9.1 4.34209 9.04397 4.32381 8.96667C4.31739 8.93951 4.32242 8.91131 4.32919 8.88422C4.33637 8.85553 4.34724 8.82789 4.36154 8.802L4.45408 8.6344C4.77238 8.05792 5.37885 7.7 6.03737 7.7H10.185C10.71 7.7 11.172 7.413 11.41 6.979L13.916 2.436C13.972 2.338 14 2.219 14 2.1C14 1.715 13.685 1.4 13.3 1.4H3.72046C3.24838 1.4 2.8188 1.12724 2.618 0.7C2.4172 0.272757 1.98762 0 1.51554 0H0.7ZM11.2 11.2C10.43 11.2 9.807 11.83 9.807 12.6C9.807 13.37 10.43 14 11.2 14C11.97 14 12.6 13.37 12.6 12.6C12.6 11.83 11.97 11.2 11.2 11.2Z"/>
+                                </svg> В корзину
                             </a>
                         </div>
                     </div>
@@ -521,33 +529,58 @@
     <footer class="footer container">
         <div class="footer__top">
             <div class="footer__nav">
-                <p class="footer__nav_title">Покупателям</p>
+                <p class="footer__nav--title">
+                    Покупателям
+                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.5 1L5 4.5L8.5 1" stroke="#777777" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </p>
                 <a href="#">Программа лояльности</a>
                 <a href="#">Подарочные карты</a>
                 <a href="#">Личный кабинет</a>
                 <a href="#">COVID-19</a>
             </div>
             <div class="footer__nav">
-                <p class="footer__nav_title">Партнёрам</p>
+                <p class="footer__nav--title">
+                    Партнёрам
+                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.5 1L5 4.5L8.5 1" stroke="#777777" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </p>
                 <a href="#">Поставщикам</a>
                 <a href="#">Документы</a>
             </div>
             <div class="footer__nav">
-                <p class="footer__nav_title">Разделы</p>
+                <p class="footer__nav--title">
+                    Разделы
+                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.5 1L5 4.5L8.5 1" stroke="#777777" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </p>
                 <a href="#">Каталог</a>
                 <a href="#">О компании</a>
                 <a href="#">Контакты</a>
                 <a href="#">Бренды</a>
             </div>
             <div class="footer__nav">
-                <p class="footer__nav_title">Информация</p>
+                <p class="footer__nav--title">
+                    Информация
+                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.5 1L5 4.5L8.5 1" stroke="#777777" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </p>
                 <a href="#">Доставка</a>
                 <a href="#">Как заказать</a>
                 <a href="#">Возврат</a>
                 <a href="#">FAQ</a>
             </div>
             <div class="footer__nav">
-                <p class="footer__nav_title">Документы</p>
+                <p class="footer__nav--title">
+                    Документы
+                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.5 1L5 4.5L8.5 1" stroke="#777777" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </p>
                 <a href="#">Конфиденциальность</a>
                 <a href="#">Политка сайта</a>
                 <a href="#">Реквизиты</a>
