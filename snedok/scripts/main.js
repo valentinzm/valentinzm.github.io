@@ -142,7 +142,7 @@ function showCaterotyTab() {
     document.querySelector(cat_id).classList.add('catalog__tab--show');
 }
 
-document.querySelector('.mobile-catalog').addEventListener('click', showCatalog);
+//document.querySelector('.mobile-catalog').addEventListener('click', showCatalog);
 
 function showCatalog(e) {
     e.preventDefault();

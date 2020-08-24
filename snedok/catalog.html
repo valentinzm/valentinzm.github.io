@@ -19,10 +19,9 @@
                 <a href="#">Поддержка</a>
                 <a href="#">Возврат</a>
                 <a href="#">COVID-19</a>
+
                 <div class="mobile-nav__divider"></div>
-                <a href="#" class="mobile-catalog">Каталог товаров</a>
-                <div class="mobile-nav__divider"></div>
-                <a href="#">
+                <a href="#" class="js-modal" data-modal="#test">
                     <svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6.13889 0C2.74496 0 0 2.6605 0 5.95C0 10.4125 6.13889 17 6.13889 17C6.13889 17 12.2778 10.4125 12.2778 5.95C12.2778 2.6605 9.53282 0 6.13889 0ZM6.13889 8.075C4.92865 8.075 3.94643 7.123 3.94643 5.95C3.94643 4.777 4.92865 3.825 6.13889 3.825C7.34913 3.825 8.33135 4.777 8.33135 5.95C8.33135 7.123 7.34913 8.075 6.13889 8.075Z" fill="#40475A"/>
                     </svg> Москва
@@ -32,6 +31,9 @@
                         <path d="M15.1228 16.3706L13.7761 11.4436C13.7458 11.3328 13.6782 11.2359 13.5846 11.1692C11.4499 9.64903 12.1497 10.1473 10.3248 8.84784C11.0175 8.13603 11.4168 7.17373 11.4168 6.16642C11.4168 4.15829 11.4302 4.04839 11.3713 3.68203C11.3495 1.57987 9.75628 0 7.64775 0H7.49289C5.38439 0 3.79114 1.57987 3.76939 3.68206C3.71052 4.04842 3.72387 4.15823 3.72387 6.16645C3.72387 7.1737 4.12317 8.13599 4.81589 8.84787C2.50654 10.4924 3.85592 9.53142 1.55607 11.1693C1.4625 11.2359 1.39484 11.3329 1.36456 11.4437L0.0178703 16.3707C-0.0686903 16.6874 0.17014 17 0.498286 17H7.07231V11.7367L7.57035 11.4095L8.0684 11.7367V17H14.6424C14.9707 17 15.2093 16.6871 15.1228 16.3706ZM7.2451 1.61374H7.89558C8.17063 1.61374 8.39362 1.83673 8.39362 2.11179C8.39362 2.38684 8.17063 2.60983 7.89558 2.60983H7.2451C6.97004 2.60983 6.74705 2.38684 6.74705 2.11179C6.74705 1.83673 6.97004 1.61374 7.2451 1.61374ZM7.07234 10.5449L5.9768 11.2647L4.51543 10.2847L5.63444 9.48779C6.09185 9.75458 6.58591 9.91419 7.07234 9.97681V10.5449ZM7.57035 9.01266C5.98839 9.01266 4.71996 7.72879 4.71996 6.16645C4.71993 5.80978 4.71953 5.51461 4.7192 5.26744L4.98695 5.65834C5.07979 5.79391 5.23352 5.87493 5.39784 5.87493H9.74283C9.90712 5.87493 10.0609 5.79391 10.1537 5.65834L10.4215 5.26744C10.4211 5.51457 10.4207 5.80978 10.4207 6.16645C10.4207 7.71481 9.16639 9.01266 7.57035 9.01266ZM8.06837 10.5449V9.97678C8.58069 9.9109 9.07084 9.74176 9.50623 9.48776L10.6252 10.2846L9.16387 11.2647L8.06837 10.5449ZM11.8013 14.8781H10.0549C9.77985 14.8781 9.55686 14.6551 9.55686 14.38C9.55686 14.105 9.77985 13.882 10.0549 13.882H11.8013C12.0764 13.882 12.2994 14.105 12.2994 14.38C12.2994 14.6551 12.0764 14.8781 11.8013 14.8781Z" fill="#40475A"/>
                     </svg> Заказать курьера
                 </a>
+                <div class="mobile-nav__divider"></div>
+                <a href="#" class="js-modal" data-modal="#login">Вход</a>
+                <a href="#" class="js-modal" data-modal="#reg">Регистрация</a>
                 <a href="#"></a>
             </nav>
         </div>
@@ -544,21 +546,31 @@
         </section>
         <div class="container">
             <section class="steps">
-                <div class="steps__item">
-                    <img src="images/step1.svg" alt="">
-                    <p class="steps__text">Выберите нужный товар</p>
+                <div class="steps__images">
+                    <div class="steps__images">
+                        <img src="images/steps-bg.svg" alt="" class="steps__bg-image steps__image--1">
+                        <img src="images/steps-bg.svg" alt="" class="steps__bg-image steps__image--2">
+                        <img src="images/steps-bg.svg" alt="" class="steps__bg-image steps__image--3">
+                        <img src="images/steps-bg.svg" alt="" class="steps__bg-image steps__image--4">
+                    </div>
                 </div>
-                <div class="steps__item">
-                    <img src="images/step2.svg" alt="">
-                    <p class="steps__text">Укажите адрес и время доставки</p>
-                </div>
-                <div class="steps__item">
-                    <img src="images/step3.svg" alt="">
-                    <p class="steps__text">Оплатите онлайн или пр получении</p>
-                </div>
-                <div class="steps__item">
-                    <img src="images/step4.svg" alt="">
-                    <p class="steps__text">Ожидайте нашу доставку</p>
+                <div class="steps__row">
+                    <div class="steps__item">
+                        <img src="images/step1.svg" alt="">
+                        <p class="steps__text">Выберите нужный товар</p>
+                    </div>
+                    <div class="steps__item">
+                        <img src="images/step2.svg" alt="">
+                        <p class="steps__text">Укажите адрес и время доставки</p>
+                    </div>
+                    <div class="steps__item">
+                        <img src="images/step3.svg" alt="">
+                        <p class="steps__text">Оплатите онлайн или пр получении</p>
+                    </div>
+                    <div class="steps__item">
+                        <img src="images/step4.svg" alt="">
+                        <p class="steps__text">Ожидайте нашу доставку</p>
+                    </div>
                 </div>
             </section>
             <section class="recommend">
