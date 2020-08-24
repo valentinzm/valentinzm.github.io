@@ -118,10 +118,13 @@ document.querySelector('.overlay').addEventListener('click', overlayClose);
 
 function overlayClose() {
     document.querySelector('.overlay').classList.remove('overlay__show');
-
     document.querySelector('.aside-cart').classList.remove('aside-cart__show');
     document.querySelector('.mobile-nav').classList.remove('mobile-nav__open');
     document.querySelector('.burger').classList.remove('burger__open');
+    let filter = document.querySelector('.filter__sidebar');
+    if (filter) {
+        filter.classList.remove('filter__sidebar--open');
+    }
 }
 
 document.querySelector('.burger').addEventListener('click', mobileMenu);
@@ -184,3 +187,16 @@ function inputBlur() {
     }
 
 }
+
+document.querySelectorAll('.products-minus').forEach(function(min) {
+    min.addEventListener('click', function() {
+        if (this.nextElementSibling.value != 1) {
+            this.nextElementSibling.value--;
+        }
+    });
+});
+document.querySelectorAll('.products-plus').forEach(function(plus) {
+    plus.addEventListener('click', function() {
+        this.previousElementSibling.value++;
+    });
+});

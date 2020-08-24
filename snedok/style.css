@@ -1930,7 +1930,7 @@ main {
     outline: none;
     color: #fff;
     background-color: transparent;
-    width: 10px;
+    width: 100%;
     text-align: center;
 }
 
@@ -2541,6 +2541,7 @@ main {
     flex-direction: column;
     padding-top: 36px;
     align-items: center;
+    cursor: pointer;
 }
 
 .order__delivery svg {
