@@ -19,12 +19,17 @@ let swiperOffers = new Swiper('.offers__slider', {
         prevEl: '.offers__button-prev',
     },
     breakpoints: {
-        768: {
+        576: {
             centeredSlides: false,
-            slidesPerView: 4,
+            slidesPerView: 2,
             spaceBetween: 25,
         },
-        1160: {
+        768: {
+            centeredSlides: false,
+            slidesPerView: 3,
+            spaceBetween: 25,
+        },
+        1240: {
             centeredSlides: true,
             slidesPerView: 5,
             spaceBetween: 25,
@@ -154,3 +159,28 @@ document.querySelectorAll('.footer__nav--title').forEach(function(title) {
         this.parentElement.classList.toggle('footer__nav--open');
     });
 });
+
+
+document.querySelectorAll('.js-input').forEach(function(e) {
+    e.addEventListener('focus', inputFocus);
+});
+
+function inputFocus() {
+    //console.log(this);
+    //this.parentElement.classList.add('label-active');
+    let nextText = this.nextElementSibling;
+    nextText.classList.add('order__none');
+
+}
+document.querySelectorAll('.js-input').forEach(function(e) {
+    e.addEventListener('blur', inputBlur);
+});
+
+function inputBlur() {
+    //this.parentElement.classList.remove('label-active');
+    let nextText = this.nextElementSibling;
+    if (this.value == '' || this.value == null) {
+        nextText.classList.remove('order__none');
+    }
+
+}
