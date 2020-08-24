@@ -1346,6 +1346,18 @@ main {
     color: #BBAABB;
 }
 
+.profile__divider {
+    background: #40475A;
+    opacity: .3;
+    height: 0.3px;
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.form-date {
+    margin-bottom: 40px;
+}
+
 .form-label {
     display: block;
     margin-bottom: 25px;
@@ -1759,7 +1771,7 @@ main {
     margin-bottom: 90px;
 }
 
-.favorites {
+.profile__content {
     flex: 1;
 }
 
@@ -3374,7 +3386,7 @@ main {
     .catalog__button {
         display: none;
     }
-    .title__mobile-mt30 {
+    .profile__title {
         margin-top: 30px;
     }
     .search__show {
@@ -3521,7 +3533,7 @@ main {
     .filter__sidebar--open {
         transform: translateX(0%);
     }
-    .sidebar__profile {
+    .profile__sidebar {
         display: flex;
         width: 100%;
         max-width: 100%;
@@ -3732,8 +3744,7 @@ main {
     }
     .cart-page__warning {
         height: auto;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding: 20px;
         text-align: center;
         flex-wrap: wrap;
         justify-content: center;
