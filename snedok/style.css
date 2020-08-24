@@ -3620,7 +3620,8 @@ main {
     .order__label {
         max-width: calc(50% - 10px);
     }
-    .order__input {
+    .order__input,
+    .order__select {
         max-width: 100%;
     }
     .order__delivery {
@@ -3755,6 +3756,15 @@ main {
         margin-right: 0;
         margin-bottom: 20px;
     }
+    .modal__body,
+    .modal-history {
+        max-width: 100%;
+        padding: 25px;
+        border-radius: 0;
+        margin-top: 0px;
+        height: 100vh;
+        overflow: scroll;
+    }
     /* .cart-table__item {
         flex-wrap: wrap;
         height: auto;
@@ -3811,10 +3821,6 @@ main {
     .footer__contact {
         width: 100%;
         text-align: center;
-    }
-    .modal__body {
-        max-width: 100%;
-        padding: 25px;
     }
 }
 
