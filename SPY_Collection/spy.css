@@ -16,6 +16,10 @@
     margin-left: 4px;
 }
 
+.banners__dots .slick-dots li:after {
+    left: 15px;
+}
+
 .cart__banners .banners__slider {
     border: none;
 }
