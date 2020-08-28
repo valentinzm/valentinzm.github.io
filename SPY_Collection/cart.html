@@ -173,16 +173,16 @@
             </div>
             <div class="col-md-9 cart-delivery__labels">
 
-                <label for="" class="delivery-label">
+                <label class="delivery-label delivery-label__cart">
                 <input type="radio" name="delivery" class="delivery-radio">
                 Почта России - до 3х дней | 334 ₽                       
             </label>
-                <label for="" class="delivery-label">
+                <label class="delivery-label delivery-label__cart">
                 <input type="radio" name="delivery" class="delivery-radio">
                 DPD - до 3х дней | 334 ₽
                 
             </label>
-                <label for="" class="delivery-label">
+                <label class="delivery-label delivery-label__cart">
                 <input type="radio" name="delivery" class="delivery-radio">
                 CDEK - до 3х дней | 334 ₽
             </label>
@@ -222,34 +222,34 @@
         <h4 class="title cart-slider05__title">
             Товары из этой коллекции
         </h4>
-        <ul class="cart-slider cart-slider05">
+        <ul class="cart-slider cart-slider05 centermode">
             <li class="cart-slider__item">
                 <div class="cart-slider__overlay"></div>
-                <img src="assets/img/spy/list-image.png" alt="">
+                <img src="assets/img/spy/black_dress.png" alt="">
                 <p class="cart-slider__title">Black bag agent</p>
                 <p class="cart-slider__price">95 ₽</p>
             </li>
             <li class="cart-slider__item">
                 <div class="cart-slider__overlay"></div>
-                <img src="assets/img/spy/list-glases.png" alt="">
+                <img src="assets/img/spy/black_dress.png" alt="">
                 <p class="cart-slider__title">Agent black glasses</p>
                 <p class="cart-slider__price">95 ₽</p>
             </li>
             <li class="cart-slider__item">
                 <div class="cart-slider__overlay"></div>
-                <img src="assets/img/spy/list-image.png" alt="">
+                <img src="assets/img/spy/black_dress.png" alt="">
                 <p class="cart-slider__title">Black bag agent</p>
                 <p class="cart-slider__price">95 ₽</p>
             </li>
             <li class="cart-slider__item">
                 <div class="cart-slider__overlay"></div>
-                <img src="assets/img/spy/list-image.png" alt="">
+                <img src="assets/img/spy/black_dress.png" alt="">
                 <p class="cart-slider__title">Black bag agent</p>
                 <p class="cart-slider__price">95 ₽</p>
             </li>
             <li class="cart-slider__item">
                 <div class="cart-slider__overlay"></div>
-                <img src="assets/img/spy/list-image.png" alt="">
+                <img src="assets/img/spy/black_dress.png" alt="">
                 <p class="cart-slider__title">Black bag agent</p>
                 <p class="cart-slider__price">95 ₽</p>
             </li>
@@ -276,38 +276,52 @@
             });
         });
 
-        $(document).ready(function() {
-            $('.cart-slider05').slick({
-                slidesToShow: 4,
-                dots: true,
-                prevArrow: '<button class="cart__controls cart__controls--prev"><svg width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.5 30L1 15.5L15.5 1" stroke="white" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
-                nextArrow: '<button class="cart__controls cart__controls--next"><svg width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L15.5 15.5L0.999995 30" stroke="white" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
-                responsive: [{
-                        breakpoint: 1240,
-                        settings: {
-                            slidesToShow: 2,
-                        }
-                    }, {
-                        breakpoint: 991,
-                        settings: {
-                            slidesToShow: 1,
-                            arrows: false,
-                            centerMode: true,
-
-                        }
-                    }, {
-                        breakpoint: 450,
-                        settings: {
-                            slidesToShow: 1,
-                            centerMode: true,
-                            arrows: false,
-
-                        }
-                    },
-
-                ]
-            });
+        $('.centermode').slick({
+            slidesToShow: 4,
+            dots: true,
+            prevArrow: '<button class="cart__controls cart__controls--prev"><svg width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.5 30L1 15.5L15.5 1" stroke="white" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+            nextArrow: '<button class="cart__controls cart__controls--next"><svg width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L15.5 15.5L0.999995 30" stroke="white" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+            responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 2,
+                }
+            }, {
+                breakpoint: 576,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '90px',
+                    slidesToShow: 1
+                }
+            }]
         });
+
+        // $(document).ready(function() {
+        //     $('.cart-slider05').slick({
+        //         slidesToShow: 4,
+        //         dots: true,
+        //         prevArrow: '<button class="cart__controls cart__controls--prev"><svg width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.5 30L1 15.5L15.5 1" stroke="white" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+        //         nextArrow: '<button class="cart__controls cart__controls--next"><svg width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L15.5 15.5L0.999995 30" stroke="white" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+        //         responsive: [{
+        //                 breakpoint: 1240,
+        //                 settings: {
+        //                     slidesToShow: 2,
+        //                 }
+        //             }, {
+        //                 breakpoint: 480,
+        //                 settings: {
+        //                     arrows: false,
+        //                     centerMode: true,
+        //                     centerPadding: '40px',
+        //                     slidesToShow: 1
+        //                 }
+        //             }
+
+        //         ]
+        //     });
+        // });
     </script>
 </body>
 

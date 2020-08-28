@@ -12,6 +12,10 @@
     background: transparent;
 }
 
+.cart__banners .slick-dots button span {
+    margin-left: 4px;
+}
+
 .cart__banners .banners__slider {
     border: none;
 }
@@ -333,6 +337,7 @@
     bottom: 60px;
     left: 0;
     right: 0;
+    margin-bottom: 0;
 }
 
 .cart-slider__price {
@@ -346,6 +351,7 @@
     left: 0;
     right: 0;
     bottom: 20px;
+    margin-bottom: 0;
 }
 
 .slick-dots {
@@ -888,6 +894,7 @@
 .cart-delivery {
     padding-bottom: 40px;
     position: relative;
+    z-index: 10;
 }
 
 .cart-delivery::after {
@@ -933,6 +940,15 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #FFFFFF;
+    position: relative;
+    z-index: 10;
+    transition: .3s;
+}
+
+.cart-btn__order:hover {
+    background-color: #FA403A;
+    color: #fff;
+    text-decoration: none;
 }
 
 .row-bg {
@@ -1223,6 +1239,11 @@
     display: flex;
     align-items: center;
     color: #fff;
+    margin-bottom: 15px;
+}
+
+.delivery-label__cart {
+    margin-bottom: 0;
 }
 
 .delivery-label input[type="radio"] {
@@ -1358,6 +1379,29 @@
 }
 
 @media(max-width: 1024px) {
+    .cart__banners {
+        margin-bottom: 33px;
+    }
+    .cart__banners .slick-dots button span {
+        display: none;
+    }
+    .cart__banners .banners__banner {
+        height: 450px;
+        background-size: cover;
+    }
+    .cart__banners .banners__banner:after {
+        bottom: 0;
+    }
+    .cart__banners .banners__dots .slick-dots li {
+        margin: 0 10px;
+    }
+    .cart__banners .banners__dots .slick-dots li svg {
+        width: 17px;
+        height: 17px;
+    }
+    .banners__dots .slick-dots li:after {
+        display: none;
+    }
     .spy-banner {
         padding-left: 28px;
         padding-right: 28px;
@@ -1375,35 +1419,6 @@
     }
     .spy-banner__button {
         margin-left: unset;
-    }
-    .cart-slider {
-        margin-left: -15px;
-        margin-right: -15px;
-    }
-    .cart-slider .slick-slide {
-        max-width: 165px;
-    }
-    .cart-slider__item {
-        height: 190px;
-        opacity: 0.5;
-        transition: all 0.3s;
-    }
-    .slick-current .cart-slider__item {
-        height: 210px;
-        background: #353535;
-        border-radius: 7px;
-        opacity: 1;
-    }
-    .cart-slider__item img {
-        max-width: 125px;
-    }
-    .cart-slider__title {
-        font-size: 11px;
-        bottom: 55px;
-    }
-    .cart-slider__price {
-        font-size: 11px;
-        bottom: 45px;
     }
     .girl-01 {
         left: unset;
@@ -1879,6 +1894,8 @@
     }
     .choice {
         flex-wrap: wrap;
+        flex: 0 0 100%;
+        max-width: 100%;
     }
     .choice__block {
         flex: 0 0 100%;
@@ -1981,6 +1998,8 @@
         background: #1C1C1C;
         padding-top: 33px;
         padding-bottom: 38px;
+        flex: 0 0 100%;
+        max-width: 100%;
     }
     .cart-delivery__labels label {
         max-width: 250px;
@@ -2034,8 +2053,11 @@
         padding-left: 0;
         height: auto;
         padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
         background: #161616;
         margin-bottom: 60px;
+        margin-top: 60px;
     }
     .cart-banner__title {
         font-weight: 300;
@@ -2097,5 +2119,44 @@
     }
     .spy-footer {
         display: none;
+    }
+}
+
+@media(max-width: 576px) {
+    .cart-slider {
+        margin-left: -15px;
+        margin-right: -15px;
+        height: 210px;
+    }
+    .cart-slider__item {
+        height: 190px;
+        opacity: 0.5;
+        transition: all 0.3s;
+    }
+    .slick-current .cart-slider__item {
+        height: 210px;
+        background: #353535;
+        border-radius: 7px;
+        opacity: 1;
+    }
+    .cart-slider__item img {
+        max-width: 125px;
+    }
+    .cart-slider__title {
+        font-weight: 550;
+        font-size: 12px;
+        line-height: 100%;
+        bottom: 42px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .cart-slider__price {
+        font-weight: 550;
+        font-size: 12px;
+        line-height: 100%;
+        bottom: 20px;
+        text-align: center;
+        color: #FFFFFF;
+        opacity: 0.3;
     }
 }
