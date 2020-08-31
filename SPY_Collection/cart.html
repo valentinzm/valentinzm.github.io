@@ -41,7 +41,7 @@
         </div>
     </header>
     <div class="cart__banners banners">
-        <div class="banners__slider">
+        <div class="cart__banners--slider">
             <div class="banners__banner" style="background-image: url(assets/img/spy/car-banner.png);">
                 <div class="container">
                     <div class="row">
@@ -168,24 +168,24 @@
             </div>
         </div>
         <div class="row cart-delivery">
-            <div class="col-md-12">
-                <p class="cart-delivery__title">Способ доставки</p>
-            </div>
-            <div class="col-md-9 cart-delivery__labels">
 
-                <label class="delivery-label delivery-label__cart">
+            <div class="col-md-9 cart-delivery__col">
+                <p class="cart-delivery__title">Способ доставки</p>
+                <div class="cart-delivery__labels">
+                    <label class="delivery-label delivery-label__cart">
                 <input type="radio" name="delivery" class="delivery-radio">
                 Почта России - до 3х дней | 334 ₽                       
-            </label>
-                <label class="delivery-label delivery-label__cart">
+                </label>
+                    <label class="delivery-label delivery-label__cart">
                 <input type="radio" name="delivery" class="delivery-radio">
                 DPD - до 3х дней | 334 ₽
                 
-            </label>
-                <label class="delivery-label delivery-label__cart">
-                <input type="radio" name="delivery" class="delivery-radio">
-                CDEK - до 3х дней | 334 ₽
-            </label>
+                </label>
+                    <label class="delivery-label delivery-label__cart">
+                    <input type="radio" name="delivery" class="delivery-radio">
+                    CDEK - до 3х дней | 334 ₽
+                </label>
+                </div>
             </div>
             <div class="col-md-3">
 
@@ -275,6 +275,17 @@
                 this.nextElementSibling.classList.toggle('choice__list--show');
             });
         });
+        $('.cart__banners--slider').slick({
+            prevArrow: '<button class="banners__controls banners__controls--prev"><svg width="19" height="37" viewBox="0 0 19 37" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.5 1L1 18.5L18.5 36" stroke="white"/></svg></button>',
+            nextArrow: '<button class="banners__controls banners__controls--next"><svg width="20" height="37" viewBox="0 0 20 37" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L18.5 18.5L1 36" stroke="white"/></svg></button>',
+            dots: true,
+            /*         autoplay: true,
+                    autoplaySpeed: 5000, */
+            customPaging: function(slider, i) {
+                return '<button class="banners__dot"><span>0' + (i + 1) + '</span><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.6879 6.82198H23.6328C21.9109 3.4553 18.7109 0.966777 14.888 0.233398C14.8765 0.333535 14.8432 0.422036 14.788 0.511682L14.4995 1.0116L11.1442 6.82312H22.6879V6.82198Z" fill="#FFF"/><path d="M1.11142 16.5114H8.25637L6.18956 12.9112L2.48853 6.51129L2.0115 5.69971C0.744822 7.65494 0 9.99984 0 12.4998C0 13.9446 0.244714 15.3332 0.7 16.6216C0.82188 16.555 0.966648 16.5114 1.11142 16.5114Z" fill="#FFF"/><path d="M2.31127 18.1784H1.36636C3.09977 21.5668 6.32167 24.0565 10.1665 24.7784C10.1665 24.6451 10.1997 24.5003 10.2779 24.367L10.4894 23.9888H10.5009L13.8456 18.1772H2.31127V18.1784Z" fill="#FFF"/><path d="M3.55586 5.02188L6.91204 10.8334L8.93384 7.3334L9.01204 7.18863L12.6787 0.833324L13.1455 0.0114441C12.9339 0 12.7121 0 12.5006 0C8.7225 0 5.32245 1.67809 3.04526 4.34477C3.15569 4.42182 3.25583 4.52196 3.33384 4.64479L3.55586 5.02188Z" fill="#FFF"/><path d="M21.9672 20.6447C21.8453 20.5896 21.7452 20.4894 21.6672 20.3561L21.4451 19.9781L18.0901 14.1562L16.0681 17.6677L15.9682 17.8561L12.3223 24.1666L11.8441 24.9885C12.0671 24.9885 12.2786 24.9999 12.5004 24.9999C16.289 24.9999 19.6785 23.3114 21.9672 20.6447Z" fill="#FFF"/><path d="M23.8882 8.48915H16.7432L18.81 12.0893L22.5099 18.4892L22.9881 19.3008C24.2548 17.3456 24.9996 15.0007 24.9996 12.5007C24.9996 11.0559 24.7549 9.66733 24.2996 8.37891C24.1777 8.44547 24.0329 8.48915 23.8882 8.48915Z" fill="#FFF"/></svg></button>';
+            },
+            appendDots: $('.banners__dots'),
+        })
 
         $('.centermode').slick({
             slidesToShow: 4,

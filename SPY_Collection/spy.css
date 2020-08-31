@@ -10,6 +10,7 @@
 .cart__banners .slick-dots button {
     text-indent: unset;
     background: transparent;
+    opacity: 1;
 }
 
 .cart__banners .slick-dots button span {
@@ -1844,6 +1845,7 @@
     }
     .cart-mobile__images {
         position: relative;
+        margin-bottom: 50px;
     }
     .cart-mobile__images img {
         max-width: 100%;
@@ -1876,7 +1878,7 @@
         letter-spacing: 0.05em;
         color: #FFFFFF;
         opacity: 0.7;
-        margin-bottom: 25px;
+        margin-bottom: 35px;
     }
     .cart-mobile__btn {
         display: flex;
@@ -1900,6 +1902,10 @@
         flex-wrap: wrap;
         flex: 0 0 100%;
         max-width: 100%;
+    }
+    .choice:before,
+    .choice:after {
+        content: none;
     }
     .choice__block {
         flex: 0 0 100%;
@@ -1996,6 +2002,10 @@
     }
     .cart-delivery {
         padding-bottom: 0;
+    }
+    .cart-delivery__col {
+        flex: 0 0 100%;
+        max-width: 100%;
     }
     .cart-delivery__labels {
         flex-direction: column;
