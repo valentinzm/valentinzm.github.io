@@ -921,12 +921,17 @@
     letter-spacing: 0.03em;
     color: #FFFFFF;
     opacity: 0.7;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 
 .cart-delivery__labels {
     display: flex;
     justify-content: space-between;
+}
+
+.delivery-label__cart {
+    align-items: flex-start;
+    height: 16px;
 }
 
 .cart-btn__order {
