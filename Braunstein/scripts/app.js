@@ -23,7 +23,7 @@ function showTab(e) {
             if (mainTab.classList.contains('app__item--show')) {
                 console.log('содержит');
             }
-        }, 500)
+        }, 100)
 
     }
 
