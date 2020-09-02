@@ -30,12 +30,15 @@ function showTab(e) {
 }
 
 
-document.querySelectorAll('.app__list--tab').forEach(function(e) {
+document.querySelectorAll('.app__list--tab a').forEach(function(e) {
     e.addEventListener('click', showSublist);
 });
 
 function showSublist(event) {
     event.preventDefault();
+    console.log(this);
+    let list = this.nextElementSibling;
+    jQuery(list).slideToggle();
 }
 document.querySelector('.content__link').addEventListener('click', showMain);
 

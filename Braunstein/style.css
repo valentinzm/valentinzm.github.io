@@ -249,23 +249,29 @@ body {
     margin: 0;
 }
 
-.app__list li {
+.app__list a {
     position: relative;
     display: flex;
     align-items: center;
     margin-bottom: 30px;
     transition: opacity .3s;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
-.app__list li:last-child {
+.app__list a:last-child {
     margin-bottom: 0;
 }
 
-.app__list li:hover {
+.app__list a:hover {
     opacity: .5;
 }
 
-.app__list li:before {
+.app__list a:before {
     content: '';
     width: 8px;
     height: 8px;
@@ -274,13 +280,17 @@ body {
     margin-right: 20px;
 }
 
-.app__list a {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    text-decoration: none;
+.app__sublist {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.app__sublist li {
+    margin-bottom: 15px;
+}
+
+.app__sublist li:last-child {
+    margin-bottom: 0;
 }
 
 .app__content {
