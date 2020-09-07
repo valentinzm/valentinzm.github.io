@@ -1375,6 +1375,12 @@ body {
     .burger {
         order: 3;
     }
+    .services {
+        margin-left: 15px;
+        margin-right: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     .services__col-3 {
         width: 100%;
         flex: 0 0 100%;

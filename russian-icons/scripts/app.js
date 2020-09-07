@@ -12,14 +12,13 @@ const zenSlider = new Swiper('.zen__slider', {
     },
     breakpoints: {
         768: {
-            centeredSlides: false,
             slidesPerView: 1,
             spaceBetween: 0,
         },
         992: {
             centeredSlides: true,
             slidesPerView: 2,
-            spaceBetween: 0,
+            spaceBetween: 14,
         },
         1240: {
             centeredSlides: true,
