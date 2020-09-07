@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="fonts/BerlingskeSerif/stylesheet.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -44,9 +45,33 @@
             <a href="#" class="site-header__callback">
                 Обратный звонок
             </a>
+            <div class="burger">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </div>
         </div>
     </header>
-    <main>
+    <main class="site-main">
+        <nav class="navigation">
+            <div class="wrapper">
+                <ul class="navigation__list">
+                    <li><a href="#">ИКОНЫ</a></li>
+                    <li><a href="#">СЕРЕБРО</a></li>
+                    <li><a href="#">ЗОЛОТО</a></li>
+                    <li><a href="#">АНТИКВАРИАТ</a></li>
+                    <li><a href="#">ЖИВОПИСЬ</a></li>
+                    <li><a href="#">ИСКУССТВО ВОСТОКА</a></li>
+                    <li><a href="#">О НАС</a></li>
+                    <li><a href="#">КОНТАКТЫ</a></li>
+                    <li>
+                        <a href="#" class="navigation__search">
+                            <img src="images/svg/search.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <section class="banner">
             <div class="banner__content">
                 <h1 class="title banner__title">
@@ -88,7 +113,7 @@
                         <div class="services__col-3">
                             <a href="#" class="services__item">
                                 <div class="services__image">
-                                    <img src="images/service1.jpg" alt="">
+                                    <img src="images/service2.jpg" alt="">
                                     <p class="services__image--text">
                                         Покупка серебра
                                     </p>
@@ -102,7 +127,7 @@
                         <div class="services__col-3">
                             <a href="#" class="services__item">
                                 <div class="services__image">
-                                    <img src="images/service1.jpg" alt="">
+                                    <img src="images/service3.jpg" alt="">
                                     <p class="services__image--text">
                                         Скупка золотых украшений
                                     </p>
@@ -116,7 +141,7 @@
                         <div class="services__col-3">
                             <a href="#" class="services__item">
                                 <div class="services__image">
-                                    <img src="images/service1.jpg" alt="">
+                                    <img src="images/service4.png" alt="">
                                     <p class="services__image--text">
                                         Выкуп живописи
                                     </p>
@@ -130,7 +155,7 @@
                         <div class="services__col-3">
                             <a href="#" class="services__item">
                                 <div class="services__image">
-                                    <img src="images/service1.jpg" alt="">
+                                    <img src="images/service5.jpg" alt="">
                                     <p class="services__image--text">
                                         Искусство востока
                                     </p>
@@ -144,7 +169,7 @@
                         <div class="services__col-3">
                             <a href="#" class="services__item">
                                 <div class="services__image">
-                                    <img src="images/service1.jpg" alt="">
+                                    <img src="images/service6.png" alt="">
                                     <p class="services__image--text">
                                         Оценка и покупка антиквариата
                                     </p>
@@ -184,7 +209,7 @@
                                 Назначаем встречу
                             </p>
                         </div>
-                        <div class="steps__arrow">
+                        <div class="steps__arrow steps__arrow--hide">
                             <img src="images/step_arrow.png" alt="">
                         </div>
                         <div class="steps__col-4">
@@ -272,7 +297,7 @@
                     Отзывы о нас
                 </h4>
                 <div class="divider rewiews__divider"></div>
-                <div class="row">
+                <div class="row rewiews__row">
                     <div class="rewiews__text">
                         <p>Саморекламой занимаются другие. Наша репутация основана на оценках благодарных клиентов.</p>
 
@@ -387,10 +412,19 @@
                             <input type="text" placeholder="Введите Ваше имя" class="form__input">
                         </label>
                         <label class="form__label">
-                            Ваше имя:
-                            <input type="text" placeholder="Введите Ваше имя" class="form__input">
+                            Прикрепить фотографию
+                            <div class="form__file">
+                                <span class="form__file--text">
+                                    Название файла
+                                </span>
+                                <span class="form__file--button">
+                                    Выберите файл
+                                </span>
+                                <input type="file" class="form__file--input">
+                            </div>
+                            
                         </label>
-                        <input type="submit" value="Отправить">
+                        <input type="submit" value="Отправить" class="form__submit">
                     </form>
                 </div>
             </div>
@@ -566,7 +600,7 @@
             </div>
         </section>
         <section class="contacts">
-            <div class="row">
+            <div class="row contacts__row">
                 <div class="contacts__block">
                     <div class="contacts__list">
                         <a href="#" class="contacts__item contacts__phone">8 495 921-78-55</a>
