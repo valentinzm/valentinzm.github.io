@@ -136,7 +136,7 @@
                 # 5665161
             </p>
             <a href="#" class="cart-mobile__btn">
-                оставить заявку
+                Оформить заказ
             </a>
         </div>
         <div class="row cart-info">
@@ -256,7 +256,7 @@
         </ul>
     </div>
 
-    <footer class="spy-footer">
+    <footer class="spy-footer spy-footer__cart">
 
         <p>Copyright © 2019. AgentBlonde. Все права защищены.</p>
         <a href="#">Наши реквизиты</a>
@@ -274,6 +274,12 @@
                 this.classList.toggle('choice__title--open');
                 this.nextElementSibling.classList.toggle('choice__list--show');
             });
+        });
+
+        document.querySelector('.cart-delivery__title').addEventListener('click', function() {
+            let deliveryParent = this.parentElement;
+            console.log(deliveryParent);
+            document.querySelector('.cart-delivery__labels').classList.toggle('cart-delivery__none');
         });
         $('.cart__banners--slider').slick({
             prevArrow: '<button class="banners__controls banners__controls--prev"><svg width="19" height="37" viewBox="0 0 19 37" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.5 1L1 18.5L18.5 36" stroke="white"/></svg></button>',

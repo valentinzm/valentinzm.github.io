@@ -1405,12 +1405,13 @@
     .cart__banners .banners__dots .slick-dots li {
         margin: 0 10px;
     }
-    .cart__banners .banners__dots .slick-dots li svg {
+    .cart__banners .banners__dots .slick-dots li svg,
+    .cart__banners .banners__dots .slick-dots .banners__dot {
         width: 17px;
-        height: 17px;
+        height: 25px;
     }
     .banners__dots .slick-dots li:after {
-        display: none;
+        content: none;
     }
     .spy-banner {
         padding-left: 28px;
@@ -1933,6 +1934,7 @@
         margin-bottom: 0;
         margin-left: -15px;
         margin-right: -15px;
+        cursor: pointer;
     }
     .choice__title:after {
         content: '';
@@ -2017,8 +2019,9 @@
         background: #1C1C1C;
         padding-top: 33px;
         padding-bottom: 38px;
-        flex: 0 0 100%;
-        max-width: 100%;
+        width: calc(100% + 30px);
+        margin-left: -15px;
+        margin-right: -15px;
     }
     .cart-delivery__labels label {
         max-width: 250px;
@@ -2039,6 +2042,10 @@
         color: #FFFFFF;
         opacity: 1;
         margin-bottom: 0;
+        cursor: pointer;
+    }
+    .cart-delivery__none {
+        display: none;
     }
     .cart-delivery::before {
         content: '';
@@ -2138,6 +2145,39 @@
     }
     .spy-footer {
         display: none;
+    }
+    .spy-footer__cart {
+        display: flex;
+        height: auto;
+        flex-direction: column-reverse;
+        border-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 100px;
+    }
+    .spy-footer__cart p {
+        padding-top: 20px;
+        padding-bottom: 15px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 121%;
+        text-align: center;
+        color: #888888;
+        opacity: 0.6;
+        max-width: 203px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .spy-footer__cart a {
+        border-bottom: 1px solid #313131;
+        padding-bottom: 20px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        font-size: 14px;
+        line-height: 121%;
+        text-align: right;
+        color: #888888;
     }
 }
 
