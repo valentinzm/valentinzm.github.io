@@ -1,10 +1,36 @@
 .cart__banners {
     margin-bottom: 100px;
     position: relative;
+    height: 635px;
+}
+
+.cart__banners .banners__banner {
+    height: 635px;
+}
+
+.cart__banners .banner__content {
+    margin-bottom: 38px;
+}
+
+.cart__banners .banner__heading {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.cart__banners:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 1.5px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    opacity: .5;
 }
 
 .cart__banners .slick-dots {
-    bottom: 40px;
+    bottom: 140px;
 }
 
 .cart__banners .slick-dots button {
@@ -1395,9 +1421,15 @@
     .cart__banners .slick-dots button span {
         display: none;
     }
+    .cart__banners {
+        height: 450px;
+    }
     .cart__banners .banners__banner {
         height: 450px;
         background-size: cover;
+    }
+    .cart__banners .slick-dots {
+        bottom: 40px;
     }
     .cart__banners .banners__banner:after {
         bottom: 0;
