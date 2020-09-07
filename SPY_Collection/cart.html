@@ -279,8 +279,10 @@
 
         document.querySelector('.cart-delivery__title').addEventListener('click', function() {
             let deliveryParent = this.parentElement;
-            console.log(deliveryParent);
+            const parent = document.querySelector('.cart-delivery');
             document.querySelector('.cart-delivery__labels').classList.toggle('cart-delivery__none');
+            parent.classList.toggle('cart-delivery--close');
+
         });
         $('.cart__banners--slider').slick({
             prevArrow: '<button class="banners__controls banners__controls--prev"><svg width="19" height="37" viewBox="0 0 19 37" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.5 1L1 18.5L18.5 36" stroke="white"/></svg></button>',
