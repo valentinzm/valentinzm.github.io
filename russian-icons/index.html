@@ -17,14 +17,29 @@
             <a href="/" class="site-logo">
                 <img src="images/logo.png" alt="Аукционный дом «Русские иконы»">
             </a>
-            <a href="#" class="site-header__yandex">
-                Яндекс.Отзывы
-            </a>
+            <div class="site-header__yandex">
+                <span class="text-underline">
+                    Яндекс.Отзывы
+                </span>
+
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    <g>
+                        <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 
+                            255.898,401.21 416.035,502.431 369.263,318.842 		"/>
+                    </g>
+
+                </svg>
+
+                <span class="site-header__yandex--star">
+                    5.0
+                </span>
+            </div>
+
             <div class="site-header__contacts">
-                <a href="#" class="site-header__contact contacts__phone">8 495 921-78-55</a>
-                <p class="site-header__contact contacts__adres">ул. Большая Якиманка, 39</p>
-                <a href="#" class="site-header__contact contacts__whatsup">8 495 921-78-55</a>
-                <a href="#" class="site-header__contact contacts__email">info@russian-icons.ru</a>
+                <a href="#" class="site-header__contact site-header__phone">8 495 921-78-55</a>
+                <p class="site-header__contact site-header__adres">ул. Большая Якиманка, 39</p>
+                <a href="#" class="site-header__contact site-header__whatsup">8 495 921-78-55</a>
+                <a href="#" class="site-header__contact site-header__email">info@russian-icons.ru</a>
             </div>
             <a href="#" class="site-header__callback">
                 Обратный звонок
@@ -41,9 +56,11 @@
                 <p class="banner__subtitle">
                     Выезд оценщика за 30 минут
                 </p>
-                <a href="#" class="banner__button">
+                <a href="#" class="button banner__button">
                     Записаться на консультацию
+                                <svg id="Capa_1" enable-background="new 0 0 344.456 344.456" height="12" viewBox="0 0 344.456 344.456" width="12" xmlns="http://www.w3.org/2000/svg"><path d="m344.353 275.462.103-275.462-275.565.034-.034 34.412h216.801l-285.658 285.657 24.353 24.353 285.658-285.657v216.766z"/></svg>
                 </a>
+
             </div>
         </section>
         <section class="bg-light">
@@ -156,6 +173,9 @@
                                 Оставляете заявку
                             </p>
                         </div>
+                        <div class="steps__arrow">
+                            <img src="images/step_arrow.png" alt="">
+                        </div>
                         <div class="steps__col-4">
                             <div class="steps__icon">
                                 <img src="images/step2.png" alt="">
@@ -164,6 +184,9 @@
                                 Назначаем встречу
                             </p>
                         </div>
+                        <div class="steps__arrow">
+                            <img src="images/step_arrow.png" alt="">
+                        </div>
                         <div class="steps__col-4">
                             <div class="steps__icon">
                                 <img src="images/step3.png" alt="">
@@ -171,6 +194,9 @@
                             <p class="steps__text">
                                 Проводим оценку
                             </p>
+                        </div>
+                        <div class="steps__arrow">
+                            <img src="images/step_arrow.png" alt="">
                         </div>
                         <div class="steps__col-4">
                             <div class="steps__icon">
@@ -197,14 +223,44 @@
                     Способы оплаты
                 </h4>
                 <div class="divider payment__divider"></div>
-                <div class="row">
+                <div class="row payment__row">
                     <div class="payment__col-3">
-                        <img src="images/payment1.png" alt="">
+                        <div class="payment__image">
+                            <img src="images/payment1.png" alt="">
+                        </div>
                         <h5 class="payment__title">
                             Оплата наличными
                         </h5>
                         <p class="payment__descr">
                             После подписания договора наш оценщик выплачивает средства наличными
+                        </p>
+                    </div>
+                    <div class="payment__col-divider">
+                        <span class="payment__line"></span>
+                    </div>
+                    <div class="payment__col-3">
+                        <div class="payment__image">
+                            <img src="images/payment2.png" alt="">
+                        </div>
+                        <h5 class="payment__title">
+                            Оплата на карту
+                        </h5>
+                        <p class="payment__descr">
+                            Эксперт-оценщик переводит средства на карту после подписания договора
+                        </p>
+                    </div>
+                    <div class="payment__col-divider">
+                        <span class="payment__line"></span>
+                    </div>
+                    <div class="payment__col-3">
+                        <div class="payment__image">
+                            <img src="images/payment3.png" alt="">
+                        </div>
+                        <h5 class="payment__title">
+                            Банковский перевод
+                        </h5>
+                        <p class="payment__descr">
+                            При желании, крупные суммы выплачиваются банковским переводом, можно в отделении банка
                         </p>
                     </div>
                 </div>
@@ -304,11 +360,17 @@
                             Мы предоставляем следующие услуги:
                         </p>
                         <ul class="consultation__list">
-                            <li>Онлайн оценка</li>
-                            <li>БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</li>
-                            <li>ВЫЕЗД ЭКСПЕРТА</li>
-                            <li>ЭКСПЕРТИЗА</li>
-                            <li>ПРИЕМ ИКОН И ПРЕДМЕТОВ АНТИКВАРИАТА НА АУКЦИОН</li>
+                            <li>
+                                <img src="images/svg/cosnt_search.svg" alt="нлайн оценка"> Онлайн оценка</li>
+                            <li>
+                                <img src="images/svg/agreement.svg" alt="БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ"> БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</li>
+                            <li>
+                                <img src="images/svg/car.svg" alt="ВЫЕЗД ЭКСПЕРТА"> ВЫЕЗД ЭКСПЕРТА</li>
+                            <li>
+                                <img src="images/svg/writing.svg" alt="ЭКСПЕРТИЗА">ЭКСПЕРТИЗА
+                            </li>
+                            <li>
+                                <img src="images/svg/hand-shake.svg" alt="ПРИЕМ ИКОН И ПРЕДМЕТОВ АНТИКВАРИАТА НА АУКЦИОН"> ПРИЕМ ИКОН И ПРЕДМЕТОВ АНТИКВАРИАТА НА АУКЦИОН</li>
                         </ul>
                     </div>
                     <form action="#" class="form">
@@ -417,8 +479,60 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">Slide 2</div>
-                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">
+                            <div class="zen__item">
+                                <div class="zen__image">
+                                    <img src="images/zan1.jpg" alt="">
+                                </div>
+                                <div class="zen__content">
+                                    <span class="zen__date">
+
+                                    </span>
+                                    <h5 class="zen__title">
+                                        Борьба с манипуляциями поддержала рынок драгметаллов
+                                    </h5>
+                                    <p class="zen__descr">
+                                        Очень удобное расположение. Пришёл оценить икону, так как лежала дома и было интересно что да как. Оценка оказалась бесплатной...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="zen__item">
+                                <div class="zen__image">
+                                    <img src="images/zan1.jpg" alt="">
+                                </div>
+                                <div class="zen__content">
+                                    <span class="zen__date">
+
+                                    </span>
+                                    <h5 class="zen__title">
+                                        Борьба с манипуляциями поддержала рынок драгметаллов
+                                    </h5>
+                                    <p class="zen__descr">
+                                        Очень удобное расположение. Пришёл оценить икону, так как лежала дома и было интересно что да как. Оценка оказалась бесплатной...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="zen__item">
+                                <div class="zen__image">
+                                    <img src="images/zan1.jpg" alt="">
+                                </div>
+                                <div class="zen__content">
+                                    <span class="zen__date">
+
+                                    </span>
+                                    <h5 class="zen__title">
+                                        Борьба с манипуляциями поддержала рынок драгметаллов
+                                    </h5>
+                                    <p class="zen__descr">
+                                        Очень удобное расположение. Пришёл оценить икону, так как лежала дома и было интересно что да как. Оценка оказалась бесплатной...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
 

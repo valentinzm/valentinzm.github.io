@@ -3,6 +3,7 @@ const zenSlider = new Swiper('.zen__slider', {
 
     loop: true,
     slidesPerView: 3,
+    spaceBetween: 28,
     // Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next',
