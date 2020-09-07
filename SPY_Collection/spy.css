@@ -1434,6 +1434,9 @@
     .cart__banners .banners__banner:after {
         bottom: 0;
     }
+    .cart__banners:after {
+        content: none;
+    }
     .cart__banners .banners__dots .slick-dots li {
         margin: 0 10px;
     }
