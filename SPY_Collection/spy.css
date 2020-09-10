@@ -603,9 +603,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-    height: 355px;
+    height: 155px;
     z-index: 11;
-    background: linear-gradient(0deg, #161616 20%, rgba(22, 22, 22, 0) 100%);
+    background: linear-gradient(0deg, #161616 60%, rgba(22, 22, 22, 0) 100%)
 }
 
 .girl-03-block--parachute {
