@@ -345,7 +345,7 @@ body {
     background-image: url('images/bkg-slider.jpeg');
     /* background-position: center; */
     background-size: cover;
-    background-position: center -200px;
+    background-position: center -145px;
 }
 
 .banner::before {
