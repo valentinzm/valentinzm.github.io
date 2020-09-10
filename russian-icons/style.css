@@ -30,14 +30,28 @@ img {
 }
 
 .wrapper {
-    max-width: 1530px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
+.wrapper__big {
+    max-width: 1530px;
+}
+
+.wrapper__small {
+    max-width: 1270px;
+}
+
 .row {
     display: flex;
+}
+
+.title {
+    font-family: 'Berlingske Serif';
+    font-weight: bold;
+    font-size: 52px;
+    text-align: center;
 }
 
 .text-underline {
@@ -272,7 +286,7 @@ body {
 
 .navigation__list a {
     display: inline-flex;
-    padding: 10px;
+    padding: 10px 22px;
     font-size: 15px;
     font-weight: 500;
     color: #fff;
@@ -350,12 +364,12 @@ body {
     max-width: 850px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 280px;
+    padding-top: 260px;
     text-align: center;
 }
 
 .banner__title {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     line-height: 78px;
     font-size: 70px;
     color: #fff;
@@ -372,24 +386,20 @@ body {
     margin-top: 20px;
 }
 
+.banner__divider {
+    margin-bottom: 25px;
+}
+
 .banner__subtitle {
     font-family: 'Graphik LCG';
     font-size: 30px;
     color: #fff;
-    margin-top: 35px;
     margin-bottom: 90px;
 }
 
 .banner__button {
     margin-left: auto;
     margin-right: auto;
-}
-
-.title {
-    font-family: 'Berlingske Serif';
-    font-weight: bold;
-    font-size: 52px;
-    text-align: center;
 }
 
 .bg-light {
@@ -404,10 +414,10 @@ body {
     margin-left: 60px;
     margin-right: 60px;
     margin-top: -40px;
-    padding-top: 70px;
+    padding-top: 60px;
     box-shadow: 0px 7px 19.4px 0.6px rgba(2, 12, 17, 0.12);
     margin-bottom: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 65px;
     padding-left: 60px;
     padding-right: 60px;
 }
@@ -513,7 +523,7 @@ body {
     width: 240px;
     border-radius: 50%;
     background-color: #fff;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
 .steps__text {
@@ -553,16 +563,16 @@ body {
 }
 
 .payment {
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 60px;
+    padding-bottom: 15px;
 }
 
 .payment__row {
-    align-items: center;
+    padding-top: 25px;
 }
 
 .payment__divider {
-    margin-bottom: 75px;
+    margin-bottom: 55px;
 }
 
 .payment__col-3 {
@@ -608,33 +618,68 @@ body {
 }
 
 .rewiews {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .rewiews__row {
-    align-items: center;
+    /* align-items: center; */
+}
+
+.rewiews__divider {
+    margin-bottom: 10px;
 }
 
 .rewiews__text {
     max-width: 620px;
     flex: 0 0 100%;
     width: 100%;
+    padding-top: 75px;
 }
 
 .rewiews__text p {
     font-size: 28px;
+    line-height: 38px;
     margin-bottom: 40px;
 }
 
 .rewiews__button {
-    margin-top: 70px;
+    margin-top: 130px;
+}
+
+.rewiews__container {
+    max-width: 532px;
+    position: relative;
+    margin-left: auto;
+    overflow: hidden;
+}
+
+.rewiews__slider {
+    /* max-width: 532px; */
+    margin-right: unset;
+}
+
+.rewiews__slider--item {
+    position: relative;
+    max-width: 370px;
 }
 
 .rewiews__slider .swiper-slide img {
+    max-width: unset;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    transform: translateX(60px);
+}
+
+.rewiews-button-prev {
+    left: 0;
+    top: 46%;
+}
+
+.rewiews-button-next {
+    right: 28px;
+    top: 46%;
 }
 
 .swiper-button {
@@ -651,7 +696,7 @@ body {
 }
 
 .swiper-button svg {
-    width: 13px;
+    width: 23px;
     height: 23px;
     fill: #b2b2b2;
 }
@@ -665,18 +710,19 @@ body {
     min-height: 830px;
     background-size: cover;
     background-position: center;
-    padding-top: 50px;
+    padding-top: 35px;
     padding-bottom: 70px;
     color: #fff;
 }
 
 .consultation__divider {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 .consultation__content {
     max-width: 430px;
     width: 100%;
+    padding-top: 40px;
 }
 
 .consultation__heading {
@@ -746,6 +792,7 @@ body {
     background-color: #fff;
     padding: 35px;
     margin-left: auto;
+    margin-right: 40px;
 }
 
 .form__label {
@@ -754,7 +801,8 @@ body {
     font-weight: 500;
 }
 
-.form__input {
+.form__input,
+.form__select {
     display: flex;
     width: 100%;
     border-radius: 10px;
@@ -765,6 +813,23 @@ body {
     outline: none;
     margin-top: 10px;
     margin-bottom: 20px;
+}
+
+.form__select {
+    color: #303030;
+    font-style: italic;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('images/select_arrow.png');
+    background-repeat: no-repeat;
+    background-position: 390px center;
+}
+
+.form__select option {
+    background-color: #f3f3f3;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .form__file {
@@ -855,6 +920,7 @@ body {
     padding-left: 30px;
     padding-right: 30px;
     transition: .3s;
+    font-weight: 500;
 }
 
 .faq__query {
@@ -946,11 +1012,52 @@ body {
     background-color: #fff;
 }
 
+.zen__date {
+    color: #c3c3c3;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.zen__date:before {
+    content: '';
+    display: inline-flex;
+    width: 15px;
+    height: 15px;
+    background-image: url(images/svg/calendar.svg);
+    margin-right: 6px;
+}
+
 .zen__title {
     font-size: 21px;
     line-height: 27px;
     color: #202020;
     margin-bottom: 15px;
+}
+
+.zen__descr {
+    color: #202020;
+    line-height: 24px;
+    margin-bottom: 15px;
+    font-weight: 200;
+}
+
+.zen__link {
+    color: #76c356;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.zen__link svg {
+    fill: #76c356;
+    margin-left: 10px;
+}
+
+.zen__link--border {
+    border-bottom: 1px solid #76c356;
 }
 
 .contacts {
@@ -1081,7 +1188,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .site-footer__nav {
@@ -1092,8 +1199,8 @@ body {
 .site-footer__nav a {
     position: relative;
     height: 28px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
     font-size: 15px;
     font-weight: 500;
     color: #fff;
@@ -1237,6 +1344,10 @@ body {
 }
 
 @media(max-width: 1024px) {
+    .title {
+        font-size: 36px;
+        line-height: 40px;
+    }
     .burger {
         display: flex;
     }
