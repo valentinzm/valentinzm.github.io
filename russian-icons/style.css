@@ -343,8 +343,9 @@ body {
     z-index: 9;
     position: relative;
     background-image: url('images/bkg-slider.jpeg');
-    background-position: center;
+    /* background-position: center; */
     background-size: cover;
+    background-position: center -200px;
 }
 
 .banner::before {
@@ -979,10 +980,16 @@ body {
     padding-top: 50px;
 }
 
-.zen__slider {
+.zen__container {
+    position: relative;
     padding-left: 100px;
     padding-right: 100px;
+    overflow: hidden;
+}
+
+.zen__slider {
     padding-bottom: 70px;
+    overflow: visible;
 }
 
 .zen__slider .swiper-slide-duplicate,
@@ -1320,6 +1327,12 @@ body {
     }
 }
 
+@media(max-width: 1240px) {
+    .zen__slider .swiper-slide-prev {
+        opacity: 0;
+    }
+}
+
 @media(max-width: 1140px) {
     .contacts__block {
         padding-left: 15px;
@@ -1414,6 +1427,9 @@ body {
         font-size: 18px;
         margin-bottom: 20px;
     }
+    .rewiews__container {
+        margin-right: auto;
+    }
     .rewiews__button {
         margin-top: 35px;
     }
@@ -1452,6 +1468,14 @@ body {
     .faq__item,
     .faq__title {
         max-width: 100%;
+    }
+    .zen__slider .swiper-slide-next {
+        opacity: 0;
+    }
+    .zen__item {
+        max-width: 425px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 

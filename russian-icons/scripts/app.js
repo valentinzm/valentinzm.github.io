@@ -15,8 +15,8 @@ const zenSlider = new Swiper('.zen__slider', {
             slidesPerView: 1,
             spaceBetween: 0,
         },
-        992: {
-            centeredSlides: true,
+        980: {
+            centeredSlides: false,
             slidesPerView: 2,
             spaceBetween: 14,
         },
