@@ -1510,6 +1510,9 @@
     .overlay-bottom1 {
         background: linear-gradient(0deg, #161616 0%, rgba(22, 22, 22, 0) 55%);
     }
+    .girl-01-block--gradient::before {
+        content: none;
+    }
     .spy-section__number {
         left: unset;
         bottom: unset;
@@ -1517,6 +1520,9 @@
         line-height: 1;
         right: 8px;
         top: 0;
+        letter-spacing: -0.09em;
+        color: #FFFFFF;
+        opacity: 0.08;
     }
     .section-content01,
     .section-content02,
@@ -1559,8 +1565,7 @@
     }
     .absolute-descr--show .absolute-descr__content {
         display: flex;
-        flex-direction: column;
-        padding: 8px;
+        flex-wrap: wrap;
     }
     .absolute-descr--show .absolute-descr__content:before {
         content: '';
@@ -1573,23 +1578,70 @@
     }
     .spy-subtitle,
     .spy-descr {
+        padding-left: 8px;
+        padding-right: 8px;
         position: relative;
+    }
+    .spy-subtitle {
+        padding-top: 8px;
+        margin-bottom: 3px;
+    }
+    .spy-descr {
+        padding-bottom: 8px;
     }
     .plane-01-block {
         left: 100px;
         top: 170px;
         z-index: 10;
     }
+    .car-01-block {
+        left: 120px;
+        bottom: 70px;
+    }
+    .girl-01-block--case {
+        left: 215px;
+        bottom: 60px;
+    }
+    .girl-01-block--case .absolute-descr__dot,
+    .absolute-descr--show .absolute-descr__dot {
+        background: #D80027;
+        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+    }
+    .girl-01-block--case .absolute-descr__dot:before,
+    .absolute-descr--show .absolute-descr__dot::before {
+        background: #D80027;
+    }
+    .girl-01-block--glasses {
+        left: 310px;
+        top: 180px;
+    }
+    .girl-01-block--watches {
+        right: 60px;
+    }
+    .girl-01-block--watches .absolute-descr__dot {
+        margin-left: auto;
+        margin-bottom: 10px;
+    }
+    .girl-01-block--glasses .absolute-descr__content {
+        position: absolute;
+        left: -110px;
+        bottom: 10px;
+    }
+    .girl-01-block--dress {
+        display: none;
+    }
     .absolute-descr--show img {
         display: none;
     }
     .section-02 {
-        height: 470px;
+        height: 550px;
         margin-top: 77px;
+    }
+    .number-02 {
+        margin-top: -15px;
     }
     .girl-02 {
         max-width: 108px;
-        left: 100px;
     }
     .car-02 {
         left: 28px;
@@ -1597,14 +1649,63 @@
         max-width: 350px;
         bottom: 150px;
     }
+    .car-02-block {
+        display: none;
+    }
+    .girl-02-block--dress {
+        left: 45%;
+        top: 270px;
+        z-index: 17;
+    }
+    .girl-02-block--dress .absolute-descr__content {
+        position: absolute;
+        width: 108px;
+        right: 10px;
+        bottom: 10px;
+    }
+    .girl-02-block--shoes {
+        top: 330px;
+        z-index: 20;
+        right: 35%;
+    }
+    .girl-02-block--shoes1 {
+        right: 50%;
+        z-index: 20;
+        bottom: 75px;
+    }
     .section-03 {
         height: 600px;
         background-position: center;
-        background-size: cover;
+        background-size: 500px 400px;
+        background-repeat: no-repeat;
+    }
+    .number-03 {
+        margin-top: -15px;
     }
     .girl-03 {
         height: 464px;
         left: -50px;
+    }
+    .girl-03-block--parachute {
+        left: unset;
+        top: 175px;
+        right: 35%;
+    }
+    .girl-03-block--parachute .absolute-descr__content {
+        width: 108px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .girl-03-block--dress {
+        left: 50%;
+        bottom: 175px;
+    }
+    .girl-03-block--dress .absolute-descr__content {
+        width: 108px;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
     }
     .section-04 {
         height: 530px;
@@ -1619,6 +1720,27 @@
         bottom: 41px;
         left: 0;
         max-width: 100%;
+    }
+    .girl-04-block--helmet {
+        left: unset;
+        right: 35%;
+        top: 180px;
+    }
+    .girl-04-block--helmet .absolute-descr__content {
+        position: absolute;
+        width: 108px;
+    }
+    .girl-04-block--dress {
+        left: unset;
+        top: 310px;
+        right: 40%;
+    }
+    .girl-04-block--gloves {
+        left: 30%;
+        top: 415px;
+    }
+    .cart-slider04 {
+        margin-bottom: 200px;
     }
     .section-content__text {
         max-width: 190px;
@@ -2324,6 +2446,9 @@
         height: 190px;
         opacity: 0.5;
         transition: all 0.3s;
+    }
+    .cart-slider__collection .cart-slider__item {
+        height: 190px;
     }
     .slick-current .cart-slider__item {
         height: 210px;
