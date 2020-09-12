@@ -897,7 +897,7 @@ body {
 
 .faq {
     padding-top: 50px;
-    height: 915px;
+    min-height: 915px;
     padding-bottom: 70px;
     background-image: url(images/faq_bg.png);
 }
@@ -1331,6 +1331,11 @@ body {
     .zen__slider .swiper-slide-prev {
         opacity: 0;
     }
+    .banner {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
 }
 
 @media(max-width: 1140px) {
@@ -1466,6 +1471,9 @@ body {
     .form {
         margin-right: auto;
     }
+    .faq {
+        min-height: auto;
+    }
     .faq__item,
     .faq__title {
         max-width: 100%;
@@ -1553,6 +1561,70 @@ body {
     }
     .steps__arrow {
         display: none;
+    }
+}
+
+@media(max-width: 540px) {
+    body,
+    html {
+        position: relative;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .services {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .faq__title {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 18px;
+    }
+    .contacts__item {
+        width: 100%;
+        flex: 0 0 100%;
+    }
+    .rewiews__container {
+        overflow: visible;
+        max-width: 320px;
+    }
+    .rewiews__slider .swiper-slide img {
+        max-width: 100%;
+    }
+    .rewiews__buttons {
+        display: flex;
+        justify-content: center;
+        bottom: -80px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        justify-content: center;
+        max-width: 170px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .zen__container {
+        overflow: visible;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 160px;
+    }
+    .zen__slider {
+        padding-bottom: 0;
+    }
+    .zen__buttons {
+        display: flex;
+        justify-content: center;
+        bottom: 80px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        justify-content: center;
+        max-width: 170px;
+        width: 100%;
+        margin: 0 auto;
     }
 }
 
