@@ -649,24 +649,30 @@ body {
 }
 
 .rewiews__container {
-    max-width: 532px;
+    max-width: 562px;
     position: relative;
     margin-left: auto;
+    padding-right: 30px;
     overflow: hidden;
+    transform: translateX(30px);
 }
 
 .rewiews__slider {
-    /* max-width: 532px; */
+    max-width: 532px;
     margin-right: unset;
+    height: 614px;
+    overflow: visible;
 }
 
 .rewiews__slider--item {
     position: relative;
+    display: flex;
+    justify-content: center;
     /* max-width: 370px; */
 }
 
 .rewiews__slider .swiper-slide img {
-    max-width: 100%;
+    max-width: unset;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -678,7 +684,7 @@ body {
 }
 
 .rewiews-button-next {
-    right: 28px;
+    right: 50px;
     top: 46%;
 }
 
@@ -1437,6 +1443,7 @@ body {
     }
     .rewiews__text p {
         font-size: 18px;
+        line-height: 28px;
         margin-bottom: 20px;
     }
     .rewiews__container {
@@ -1599,15 +1606,21 @@ body {
     }
     .rewiews__container {
         overflow: visible;
+        transform: translateX(0);
         max-width: 100%;
+        padding-right: 0;
         /* margin-right: -15px;
         margin-left: -15px; */
     }
     .swiper-container {
         overflow: hidden;
     }
+    .rewiews__slider {
+        height: auto;
+    }
     .rewiews__slider .swiper-slide img {
         max-width: 100%;
+        transform: translateX(20px);
     }
     .rewiews__buttons {
         display: flex;

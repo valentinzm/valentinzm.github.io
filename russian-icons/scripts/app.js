@@ -33,11 +33,18 @@ const rewiewsSlider = new Swiper('.rewiews__slider', {
 
     loop: true,
     slidesPerView: 1,
+    spaceBetween: 0,
     // Navigation arrows
     navigation: {
         nextEl: '.rewiews-button-next',
         prevEl: '.rewiews-button-prev',
     },
+    breakpoints: {
+        540: {
+            spaceBetween: 100,
+        },
+
+    }
 
 });
 document.querySelectorAll('.faq__title').forEach(function(e) {
