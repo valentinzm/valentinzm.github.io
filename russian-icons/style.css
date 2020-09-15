@@ -1607,6 +1607,7 @@ body {
     .services__image,
     .services__image img {
         height: 180px;
+        width: 100%;
     }
     .services__buy {
         font-size: 18px;
