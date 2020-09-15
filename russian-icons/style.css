@@ -1640,14 +1640,22 @@ body {
     }
     .consultation__info {
         position: relative;
-        padding-bottom: 50px;
+        /* padding-bottom: 50px; */
         margin-bottom: 20px;
+        align-items: center;
     }
+    .consultation__info--name {
+        margin-bottom: 0;
+    }
+    .consultation__info--post,
     .consultation__info--descr {
+        display: none;
+    }
+    /* .consultation__info--descr {
         position: absolute;
         bottom: 0;
         left: 0;
-    }
+    } */
     .consultation__heading {
         font-size: 16px;
         margin-bottom: 15px;
