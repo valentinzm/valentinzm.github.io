@@ -30,7 +30,7 @@ const zenSlider = new Swiper('.zen__slider', {
 });
 const rewiewsSlider = new Swiper('.rewiews__slider', {
     // Optional parameters
-
+    effect: 'fade',
     loop: true,
     slidesPerView: 1,
     spaceBetween: 0,

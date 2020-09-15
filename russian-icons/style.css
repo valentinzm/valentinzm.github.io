@@ -656,6 +656,8 @@ body {
     padding-right: 30px;
     overflow: hidden;
     transform: translateX(30px);
+    background-image: url(images/rewiews_bg.png);
+    background-position: center;
 }
 
 .rewiews__slider {
@@ -677,6 +679,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 42px;
 }
 
 .rewiews-button-prev {
@@ -1345,6 +1348,9 @@ body {
 }
 
 @media(max-width: 1140px) {
+    .navigation__list a {
+        padding: 10px 12px;
+    }
     .contacts__block {
         padding-left: 15px;
     }
@@ -1456,6 +1462,16 @@ body {
     }
     .payment__row {
         flex-wrap: nowrap;
+        overflow: scroll;
+        padding-top: 0px;
+    }
+    .payment__image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .payment__image img {
+        max-width: 70%;
     }
     .payment__col-3 {
         max-width: 33.333%;
@@ -1587,16 +1603,16 @@ body {
         margin-right: -15px;
     }
     .steps__icon {
-        width: 188px;
-        height: 188px;
+        width: 160px;
+        height: 160px;
     }
     .steps__icon img {
-        max-width: 50%;
+        max-width: 40%;
     }
     .steps__col-4 {
         width: 100%;
         margin-bottom: 25px;
-        margin-right: 25px;
+        margin-right: 20px;
     }
     .steps__text {
         font-size: 18px;
@@ -1609,6 +1625,23 @@ body {
     }
     .steps__arrow {
         display: none;
+    }
+    .payment__col-3 {
+        max-width: 200px;
+        flex: 0 0 200px;
+    }
+    .payment__image {
+        height: 175px;
+    }
+    .payment__title {
+        font-size: 16px;
+    }
+    .payment__descr {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .payment__line {
+        min-height: 300px;
     }
 }
 
@@ -1637,20 +1670,25 @@ body {
     .rewiews__container {
         overflow: visible;
         transform: translateX(0);
-        max-width: 100%;
+        /* max-width: 100%; */
         padding-right: 0;
         /* margin-right: -15px;
         margin-left: -15px; */
+        margin-left: -15px;
+        margin-right: -15px;
+        width: calc(100% + 30px);
+        background-position: 45%;
     }
     .swiper-container {
         overflow: hidden;
     }
     .rewiews__slider {
-        height: auto;
+        /* height: auto; */
     }
     .rewiews__slider .swiper-slide img {
-        max-width: 100%;
-        transform: translateX(20px);
+        max-width: 260px;
+        width: 100%;
+        transform: translateX(0);
     }
     .rewiews__buttons {
         display: flex;
