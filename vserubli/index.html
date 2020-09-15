@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>все рубли</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/nouislider.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container site-header__container">
+            <a href="/" class="site-header__logo">
+                <img src="images/logo.png" alt="Все рубли - логотип">
+            </a>
+            <div class="site-header__collapse">
+                <nav class="nav">
+                    <a href="#" class="nav__item">Горячая линия</a>
+                    <a href="#" class="nav__item nav__item--phone">8 800 111 222 3</a>
+                    <a href="#" class="nav__item">Личный кабинет</a>
+                </nav>
+            </div>
+            <div class="burger">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <div class="row">
+                <div class="instant">
+                    <h1 class="instant__title">Моментальные займы онлайн <span>под 0%</span></h1>
+                    <div class="instant__man">
+                        <div class="instant__man--bubble bubble__effect">
+                            <div class="instant__man--content">
+                                <h5 class="instant__man--title">
+                                    VSERUBLI.RU
+                                </h5>
+                                <p class="instant__man--text">Вам зачислено 30 000 рублей</p>
+                            </div>
+                        </div>
+                        <img src="images/man.png" alt="Изображение мужчины" class="instant__man--image">
+                    </div>
+                </div>
+                <div class="calculator">
+                    <h5 class="calculator__title">
+                        Заполните анкету
+                    </h5>
+                    <p class="calculator__descr">
+                        и деньги будут у вас в <span id="time"></span>
+                    </p>
+                    <form class="calculator__form">
+                        <div class="calculator__range">
+                            <div class="calculator__form--header">
+                                <p>
+                                    Выберите сумму
+                                </p>
+                                <p id="sum">
+                                    20 000
+                                </p>
+                            </div>
+                            <div id="slider-snap1" class="slider"></div>
+                            <div class="calculator__range--bottom">
+                                <p>1 000 руб</p>
+                                <p>100 000 руб</p>
+                            </div>
+                        </div>
+                        <div class="calculator__range">
+                            <div class="calculator__form--header">
+                                <p>
+                                    Выберите срок
+                                </p>
+                                <p id="days">
+                                    30
+                                </p>
+                            </div>
+                            <div id="slider-snap2" class="slider"></div>
+                            <div class="calculator__range--bottom">
+                                <p>7 дней</p>
+                                <p>180 дней</p>
+                            </div>
+                        </div>
+                        <input type="submit" value="Получить деньги" class="calculator__submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="scripts/nouislider.min.js"></script>
+    <script src='app.js'></script>
+</body>
+
+</html>
