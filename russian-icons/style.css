@@ -1561,15 +1561,131 @@ body {
     .burger {
         order: 3;
     }
+    .banner {
+        height: 550px;
+    }
+    .banner__content {
+        padding-top: 180px;
+    }
+    .banner__title {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .banner__subtitle {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .title {
+        font-size: 28px;
+    }
+    .divider {
+        margin-top: 10px;
+        height: 3px;
+        margin-bottom: 25px;
+    }
+    .button {
+        height: 45px;
+    }
     .services {
+        padding-top: 20px;
         margin-left: 15px;
         margin-right: 15px;
         padding-left: 15px;
         padding-right: 15px;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+    }
+    .services__divider {
+        margin-bottom: 25px;
+    }
+    .services__item {
+        height: 250px;
+    }
+    .services__image {
+        margin-bottom: 15px;
+    }
+    .services__image,
+    .services__image img {
+        height: 180px;
+    }
+    .services__buy {
+        font-size: 18px;
     }
     .services__col-3 {
         width: 100%;
         flex: 0 0 100%;
+        margin-bottom: 20px;
+    }
+    .steps {
+        padding-bottom: 35px;
+    }
+    .steps__button {
+        margin-top: 0;
+    }
+    .rewiews__text p {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .swiper-button {
+        height: 45px;
+        width: 45px;
+    }
+    .swiper-button svg {
+        width: 13px;
+        height: 13px;
+    }
+    .consultation__content {
+        padding-top: 0;
+    }
+    .consultation__info {
+        position: relative;
+        padding-bottom: 50px;
+        margin-bottom: 20px;
+    }
+    .consultation__info--descr {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .consultation__heading {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .consultation__list li {
+        font-size: 12px;
+    }
+    .consultation__list img {
+        width: 20px;
+        flex: 0 0 20px;
+        height: 20px;
+    }
+    .form {
+        padding: 15px;
+    }
+    .form__label {
+        font-size: 12px;
+    }
+    .form__input,
+    .form__select {
+        height: 40px;
+        padding-left: 15px;
+    }
+    .faq__title {
+        font-size: 14px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .faq__query {
+        flex: 0 0 25px;
+        margin-right: 10px;
+    }
+    .faq__content {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .zen__title {
+        font-size: 18px;
+        line-height: 22px;
     }
     .contacts {
         height: auto;
@@ -1658,11 +1774,6 @@ body {
         padding-left: 0;
         padding-right: 0;
     }
-    .faq__title {
-        padding-left: 15px;
-        padding-right: 15px;
-        font-size: 18px;
-    }
     .contacts__item {
         width: 100%;
         flex: 0 0 100%;
@@ -1677,28 +1788,30 @@ body {
         margin-left: -15px;
         margin-right: -15px;
         width: calc(100% + 30px);
-        background-position: 45%;
+        background-position: 40%;
+        height: 400px;
+        background-size: cover;
     }
     .swiper-container {
         overflow: hidden;
     }
     .rewiews__slider {
-        /* height: auto; */
+        height: 400px;
     }
     .rewiews__slider .swiper-slide img {
-        max-width: 260px;
+        max-width: 160px;
         width: 100%;
         transform: translateX(0);
     }
     .rewiews__buttons {
         display: flex;
         justify-content: center;
-        bottom: -80px;
+        bottom: -50px;
         position: absolute;
         left: 0;
         right: 0;
         justify-content: center;
-        max-width: 170px;
+        max-width: 110px;
         width: 100%;
         margin: 0 auto;
     }
