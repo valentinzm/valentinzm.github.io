@@ -14,6 +14,10 @@ body {
     overflow: hidden;
 }
 
+.logo {
+    max-width: 350px;
+}
+
 .main-screen {
     position: relative;
 }
