@@ -72,26 +72,15 @@ function faqList(evt) {
 // })
 document.querySelector('.burger').addEventListener('click', mobileNavigation);
 
+
 function mobileNavigation(evt) {
     evt.preventDefault();
     this.classList.toggle('burger__open');
-    const nav = document.querySelector('.navigation');
-    // if (nav.classList.contains('navigation__down')) {
-    //     nav.classList.add('navigation__up');
-    // } else {
-    //     nav.classList.add('navigation__down');
-    // }
-    document.querySelector('.navigation').classList.toggle('navigation__down');
+    document.querySelector('.navigation').classList.toggle('navigation__open');
 
-    // document.querySelector('.burger__open').addEventListener('click', mobileNavigationClose);
 }
-//document.querySelector('.burger__open').addEventListener('click', mobileNavigationClose);
 
-// function mobileNavigationClose() {
-//     console.log('click');
-//     document.querySelector('.burger').classList.remove('burger__open');
-//     document.querySelector('.navigation').classList.remove('navigation__open');
-// }
+
 ymaps.ready(function() {
     var myMap = new ymaps.Map('map', {
             center: [55.751574, 37.573856],
