@@ -273,8 +273,10 @@ body {
     flex: 0 0 8px;
     height: 8px;
     display: inline-flex;
-    background-image: url(../images/dot.svg);
+    /* background-image: url(../images/dot.svg); */
     margin-right: 20px;
+    background-color: #fff;
+    border-radius: 50%;
 }
 
 .app__list--text p {
@@ -312,15 +314,28 @@ body {
 .app__list a:before {
     content: '';
     width: 8px;
+    flex: 0 0 8px;
     height: 8px;
     display: inline-flex;
-    background-image: url(../images/dot.svg);
+    /* background-image: url(../images/dot.svg); */
     margin-right: 20px;
+    background-color: #fff;
+    border-radius: 50%;
 }
 
 .app__sublist {
     display: none;
     margin-bottom: 30px;
+}
+
+.app__sublist a {
+    display: inline;
+    font-weight: normal;
+    color: #337ab7;
+}
+
+.app__sublist a:before {
+    content: none;
 }
 
 .app__sublist li {
@@ -464,6 +479,43 @@ body {
     }
     .app__list--text li {
         margin-bottom: 15px;
+        font-size: 14px;
+    }
+    .app__text {
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 330px) {
+    .app {
+        padding-left: 10px;
+    }
+    .app__back {
+        left: 10px;
+        font-size: 11px;
+    }
+    .app__list--text li:before,
+    .app__list a:before {
+        width: 5px;
+        flex: 0 0 5px;
+        height: 5px;
+        margin-right: 10px;
+    }
+    .app__list a,
+    .app__list--text li {
+        margin-bottom: 10px;
+        font-size: 11px;
+        line-height: 16px;
+    }
+    .form__input,
+    .form__submit {
+        height: 44px;
+    }
+    .app__text {
+        font-size: 11px;
+        line-height: 16px;
+    }
+    .app__text strong {
         font-size: 14px;
     }
 }
