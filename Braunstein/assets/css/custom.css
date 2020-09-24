@@ -360,6 +360,10 @@ body {
     color: #FFFFFF;
 }
 
+.form {
+    position: relative;
+}
+
 .form__input {
     border: 0.5px solid rgb(255 255 255 / .5);
     background: transparent;
@@ -394,6 +398,20 @@ body {
     height: 54px;
     width: 146px;
     color: #000000;
+    outline: none;
+}
+
+.form__alert {
+    display: none;
+    position: absolute;
+    bottom: -60px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    left: 0;
+}
+
+.form__alert--show {
+    display: flex;
 }
 
 @media(max-width: 1366px) {
