@@ -486,7 +486,7 @@ body {
     }
 }
 
-@media(max-width: 330px) {
+@media(max-width: 350px) {
     .app {
         padding-left: 10px;
     }
