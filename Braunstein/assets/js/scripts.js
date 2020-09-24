@@ -323,11 +323,11 @@ $(document).ready(function() {
         // }
 
 
-
+        document.querySelector('.front-content').addEventListener('click', nextOverlay);
         // EVENT - ON DOWN BUTTON CLICK
-        downBtn.click(function() {
-            nextOverlay();
-        });
+        // downBtn.click(function() {
+        //     nextOverlay();
+        // });
 
         // EVENT - ON UP BUTTON CLICK
         upBtn.click(function() {
