@@ -322,7 +322,7 @@ $(document).ready(function() {
         //     createBulletNav();
         // }
 
-
+        document.querySelector('.front-content').addEventListener('touchstart', nextOverlay);
         document.querySelector('.front-content').addEventListener('click', nextOverlay);
         // EVENT - ON DOWN BUTTON CLICK
         // downBtn.click(function() {
