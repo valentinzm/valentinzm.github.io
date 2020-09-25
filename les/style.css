@@ -83,6 +83,25 @@ a {
     font-weight: normal;
 }
 
+.header-city__value {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    transition: opacity .4s;
+    position: relative;
+    margin-left: 7px;
+    display: inline-flex;
+}
+
+.header-city__value:after {
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #479a00;
+    position: absolute;
+    bottom: -1px;
+}
+
 .header-top__outer {
     margin-left: auto;
 }
