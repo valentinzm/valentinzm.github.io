@@ -1422,7 +1422,7 @@ body {
         overflow: hidden;
         height: calc(100vh - 110px);
         background-color: #fff;
-        transform: translateY(-120%);
+        transform: translateY(-100vh);
         transition: transform .3s;
     }
     .navigation__open {
@@ -1430,6 +1430,14 @@ body {
         /* display: flex; */
         background-color: #fff;
         /* height: calc(100vh - 110px); */
+    }
+    .navigation__body {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .navigation__search {
+        display: none!important;
     }
     .navigation .navigation__list {
         flex-direction: column;
@@ -1759,10 +1767,11 @@ body {
         justify-content: flex-start;
         overflow: scroll;
         margin-right: -15px;
+        margin-left: -15px;
     }
     .steps__icon {
-        width: 160px;
-        height: 160px;
+        width: 140px;
+        height: 140px;
     }
     .steps__icon img {
         max-width: 40%;
@@ -1771,6 +1780,8 @@ body {
         width: 100%;
         margin-bottom: 25px;
         margin-right: 20px;
+        padding-top: 20px;
+        padding-left: 15px;
     }
     .steps__text {
         font-size: 18px;

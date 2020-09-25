@@ -76,6 +76,7 @@ document.querySelector('.burger').addEventListener('click', mobileNavigation);
 function mobileNavigation(evt) {
     evt.preventDefault();
     this.classList.toggle('burger__open');
+    document.body.classList.toggle('navigation__body');
     document.querySelector('.navigation').classList.toggle('navigation__open');
 
 }
