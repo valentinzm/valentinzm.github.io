@@ -1,0 +1,16 @@
+.catalog {
+    padding: 30px;
+    background: #fff;
+    margin-top: -70px;
+}
+
+.catalog__image {
+    max-width: 100%;
+}
+
+.catalog__title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #010101;
+}

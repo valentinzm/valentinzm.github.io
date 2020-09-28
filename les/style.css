@@ -41,6 +41,13 @@ a {
 }
 
 .col-lg-3 {
+    width: 25%;
+    flex: 0 0 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.col-lg-4 {
     width: 33.333%;
     flex: 0 0 33.333%;
     padding-left: 10px;
@@ -50,6 +57,20 @@ a {
 .col-lg-5 {
     width: 50%;
     flex: 0 0 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.col-lg-8 {
+    width: 66.666%;
+    flex: 0 0 66.666%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.col-lg-9 {
+    width: 75%;
+    flex: 0 0 75%;
     padding-left: 10px;
     padding-right: 10px;
 }

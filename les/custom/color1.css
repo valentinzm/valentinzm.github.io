@@ -1,0 +1,64 @@
+.header {
+    background: transparent;
+}
+
+.header-top {
+    background-color: #66bb6a;
+}
+
+
+/* .header-top__menu a,
+.header-city__key,
+.header-city__value, */
+
+.header-bottom__logo a,
+.header-bottom__phone a,
+.header-bottom__address {
+    color: #362f2a;
+}
+
+.header-top__call a {
+    background: linear-gradient(to right, #f85032 0%, #e73827 100%);
+    border: 1px solid #f85032;
+}
+
+.header-top {
+    border-bottom: none;
+}
+
+.catalog__block {
+    background: rgb(102 187 106 / .3);
+}
+
+.catalog__block:hover {
+    background: #66bb6a;
+}
+
+.table-delivery__head-col {
+    background-color: #66bb6a;
+}
+
+.header {
+    border-bottom: 5px solid #66bb6a;
+}
+
+.footer {
+    background: #1F2425;
+}
+
+.footer__head {
+    border-bottom: 1px solid rgb(255 255 255 / .1);
+}
+
+.footer-nav {
+    border-right: 1px solid rgb(255 255 255 / .1);
+}
+
+.products__button {
+    background: linear-gradient(to right, #f85032 0%, #e73827 100%)!important;
+    border: 1px solid #f85032!important;
+}
+
+.sidebar__active {
+    background-color: #66bb6a!important;
+}

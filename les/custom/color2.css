@@ -1,0 +1,117 @@
+.header {
+    background: #fff;
+    border: none;
+}
+
+.header-bottom__logo a {
+    color: #000;
+}
+
+.header__navigation {
+    background-color: #43B02A;
+}
+
+.header-bottom__logo {
+    margin-right: 50px;
+}
+
+.header-city__key,
+.header-city__value {
+    color: #000;
+}
+
+.header-bottom__phone a,
+.header-bottom__address {
+    color: #000;
+}
+
+.header-bottom__phone span {
+    font-size: 12px;
+    color: #888;
+}
+
+.header__menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+
+.header__menu li {
+    display: inline-flex;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    transition: .3s;
+}
+
+.header__menu li:hover {
+    background: #439b09;
+}
+
+.header__menu a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.header__callback {
+    margin-left: 25px;
+}
+
+.header__callback a {
+    box-shadow: 0px 5px 30px rgba(255, 156, 19, 0.4);
+    font-family: Roboto, sans-serif;
+    color: #fff;
+    background: #ff9c13;
+    text-transform: uppercase;
+    font-size: 12px;
+    height: 48px;
+    border: 1px solid #ff9c13;
+    width: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin-left: auto;
+    transition: 0.3s;
+}
+
+.catalog__block {
+    background: rgb(67 176 42 / .3);
+}
+
+.catalog__block:hover {
+    background-color: rgb(67 176 42 / 1);
+}
+
+.footer {
+    background: #1F2425;
+}
+
+.footer__head {
+    border-bottom: 1px solid rgb(255 255 255 / .1);
+}
+
+.footer-nav {
+    border-right: 1px solid rgb(255 255 255 / .1);
+}
+
+.footer__contacts--phone {
+    color: #ff9c13;
+}
+
+.footer__contacts--call {
+    background-color: #ff9c13;
+    border: 1px solid #ff9c13;
+}
+
+.footer__contacts--call:hover {
+    border: 1px solid #ff9c13;
+    background-color: transparent;
+}
+
+.table-delivery__head-col {
+    background-color: #43B02A;
+}

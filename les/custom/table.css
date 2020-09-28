@@ -1,0 +1,238 @@
+.table__main {
+    background-color: #f3f3f3;
+    padding-bottom: 60px;
+}
+
+.breadcrumbs {
+    position: relative;
+    margin-bottom: 40px;
+    padding: 0 40px;
+    border-bottom: 1px solid #eee;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(http://wm-3102401.oml.ru/t/v430/images/images/54454914_2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.breadcrumbs__list {
+    padding: 50px 0px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.breadcrumbs__list li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-right: 25px;
+}
+
+.breadcrumbs__list li:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-image: url(../images/iconmonstr-arrow-63.svg);
+    background-size: 10px;
+    position: absolute;
+    right: 7px;
+    background-repeat: no-repeat;
+}
+
+.breadcrumbs__list li:last-child:after {
+    content: none;
+}
+
+.breadcrumbs__list a {
+    color: #fff;
+}
+
+.col-left {
+    width: 23%;
+    flex: 0 0 23%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.col-right {
+    width: 77%;
+    flex: 0 0 77%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/* .sidebar {
+    background: #FAFAFA;
+} */
+
+.sidebar__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar__header {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px 15px 20px;
+    color: #fff;
+    font-weight: normal;
+    font-size: 13px;
+    color: #000;
+    background: transparent;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.sidebar__active {
+    background-color: #43B02A;
+    color: #fff;
+}
+
+.sidebar__submenu {
+    list-style: none;
+    margin: 0;
+    background: #fff;
+    border-top: 1px solid #f2f2f2;
+    padding: 15px 20px 15px 20px;
+    list-style: none;
+    font-size: 13px;
+    display: none;
+}
+
+.sidebar__submenu--show {
+    display: block;
+}
+
+.sidebar__submenu li {
+    display: flex;
+    align-items: center;
+    min-height: 26px;
+}
+
+.sidebar__submenu a {
+    color: #222;
+}
+
+.products {
+    padding: 30px;
+    background: #fff;
+    margin-top: -70px;
+}
+
+.products__title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    line-height: 30px;
+    margin-bottom: 36px;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.products__row {
+    border: 1px solid #f2f2f2;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+.products__image {
+    width: 60%;
+    flex: 0 0 60%;
+}
+
+.products__image img {
+    max-width: 400px;
+}
+
+.products__content {
+    width: 40%;
+    flex: 0 0 40%;
+}
+
+.products__price {
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.products__price--title {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.products__price--value {
+    color: #222;
+    font-size: 24px;
+    font-weight: bold;
+    padding-right: 5px;
+    line-height: 26px;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.products__price--status {
+    margin-right: 15px;
+    padding: 2px 0 0px 20px;
+    position: relative;
+    font-size: 13px;
+    display: flex;
+    vertical-align: top;
+    height: 20px;
+    line-height: 14px;
+    color: #666;
+    margin: 0;
+}
+
+.products__price--status::before {
+    content: '';
+    display: inline-flex;
+    background-image: url(../images/iconmonstr-check-mark-1.svg);
+    width: 15px;
+    height: 15px;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.products__button {
+    font-size: 15px;
+    font-weight: 700;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    max-width: 170px;
+    border: 1px solid #ff9c13;
+    background: #ff9c13;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.products__text {
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.products__subtitle {
+    font-family: 'Roboto Slab', serif;
+    font-size: 28px;
+    line-height: 30px;
+    margin: 36px 0;
+    font-weight: bold;
+}
+
+.table-delivery__row-col {
+    min-height: 40px;
+    height: unset;
+}
+
+.table-delivery__row-col--first {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.footer {
+    margin-top: 0;
+}
