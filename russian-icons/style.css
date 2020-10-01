@@ -1603,29 +1603,35 @@ body {
         order: 3;
     }
     .banner {
-        height: 550px;
+        height: 480px;
     }
     .banner__content {
         padding-top: 180px;
     }
-    .banner__title {
-        font-size: 32px;
-        line-height: 36px;
-    }
     .banner__subtitle {
-        font-size: 20px;
-        margin-bottom: 30px;
+        font-size: 18px;
+        margin-bottom: 20px;
     }
     .title {
-        font-size: 28px;
+        font-size: 24px;
+    }
+    .banner__title {
+        font-size: 26px;
+        line-height: 32px;
+        margin-bottom: 10px;
     }
     .divider {
         margin-top: 10px;
         height: 3px;
-        margin-bottom: 25px;
+        margin-bottom: 15px;
+    }
+    .banner__divider {
+        margin-bottom: 15px;
     }
     .button {
-        height: 45px;
+        height: 40px;
+        font-size: 14px;
+        max-width: 220px;
     }
     .services {
         padding-top: 20px;
@@ -1640,18 +1646,21 @@ body {
         margin-bottom: 25px;
     }
     .services__item {
-        height: 250px;
+        height: 230px;
     }
     .services__image {
         margin-bottom: 15px;
     }
     .services__image,
     .services__image img {
-        height: 180px;
+        height: 160px;
         width: 100%;
     }
-    .services__buy {
+    .services__image--text {
         font-size: 18px;
+    }
+    .services__buy {
+        font-size: 14px;
     }
     .services__col-3 {
         width: 100%;
@@ -1660,6 +1669,9 @@ body {
     }
     .steps {
         padding-bottom: 35px;
+    }
+    .steps__divider {
+        margin-bottom: 0;
     }
     .steps__button {
         margin-top: 0;
@@ -1720,6 +1732,9 @@ body {
         height: 40px;
         padding-left: 15px;
     }
+    .faq {
+        padding-top: 20px;
+    }
     .faq__title {
         font-size: 14px;
         padding-left: 15px;
@@ -1732,6 +1747,7 @@ body {
     .faq__content {
         padding: 10px;
         font-size: 14px;
+        line-height: 18px;
     }
     .zen__title {
         font-size: 18px;
@@ -1756,8 +1772,9 @@ body {
 
 @media(max-width: 625px) {
     .button {
-        max-width: 280px;
-        font-size: 16px;
+        height: 40px;
+        font-size: 14px;
+        max-width: 250px;
     }
     .site-header__adres {
         display: none;
@@ -1770,11 +1787,11 @@ body {
         margin-left: -15px;
     }
     .steps__icon {
-        width: 140px;
-        height: 140px;
+        width: 125px;
+        height: 125px;
     }
     .steps__icon img {
-        max-width: 40%;
+        max-width: 35%;
     }
     .steps__col-4 {
         width: 100%;
@@ -1784,16 +1801,19 @@ body {
         padding-left: 15px;
     }
     .steps__text {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 1;
     }
     .steps__icon {
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 25px;
+        margin-bottom: 15px;
     }
     .steps__arrow {
         display: none;
+    }
+    .payment {
+        padding-top: 20px;
     }
     .payment__col-3 {
         max-width: 200px;
