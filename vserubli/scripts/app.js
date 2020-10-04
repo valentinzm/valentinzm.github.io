@@ -1,7 +1,7 @@
 let date = new Date();
-//var newDateObj = moment(date).add(20, 'm').toDate();
+
 var newDateObj = new Date(date.getTime() + 20 * 60000);
-document.querySelector('#time').textContent = newDateObj.getHours() + ':' + newDateObj.getMinutes();
+document.querySelector('#time').textContent = newDateObj.getHours() + ':' + (newDateObj.getMinutes() < 10 ? '0' : '') + newDateObj.getMinutes();
 
 
 var snapSlider1 = document.getElementById('slider-snap1');

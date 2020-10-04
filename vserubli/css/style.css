@@ -33,7 +33,7 @@ body {
 
 .site-header {
     height: 130px;
-    background-image: url('images/header_bg.png');
+    background-image: url('../images/header_bg.png');
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -172,7 +172,7 @@ main {
     left: 0;
     width: 180px;
     height: 79px;
-    background-image: url(images/bubble.png);
+    background-image: url(../images/bubble.png);
     background-repeat: no-repeat;
 }
 
@@ -221,7 +221,7 @@ main {
     content: '';
     width: 20px;
     height: 20px;
-    background-image: url(images/instant_title.png);
+    background-image: url(../images/instant_title.png);
     margin-right: 5px;
 }
 
