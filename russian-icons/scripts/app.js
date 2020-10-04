@@ -137,3 +137,19 @@ ymaps.ready(function() {
         .add(myPlacemark)
         .add(myPlacemarkWithContent);
 });
+
+document.querySelectorAll('.js-modal').forEach((e) => { e.addEventListener('click', showModal) });
+
+function showModal(event) {
+    event.preventDefault();
+    let modalid = this.dataset.modal;
+    document.querySelectorAll('.modal').forEach((modal) => { modal.classList.remove('modal__show') });
+    document.querySelector(modalid).classList.add('modal__show');
+}
+document.querySelectorAll('.overlay').forEach((overlay) => { overlay.addEventListener('click', closeModal) });
+document.querySelectorAll('.modal__close').forEach((close) => { close.addEventListener('click', closeModal) });
+
+function closeModal(event) {
+    event.preventDefault();
+    document.querySelectorAll('.modal').forEach((modal) => { modal.classList.remove('modal__show') });
+}
