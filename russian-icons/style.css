@@ -1284,6 +1284,11 @@ body {
     display: flex;
 }
 
+.table__head .table__col:first-child,
+.table__row .table__col:first-child {
+    border-right: 2px solid #f5f7f8;
+}
+
 .table__head {
     background-color: #fccb8d;
 }
@@ -1513,6 +1518,15 @@ body {
     font-size: 14px;
     line-height: 20px;
     margin-top: 20px;
+}
+
+.sidebar__subtitle {
+    font-size: 12px;
+    text-transform: uppercase;
+    opacity: .5;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .sidebar__list {
