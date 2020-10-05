@@ -411,6 +411,7 @@ body {
 
 .banner__page--content {
     padding-top: 365px;
+    max-width: unset;
 }
 
 .bg-light {
@@ -1322,7 +1323,7 @@ body {
     font-size: 22px;
 }
 
-.page__content--text p {
+.page__content p {
     font-size: 18px;
     line-height: 28px;
     margin-bottom: 35px;
@@ -1347,6 +1348,13 @@ body {
 }
 
 .page__col-3 {
+    width: 25%;
+    flex: 0 0 25%;
+    padding-left: 13.5px;
+    padding-right: 13.5px;
+}
+
+.page__col-4 {
     width: 33.333%;
     flex: 0 0 33.333%;
     padding-left: 13.5px;
@@ -1384,6 +1392,10 @@ body {
 
 .page__item:hover::before {
     opacity: 0.4;
+}
+
+.page__item--col3 {
+    height: 240px;
 }
 
 .page__item img {
@@ -1465,6 +1477,25 @@ body {
     font-size: 14px;
     line-height: 20px;
     margin-top: 20px;
+}
+
+.sidebar__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar__list a {
+    display: flex;
+    font-size: 14px;
+    color: #202020;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.sidebar__list li:last-child a {
+    border-bottom: 0;
 }
 
 .site-footer {
