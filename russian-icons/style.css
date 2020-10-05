@@ -567,6 +567,12 @@ body {
     margin-right: auto;
 }
 
+.steps__painting {
+    padding-top: 45px;
+    background-color: #ebeced;
+    border-top: 2px solid #dadada;
+}
+
 .button {
     display: flex;
     align-items: center;
@@ -603,6 +609,14 @@ body {
 
 .line__right {
     margin-left: 30px;
+}
+
+.lines__steps {
+    margin-top: 55px;
+}
+
+.lines__steps .line {
+    background-color: #d6d7d8;
 }
 
 .payment {
