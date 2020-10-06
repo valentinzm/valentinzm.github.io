@@ -60,9 +60,11 @@ function showMain(event) {
 
 document.querySelectorAll('.js-form').forEach(function(e) {
     e.addEventListener('click', toForm);
-
 });
 
+document.querySelectorAll('.js-reg').forEach(function(e) {
+    e.addEventListener('click', toReg);
+});
 
 function toForm(e) {
     e.preventDefault();
@@ -74,17 +76,16 @@ function toForm(e) {
     document.querySelector('#elite').classList.add('app__item--show');
     document.querySelector('#elite').classList.add('app__item--on');
 }
-// document.querySelector('.scroll-down').addEventListener('click', function() {
-//     const screen = document.querySelector('.screen');
-//     screen.scrollIntoView({ block: "center", behavior: "smooth" });
-// });
-document.querySelector('.form').addEventListener('submit', formAlert);
 
-function formAlert(e) {
+function toReg(e) {
     e.preventDefault();
-    document.querySelector('.form__alert').classList.add('form__alert--show');
+    document.querySelectorAll('.app__item').forEach(function(e) {
+        e.classList.remove('app__item--show');
+    });
+    //document.querySelector('#elite').
+    document.querySelector('#registration').classList.add('app__item--show');
+    document.querySelector('#registration').classList.add('app__item--on');
 }
-//back page
 
 document.querySelector('.app__back').addEventListener('click', backButton);
 
