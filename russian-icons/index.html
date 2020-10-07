@@ -41,7 +41,7 @@
             <a href="#" class="site-header__contact site-header__whatsup">8 495 921-78-55</a>
             <a href="#" class="site-header__contact site-header__email">info@russian-icons.ru</a>
         </div>
-        <a href="#" class="site-header__callback">
+        <a href="#" class="site-header__callback js-modal" data-modal="#callback">
             Обратный звонок
         </a>
         <div class="burger">
@@ -733,7 +733,47 @@
     </div>
 </section>
 </main>
-<footer class="site-footer">
+<div class="modal" id="callback">
+    <div class="overlay"></div>
+    <div class="modal__body">
+        <a href="#" class="modal__close">
+            <?xml version="1.0" encoding="iso-8859-1"?>
+            <svg fill="#c3c3c3" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 298.667 298.667" style="enable-background:new 0 0 298.667 298.667;" xml:space="preserve">
+            <g>
+                <g>
+                    <polygon points="298.667,30.187 268.48,0 149.333,119.147 30.187,0 0,30.187 119.147,149.333 0,268.48 30.187,298.667 
+                        149.333,179.52 268.48,298.667 298.667,268.48 179.52,149.333 		"/>
+                </g>
+            </g>
+            </svg>
+        </a>
+        <h4 class="modal__title">Заявка на обратный звонок</h4>
+        <div class="modal__divider"></div>
+        <form action="#" class="form modal__form">
+            <label class="form__label">
+                    Ваше имя:
+                    <input type="text" placeholder="Введите Ваше имя" class="form__input">
+                </label>
+            <label class="form__label">
+                    Ваш номер телефона:
+                    <input type="text" placeholder="Контактный номер телефона" class="form__input">
+                </label>
+            <label class="form__label">
+                    Ваш e-mail
+                    <input type="text" placeholder="Введите Ваше имя" class="form__input">
+                </label>
+            <label class="form__label">
+                    Каким способом вам ответить?
+                    <select name="" id="" class="form__select">
+                        <option value="">Перезвоните мне</option>
+                        <option value="">Перезвоните мне</option>
+                        <option value="">Перезвоните мне</option>
+                    </select>
+                </label>
+            <input type="submit" value="Отправить" class="form__submit">
+        </form>
+    </div>
+</div> <footer class="site-footer">
     <div class="wrapper wrapper__small">
         <a href="/" class="site-footer__logo">
             <img src="images/logo.png" alt="">

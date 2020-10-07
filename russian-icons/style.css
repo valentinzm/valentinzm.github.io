@@ -1340,6 +1340,22 @@ body {
     font-size: 42px;
 }
 
+.page__content p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 35px;
+}
+
+.page__content--text ul {
+    list-style: none;
+    font-size: 18px;
+    padding-left: 0;
+}
+
+.page__content--text li {
+    margin-bottom: 10px;
+}
+
 .page__alert {
     box-shadow: 0px 9px 28.8px 1.2px rgba(32, 32, 32, 0.08);
     display: flex;
@@ -1358,25 +1374,10 @@ body {
     margin-right: 30px;
 }
 
-.page__alert p {
+.page__alert--text {
     color: #202020;
     font-size: 22px;
-}
-
-.page__content p {
-    font-size: 18px;
-    line-height: 28px;
-    margin-bottom: 35px;
-}
-
-.page__content--text ul {
-    list-style: none;
-    font-size: 18px;
-    padding-left: 0;
-}
-
-.page__content--text li {
-    margin-bottom: 10px;
+    margin-bottom: 0;
 }
 
 .page__services {
@@ -1465,6 +1466,10 @@ body {
     width: auto;
     padding-left: 95px;
     padding-right: 95px;
+}
+
+.page__button--mobile {
+    display: none;
 }
 
 .sidebar {
@@ -1935,6 +1940,16 @@ body {
         font-size: 24px;
         margin-bottom: 45px;
     }
+    .banner__page {
+        height: 220px;
+    }
+    .banner__page--content {
+        padding-top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
     .burger {
         display: flex;
     }
@@ -2076,10 +2091,27 @@ body {
     .page__content {
         max-width: 100%;
         flex: 0 0 100%;
+        padding-bottom: 0px;
     }
     .sidebar {
         margin-left: 0;
         max-width: 100%;
+    }
+    .page__alert {
+        margin-bottom: 15px;
+    }
+    .page__services {
+        margin-bottom: 0;
+    }
+    .table {
+        margin-bottom: 35px;
+    }
+    .icon-tabs {
+        max-width: 100%;
+    }
+    .icon-row img {
+        margin-top: 23px;
+        margin-bottom: 23px;
     }
 }
 
@@ -2152,10 +2184,13 @@ body {
         height: 480px;
     }
     .banner__page {
-        height: 300px;
+        height: 220px;
     }
     .banner__content {
         padding-top: 180px;
+    }
+    .banner__page--content {
+        padding-top: 0;
     }
     .banner__subtitle {
         font-size: 18px;
@@ -2333,6 +2368,10 @@ body {
     .page__alert p {
         font-size: 16px;
     }
+    .page__col-4 {
+        flex: 0 0 100%;
+        width: 100%;
+    }
     .page__col-3 {
         flex: 0 0 100%;
         width: 100%;
@@ -2357,6 +2396,13 @@ body {
     }
     .page__content--text ul {
         font-size: 16px;
+    }
+    .page__content--subtitle {
+        font-size: 24px;
+    }
+    .modal__close {
+        right: 0;
+        top: -60px;
     }
 }
 
