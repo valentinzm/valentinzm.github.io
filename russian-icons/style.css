@@ -1561,9 +1561,14 @@ body {
     border-bottom: 0;
 }
 
+.sidebar__wrapper {
+    display: none;
+}
+
 .icon-row {
     display: flex;
     align-items: center;
+    margin-bottom: 35px;
 }
 
 .icon-row img {
@@ -2104,6 +2109,14 @@ body {
     .sidebar {
         margin-left: 0;
         max-width: 100%;
+    }
+    .sidebar__hidden {
+        display: none;
+    }
+    .sidebar__wrapper {
+        display: block;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
     .page__alert {
         margin-bottom: 15px;

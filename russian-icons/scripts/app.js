@@ -153,3 +153,22 @@ function closeModal(event) {
     event.preventDefault();
     document.querySelectorAll('.modal').forEach((modal) => { modal.classList.remove('modal__show') });
 }
+
+//для страницы икон
+document.querySelectorAll('.icon-tab__link').forEach((e) => {
+    e.addEventListener('click', showIcon)
+});
+
+function showIcon(event) {
+    let parent = this.parentElement;
+
+
+    if (parent.classList.contains('icon-tab__active')) {
+        parent.classList.remove('icon-tab__active');
+    } else {
+        document.querySelectorAll('.icon-tab').forEach((tab) => {
+            tab.classList.remove('icon-tab__active')
+        });
+        parent.classList.add('icon-tab__active');
+    }
+}

@@ -55,12 +55,12 @@
     <nav class="navigation">
     <div class="wrapper wrapper__big">
         <ul class="navigation__list">
-            <li><a href="/icons.html">ИКОНЫ</a></li>
-            <li><a href="/silver.html">СЕРЕБРО</a></li>
-            <li><a href="/gold.html">ЗОЛОТО</a></li>
+            <li><a href="/russian-icons/icons.html">ИКОНЫ</a></li>
+            <li><a href="/russian-icons/silver.html">СЕРЕБРО</a></li>
+            <li><a href="/russian-icons/gold.html">ЗОЛОТО</a></li>
             <li><a href="#">АНТИКВАРИАТ</a></li>
-            <li><a href="/painting.html">ЖИВОПИСЬ</a></li>
-            <li><a href="/east.html">ИСКУССТВО ВОСТОКА</a></li>
+            <li><a href="/russian-icons/painting.html">ЖИВОПИСЬ</a></li>
+            <li><a href="/russian-icons/east.html">ИСКУССТВО ВОСТОКА</a></li>
             <li><a href="#">О НАС</a></li>
             <li><a href="#">КОНТАКТЫ</a></li>
             <li>
@@ -239,27 +239,16 @@
                             </div>
                             <img src="images/big_mama.jpg" alt="">
                         </section>
+                        <div class="lines">
+                            <div class="line line__left"></div>
+                            <a href="#" class="button page__button js-modal" data-modal="#callback">
+                                Оставить заявку
+                                <svg  enable-background="new 0 0 344.456 344.456" height="12" viewBox="0 0 344.456 344.456" width="12" xmlns="http://www.w3.org/2000/svg"><path d="m344.353 275.462.103-275.462-275.565.034-.034 34.412h216.801l-285.658 285.657 24.353 24.353 285.658-285.657v216.766z"/></svg>
+                            </a>
+                            <div class="line line__right"></div>
+                        </div>
                     </section>
-                    <script>
-                        document.querySelectorAll('.icon-tab__link').forEach((e) => {
-                            e.addEventListener('click', showIcon)
-                        });
-
-                        function showIcon(event) {
-                            let parent = this.parentElement;
-
-
-                            if (parent.classList.contains('icon-tab__active')) {
-                                parent.classList.remove('icon-tab__active');
-                            } else {
-                                document.querySelectorAll('.icon-tab').forEach((tab) => {
-                                    tab.classList.remove('icon-tab__active')
-                                });
-                                parent.classList.add('icon-tab__active');
-                            }
-                        }
-                    </script>
-                    <aside class="sidebar">
+                    <aside class="sidebar sidebar__hidden">
                         <section class="sidebar__section">
                             <h5 class="sidebar__title">График работы</h5>
                             <div class="sidebar__divider"></div>
@@ -363,6 +352,49 @@
 
             </div>
         </section>
+        <div class="wrapper wrapper__big sidebar__wrapper">
+            <section class="bg-light">
+                <aside class="sidebar sidebar__hidden">
+                    <section class="sidebar__section">
+                        <h5 class="sidebar__title">График работы</h5>
+                        <div class="sidebar__divider"></div>
+                        <div class="sidebar__item sidebar__time">
+                            <p>Пн-Пт</p>
+                            <p class="sidebar__item--bold">10:00 - 22:00</p>
+                        </div>
+                        <div class="sidebar__item sidebar__time">
+                            <p>Пн-Пт</p>
+                            <p class="sidebar__item--bold">10:00 - 22:00</p>
+                        </div>
+                        <p class="sidebar__descr">
+                            Работаем без выходных, кроме праздничных дней!
+                        </p>
+                    </section>
+                    <section class="sidebar__section timechart">
+                        <h5 class="sidebar__title">Смотрите также</h5>
+                        <div class="sidebar__divider"></div>
+                        <ul class="sidebar__list">
+                            <li><a href="#">Оценка икон</a></li>
+                            <li><a href="#">Скупка икон</a></li>
+                            <li><a href="#">Выкуп икон</a></li>
+                            <li><a href="#">Экспертиза икон</a></li>
+                            <li><a href="#">Иконы XV века</a></li>
+                            <li><a href="#">Иконы XVI века</a></li>
+                            <li><a href="#">Иконы XVII века</a></li>
+                            <li><a href="#">Иконы XVIII века</a></li>
+                            <li><a href="#">Иконы XIX века</a></li>
+                            <li><a href="#">Иконы XX века</a></li>
+                            <li><a href="#">Иконы Божьей Матери</a></li>
+                            <li><a href="#">Иконы в окладе</a></li>
+                            <li><a href="#">Иконы в окладе</a></li>
+                            <li><a href="#">Иконы с эмалью</a></li>
+                            <li><a href="#">Иконы на дереве</a></li>
+                            <li><a href="#">Старинные иконы</a></li>
+                        </ul>
+                    </section>
+                </aside>
+            </section>
+        </div>
         <section class="consultation">
     <div class="wrapper wrapper__small">
         <h4 class="title">
@@ -532,7 +564,47 @@
     </div>
 </section>
 </main>
-<footer class="site-footer">
+<div class="modal" id="callback">
+    <div class="overlay"></div>
+    <div class="modal__body">
+        <a href="#" class="modal__close">
+            <?xml version="1.0" encoding="iso-8859-1"?>
+            <svg fill="#c3c3c3" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 298.667 298.667" style="enable-background:new 0 0 298.667 298.667;" xml:space="preserve">
+            <g>
+                <g>
+                    <polygon points="298.667,30.187 268.48,0 149.333,119.147 30.187,0 0,30.187 119.147,149.333 0,268.48 30.187,298.667 
+                        149.333,179.52 268.48,298.667 298.667,268.48 179.52,149.333 		"/>
+                </g>
+            </g>
+            </svg>
+        </a>
+        <h4 class="modal__title">Заявка на обратный звонок</h4>
+        <div class="modal__divider"></div>
+        <form action="#" class="form modal__form">
+            <label class="form__label">
+                    Ваше имя:
+                    <input type="text" placeholder="Введите Ваше имя" class="form__input">
+                </label>
+            <label class="form__label">
+                    Ваш номер телефона:
+                    <input type="text" placeholder="Контактный номер телефона" class="form__input">
+                </label>
+            <label class="form__label">
+                    Ваш e-mail
+                    <input type="text" placeholder="Введите Ваше имя" class="form__input">
+                </label>
+            <label class="form__label">
+                    Каким способом вам ответить?
+                    <select name="" id="" class="form__select">
+                        <option value="">Перезвоните мне</option>
+                        <option value="">Перезвоните мне</option>
+                        <option value="">Перезвоните мне</option>
+                    </select>
+                </label>
+            <input type="submit" value="Отправить" class="form__submit">
+        </form>
+    </div>
+</div> <footer class="site-footer">
     <div class="wrapper wrapper__small">
         <a href="/" class="site-footer__logo">
             <img src="images/logo.png" alt="">
