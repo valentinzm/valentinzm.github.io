@@ -2203,7 +2203,7 @@ body {
         margin-bottom: 15px;
     }
     .page__services {
-        margin-bottom: 0;
+        margin-bottom: 20px;
     }
     .table {
         margin-bottom: 35px;
@@ -2213,7 +2213,7 @@ body {
     }
     .icon-row img {
         margin-top: 23px;
-        margin-bottom: 23px;
+        margin-bottom: 0px;
     }
     .page__button {
         padding-left: 0;
