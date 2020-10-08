@@ -988,6 +988,7 @@ body {
     background-color: #76c356;
     color: #fff;
     font-size: 18px;
+    outline: none;
 }
 
 .form__submit:after {
@@ -1824,6 +1825,17 @@ body {
     padding-top: 0;
 }
 
+.modal__text {
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 30px;
+}
+
 @media(max-width: 1600px) {
     .wrapper {
         max-width: 1300px;
@@ -1848,6 +1860,9 @@ body {
     .icon-row img {
         max-width: 350px;
         margin-left: 24px;
+    }
+    .page__alert--text {
+        font-size: 18px;
     }
 }
 
@@ -1940,7 +1955,15 @@ body {
         flex-wrap: wrap;
     }
     .site-footer__nav a {
-        font-size: 14px;
+        font-size: 10px;
+        width: 50%;
+        flex: 0 0 50%;
+    }
+    .site-footer__logo img {
+        max-width: 200px;
+    }
+    .site-footer__nav a:nth-child(odd):before {
+        content: none;
     }
 }
 
@@ -2035,8 +2058,8 @@ body {
         left: 0;
         right: 0;
         height: calc(100vh - 110px);
-        background-color: #fff;
-        z-index: 15;
+        background-color: #ebeced;
+        z-index: 20;
         padding-left: 15px;
         padding-right: 15px;
         padding-top: 20px;
@@ -2157,6 +2180,7 @@ body {
     } */
     .page__row {
         flex-wrap: wrap;
+        padding-top: 24px;
     }
     .page__content {
         max-width: 100%;
@@ -2307,6 +2331,7 @@ body {
     }
     .title {
         font-size: 24px;
+        line-height: 1;
     }
     .banner__title {
         font-size: 26px;
@@ -2474,7 +2499,7 @@ body {
         flex: 0 0 32px;
         height: 32px;
     }
-    .page__alert p {
+    .page__alert--text {
         font-size: 16px;
     }
     .page__col-4 {
@@ -2510,8 +2535,30 @@ body {
         font-size: 24px;
     }
     .modal__close {
-        right: 0;
-        top: -60px;
+        right: 20px;
+        top: -50px;
+    }
+    .modal {
+        align-items: flex-start;
+        padding-top: 60px;
+    }
+    .modal__title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .modal__divider {
+        margin-bottom: 10px;
+    }
+    .modal__form {
+        padding-top: 0;
+    }
+    .form__input,
+    .form__select {
+        margin-bottom: 10px;
+    }
+    .form__submit {
+        font-size: 14px;
+        height: 40px;
     }
 }
 

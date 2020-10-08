@@ -172,3 +172,11 @@ function showIcon(event) {
         parent.classList.add('icon-tab__active');
     }
 }
+
+document.querySelectorAll('.form').forEach((form) => { form.addEventListener('submit', formSubmitted) });
+
+function formSubmitted(event) {
+    event.preventDefault();
+    document.querySelectorAll('.modal').forEach((modal) => { modal.classList.remove('modal__show') });
+    document.querySelector('#thanks').classList.add('modal__show');
+}
