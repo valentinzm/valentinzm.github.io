@@ -2306,9 +2306,11 @@ body {
         margin-right: 0;
         max-width: 180px;
         height: 45px;
+        display: flex;
+        align-items: center;
     }
     .site-logo img {
-        height: 45px;
+        height: 35px;
     }
     .burger {
         order: 3;
@@ -2667,6 +2669,7 @@ body {
         max-width: 160px;
         width: 100%;
         transform: translateX(0);
+        height: 325px;
     }
     .rewiews__buttons {
         display: flex;
@@ -2715,6 +2718,7 @@ body {
     }
     .rewiews__slider .swiper-slide img {
         max-width: 150px;
+        height: 285px;
     }
 }
 
