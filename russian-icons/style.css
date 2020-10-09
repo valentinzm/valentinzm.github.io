@@ -1998,6 +1998,7 @@ body {
     }
     .site-header__wrapper {
         justify-content: space-between;
+        height: 110px;
     }
     .site-header__contacts {
         margin-left: unset;
@@ -2666,10 +2667,10 @@ body {
         height: 400px;
     }
     .rewiews__slider .swiper-slide img {
-        max-width: 160px;
+        max-width: 190px;
         width: 100%;
-        transform: translateX(0);
-        height: 325px;
+        transform: translateX(-5px);
+        height: 380px;
     }
     .rewiews__buttons {
         display: flex;
@@ -2709,6 +2710,12 @@ body {
     }
 }
 
+@media(max-width: 450px) {
+    .rewiews__slider .swiper-slide img {
+        transform: translateX(0px);
+    }
+}
+
 @media(max-width: 420px) {
     .site-header__email {
         display: none;
@@ -2718,7 +2725,7 @@ body {
     }
     .rewiews__slider .swiper-slide img {
         max-width: 150px;
-        height: 285px;
+        height: 335px;
     }
 }
 
