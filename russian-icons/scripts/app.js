@@ -1,11 +1,8 @@
 const zenSlider = new Swiper('.zen__slider', {
-    // Optional parameters
-
     loop: true,
     slidesPerView: 1,
     centeredSlides: true,
     spaceBetween: 0,
-    // Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -29,12 +26,10 @@ const zenSlider = new Swiper('.zen__slider', {
 
 });
 const rewiewsSlider = new Swiper('.rewiews__slider', {
-    // Optional parameters
     effect: 'fade',
     loop: true,
     slidesPerView: 1,
     spaceBetween: 0,
-    // Navigation arrows
     navigation: {
         nextEl: '.rewiews-button-next',
         prevEl: '.rewiews-button-prev',
@@ -59,17 +54,8 @@ function faqList(evt) {
     const content = this.nextElementSibling;
     const parent = this.parentElement;
     parent.classList.toggle('faq__item--open');
-
-    //content.style.display = 'block';
 }
-// window.addEventListener('scroll', function() {
-//     let scrollValue = window.scrollY;
-//     if (scrollValue >= 110) {
-//         document.querySelector('.navigation').classList.add('navigation__sticky');
-//     } else {
-//         document.querySelector('.navigation').classList.remove('navigation__sticky');
-//     }
-// })
+
 document.querySelector('.burger').addEventListener('click', mobileNavigation);
 
 
@@ -84,8 +70,8 @@ function mobileNavigation(evt) {
 
 ymaps.ready(function() {
     var myMap = new ymaps.Map('map', {
-            center: [55.751574, 37.573856],
-            zoom: 9,
+            center: [55.733856, 37.613360],
+            zoom: 17,
             controls: [],
         }, {
             searchControlProvider: 'yandex#search'
@@ -97,47 +83,17 @@ ymaps.ready(function() {
         ),
 
         myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-            hintContent: 'Собственный значок метки',
-            balloonContent: 'Это красивая метка'
+            //hintContent: 'Собственный значок метки',
+            iconCaption: 'Русские Иконы',
         }, {
-            // Опции.
-            // Необходимо указать данный тип макета.
-            iconLayout: 'default#image',
-            // Своё изображение иконки метки.
-            iconImageHref: 'images/myIcon.gif',
-            // Размеры метки.
-            iconImageSize: [30, 42],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            iconImageOffset: [-5, -38]
-        }),
-
-        myPlacemarkWithContent = new ymaps.Placemark([55.661574, 37.573856], {
-            hintContent: 'Собственный значок метки с контентом',
-            balloonContent: 'А эта — новогодняя',
-            iconContent: '12'
-        }, {
-            // Опции.
-            // Необходимо указать данный тип макета.
-            iconLayout: 'default#imageWithContent',
-            // Своё изображение иконки метки.
-            iconImageHref: 'images/ball.png',
-            // Размеры метки.
-            iconImageSize: [48, 48],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            iconImageOffset: [-24, -24],
-            // Смещение слоя с содержимым относительно слоя с картинкой.
-            iconContentOffset: [15, 15],
-            // Макет содержимого.
-            iconContentLayout: MyIconContentLayout
+            iconColor: '#76c356',
+            iconImageSize: [42, 42],
+            iconImageOffset: [0, 0]
         });
 
     myMap.geoObjects
         .add(myPlacemark)
-        .add(myPlacemarkWithContent);
 });
-
 document.querySelectorAll('.js-modal').forEach((e) => { e.addEventListener('click', showModal) });
 
 function showModal(event) {
@@ -161,8 +117,6 @@ document.querySelectorAll('.icon-tab__link').forEach((e) => {
 
 function showIcon(event) {
     let parent = this.parentElement;
-
-
     if (parent.classList.contains('icon-tab__active')) {
         parent.classList.remove('icon-tab__active');
     } else {
@@ -172,11 +126,28 @@ function showIcon(event) {
         parent.classList.add('icon-tab__active');
     }
 }
-
+document.querySelector('.search-form__form').addEventListener('submit', function(event) {
+    event.preventDefault();
+})
 document.querySelectorAll('.form').forEach((form) => { form.addEventListener('submit', formSubmitted) });
 
 function formSubmitted(event) {
     event.preventDefault();
     document.querySelectorAll('.modal').forEach((modal) => { modal.classList.remove('modal__show') });
     document.querySelector('#thanks').classList.add('modal__show');
+}
+
+document.querySelector('.navigation__search-btn').addEventListener('click', showSearchForm);
+
+function showSearchForm(event) {
+    event.preventDefault();
+    document.querySelector('.navigation__list').classList.add('hide');
+    document.querySelector('.search-form').classList.add('show');
+}
+document.querySelector('.search-form__close').addEventListener('click', closeSearchForm);
+
+function closeSearchForm(event) {
+    event.preventDefault();
+    document.querySelector('.search-form').classList.remove('show');
+    document.querySelector('.navigation__list').classList.remove('hide');
 }
