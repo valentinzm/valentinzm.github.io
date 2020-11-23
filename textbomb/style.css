@@ -2656,7 +2656,16 @@ div.wpcf7-mail-sent-ng {
     display: none;
 }
 
-@media(max-width: 1024px) {
+@media(max-width: 1340px) {
+    .btn-group a {
+        width: 120px;
+    }
+    .btn-group a:last-child {
+        width: 165px;
+    }
+}
+
+@media(max-width: 1200px) {
     .site-nav,
     .contacts .teleg,
     .contacts .email,
@@ -2716,6 +2725,7 @@ div.wpcf7-mail-sent-ng {
     .menu-open {
         display: flex!important;
         flex-direction: column;
+        justify-content: center;
         position: fixed;
         bottom: 0;
         top: 0;
@@ -2745,6 +2755,53 @@ div.wpcf7-mail-sent-ng {
     .site-logo {
         margin-left: 0;
     }
+    .coin-block {
+        flex-direction: column;
+        align-items: center;
+    }
+    .coin-block div {
+        flex-direction: column;
+    }
+    .coin-block div:last-child {
+        flex-direction: column-reverse;
+        max-width: 210px;
+        margin: 0 auto;
+    }
+    .coin-block p {
+        text-align: center;
+        font-size: 22px;
+    }
+    .team {
+        max-width: 457px;
+        height: 253px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .team__partners {
+        height: auto;
+    }
+    .team-text {
+        font-size: 16px;
+    }
+    .grid {
+        grid-template-columns: repeat(12, 50%);
+        overflow-x: scroll;
+    }
+    .brick-bg {
+        padding: 20px 40px;
+        background-size: 100%;
+    }
+    .brick-title {
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+    .brick__text {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+}
+
+@media(max-width: 1024px) {
     .banner {
         padding-top: 90px;
     }
@@ -2808,6 +2865,8 @@ div.wpcf7-mail-sent-ng {
         height: 260px;
         background-size: cover;
         align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .bonus-top img {
         max-width: 295px;
@@ -2820,25 +2879,12 @@ div.wpcf7-mail-sent-ng {
         flex-direction: column;
         align-items: center;
     }
-    .team {
-        max-width: 457px;
-        height: 253px;
-        margin: 0 auto;
-        margin-bottom: 15px;
-    }
-    .team__partners {
-        height: auto;
-    }
-    .team-text {
-        font-size: 16px;
-    }
     .brick-bg {
         width: 470px;
-        min-height: unset;
+        min-height: 235px;
         margin: 0 auto;
-        background-size: contain;
+        background-size: 100%;
         padding: 30px;
-        margin-bottom: 20px;
     }
     .brick-bg img {
         max-width: 60px;
@@ -2846,33 +2892,11 @@ div.wpcf7-mail-sent-ng {
     .brick-padding .col-lg-6:nth-child(2) {
         margin-bottom: 0;
     }
-    .coin-block {
-        flex-direction: column;
-    }
-    .coin-block div {
-        flex-direction: column;
-    }
-    .coin-block div:last-child {
-        flex-direction: column-reverse;
-        max-width: 210px;
-        margin: 0 auto;
-    }
-    .coin-block p {
-        text-align: center;
-        font-size: 22px;
-    }
-    /* .work-container .work-block:nth-child(3n+3) .arrow{
-    display: none;
-  } */
     .work-container .work-block:nth-child(5) .arrow {
         display: block;
     }
     .work-block p {
         font-size: 16px;
-    }
-    .grid {
-        grid-template-columns: repeat(12, 50%);
-        overflow-x: scroll;
     }
     .form-title {
         font-size: 25px;
@@ -3110,6 +3134,8 @@ div.wpcf7-mail-sent-ng {
         margin: 0 auto;
         justify-content: center;
         margin-bottom: 20px;
+        padding-left: 0;
+        padding-right: 0;
     }
     .bonus-top img {
         max-width: 210px;
@@ -3139,6 +3165,10 @@ div.wpcf7-mail-sent-ng {
     }
     .title {
         font-size: 36px;
+        line-height: 1;
+    }
+    .row__team {
+        display: none;
     }
     .team__container .col-lg-3 {
         display: none;
@@ -3166,7 +3196,6 @@ div.wpcf7-mail-sent-ng {
         grid-template-columns: repeat(12, 300px);
         grid-template-rows: auto;
         overflow-x: scroll;
-        margin-top: -20px;
         padding-top: 40px;
     }
     .grid svg {
@@ -3222,9 +3251,10 @@ div.wpcf7-mail-sent-ng {
         display: none;
     }
     .brick-bg {
-        width: 100%;
+        min-height: 200px;
         background-position: center;
-        background-size: cover;
+        background-size: 100%;
+        margin-bottom: 20px;
     }
     .brick__content {
         max-width: 300px;
@@ -3305,5 +3335,12 @@ div.wpcf7-mail-sent-ng {
     .plus2,
     .plus3 {
         display: none;
+    }
+}
+
+@media(max-width: 500px) {
+    .brick-bg {
+        width: 100%;
+        background-size: cover;
     }
 }

@@ -52,35 +52,46 @@ function closeOverlay() {
     this.classList.remove('show');
 }
 
-try {
-    document.querySelector('.team__container').addEventListener('mousemove', planets_move);
 
-    function planets_move(event) {
-        let eventY = event.clientY;
-        let eventX = event.clientX;
-        let formY = -eventY / 30;
-        let formX = -eventX / 30;
+document.querySelector('.team__container').addEventListener('mousemove', planets_move);
 
-        document.querySelector('.earth').style.transform = 'translate(' + formX + 'px, ' + formY + 'px)';
-        document.querySelector('.mars').style.transform = 'translate(' + formX + 'px, ' + formY + 'px)';
-        document.querySelector('.plus1').style.transform = 'translate(' + -formX + 'px, ' + -formY + 'px)';
-        document.querySelector('.plus2').style.transform = 'translate(' + -formX + 'px, ' + -formY + 'px)';
-        document.querySelector('.plus3').style.transform = 'translate(' + -formX + 'px, ' + -formY + 'px)';
-    }
+function planets_move(event) {
+    let eventY = event.clientY;
+    let eventX = event.clientX;
+    let formY = -eventY / 30;
+    let formX = -eventX / 30;
 
-    document.querySelector('.bg-form').addEventListener('mousemove', rocket_move);
-
-    function rocket_move(event) {
-        let eventY = event.clientY;
-        let eventX = event.clientX;
-        let formY = -eventY / 50;
-        let formX = -eventX / 50;
-        document.querySelector('.rocket').style.transform = 'translate(' + formX + 'px, ' + formY + 'px)';
-    }
-} catch (e) {
-    console.log('no team__container')
+    document.querySelector('.earth').style.transform = 'translate(' + formX + 'px, ' + formY + 'px)';
+    document.querySelector('.mars').style.transform = 'translate(' + formX + 'px, ' + formY + 'px)';
+    document.querySelector('.plus1').style.transform = 'translate(' + -formX + 'px, ' + -formY + 'px)';
+    document.querySelector('.plus2').style.transform = 'translate(' + -formX + 'px, ' + -formY + 'px)';
+    document.querySelector('.plus3').style.transform = 'translate(' + -formX + 'px, ' + -formY + 'px)';
 }
 
+
+if (window.innerWidth > 1024) {
+    document.querySelector('.bg-form').addEventListener('mousemove', rocket_move);
+}
+
+function rocket_move(event) {
+    let eventY = event.clientY;
+    let eventX = event.clientX;
+    let formY = -eventY / 50;
+    let formX = -eventX / 50;
+    document.querySelector('.rocket').style.transform = 'translate(' + formX + 'px, ' + formY + 'px)';
+}
+
+window.addEventListener('resize', resizing);
+
+function resizing() {
+    if (window.innerWidth > 1024) {
+        document.querySelector('.bg-form').addEventListener('mousemove', rocket_move);
+        document.querySelector('.rocket').style.transform = 'rotate(0deg)';
+    } else {
+        document.querySelector('.bg-form').removeEventListener('mousemove', rocket_move);
+        document.querySelector('.rocket').style.transform = 'rotate(90deg)';
+    }
+}
 
 
 document.querySelector('.btn__submenu a').addEventListener('click', mobileMenu);
@@ -102,6 +113,13 @@ let startX;
 let scrollLeft;
 
 slider.addEventListener('mousedown', (e) => {
+    isDown = true;
+    slider.classList.add('active');
+    svg.style.display = "none";
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+});
+slider.addEventListener('touchmove', (e) => {
     isDown = true;
     slider.classList.add('active');
     svg.style.display = "none";
